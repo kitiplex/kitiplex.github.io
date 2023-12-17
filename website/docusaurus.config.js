@@ -94,11 +94,6 @@ const config = {
             position: 'left',
             items: [
               {
-                label: 'Team',
-                to: '/resources'
-              },
-
-              {
                 label: 'Blog',
                 to: '/blog',
               },

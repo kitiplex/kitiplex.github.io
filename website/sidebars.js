@@ -50,7 +50,9 @@ const sidebars = {
         'projects/ginabot-ai'
       ]
     }
-  ]
+  ],
+
+
 
   // But you can create a sidebar manually
   /*
