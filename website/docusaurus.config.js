@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://kitiplex-dev.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -106,7 +106,7 @@ const config = {
             ]
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/kitiplex',
             'aria-label': 'GitHub repository',
             position: 'right',
             className: 'header-github-link',
@@ -152,7 +152,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/kitiplex',
               },
             ],
           },
