@@ -1,3 +1,21 @@
 ---
-title: Basic python
+title: Installing Python on Windows
 ---
+
+Installing Python on Windows
+
+To install Python on Windows, you can follow these steps:
+
+1. Visit the official Python website by clicking [here](https://www.python.org/downloads).
+2. Click on the "Downloads" tab located at the top of the page.
+3. Scroll down to the "Python Releases for Windows" section.
+4. Choose the version of Python you wish to install. It is generally recommended to select the latest stable version.
+5. Depending on your system architecture (32-bit or 64-bit), click on the appropriate installer link. If you're uncertain about your system architecture, you can right-click on "This PC" (or "My Computer"), select "Properties," and look for the system type information.
+6. Once the installer file is downloaded, locate it in your downloads folder and double-click to run it.
+7. In the Python Installer, ensure that the "Add Python to PATH" option is checked. This will enable easy access to Python from the command line.
+8. Click on the "Customize installation" button to modify installation settings if desired. Otherwise, proceed with the default settings.
+9. Next, click on the "Install Now" button to initiate the installation process.
+10. The installer will begin installing Python on your system, and you will see a progress bar indicating the installation status.
+11. After the installation is complete, a "Setup was successful" message will be displayed. Make sure the "Disable path length limit" checkbox is selected, and then click "Close."
+
+Congratulations! Python is now successfully installed on your Windows system. You can confirm the installation by opening the command prompt, PowerShell, or any other terminal and typing `py`. You should see the Python version and the Python interactive shell, indicating that Python is installed correctly.
