@@ -36,29 +36,29 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fa'],
-    path: 'i18n',
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        calendar: 'gregory',
-        path: 'en',
-      },
-      fa: {
-        label: 'فارسی',
-        direction: 'rtl',
-        htmlLang: 'fa-IR',
-        calendar: 'persian',
-        path: 'fa',
-      },
-    },
+    locales: ['en', 'fr','ko'],
+    // path: 'i18n',
+    // localeConfigs: {
+    //   en: {
+    //     label: 'English',
+    //     direction: 'ltr',
+    //     htmlLang: 'en-US',
+    //     calendar: 'gregory',
+    //     path: 'en',
+    //   },
+    //   fa: {
+    //     label: 'فارسی',
+    //     direction: 'rtl',
+    //     htmlLang: 'fa-IR',
+    //     calendar: 'persian',
+    //     path: 'fa',
+    //   },
+    // },
   },
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -84,7 +84,7 @@ const config = {
       }),
     ],
   ],
-
+  plugins: ['@docusaurus/theme-live-codeblock'],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -92,22 +92,40 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
+          autoCollapseCategories: false,
         }
       },
-      image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+
+      image: 'img/kitiplex-social-card.png',
+      
       navbar: {
         title: 'kitiplex',
         logo: {
           alt: 'My Site Logo',
           src: 'img/kitim_bb.png',
+          // width: 40,
+          height: 40,
+          className: 'custom-navbar-logo-class',
+          target: '_self',
         },
+        
         items: [
+
           {
-            label: 'Docs',
+            label: 'Platform',
             position: 'left',
             to: 'docs/introduction'
           },
-
+          {
+            label: 'Gists',
+            position: 'left',
+            to: 'docs/gists/openai-api'
+          },
           {
             label: 'Demos',
             position: 'left',
@@ -117,6 +135,7 @@ const config = {
           {
             label: 'Resources',
             position: 'left',
+            type: 'dropdown',
             items: [
               {
                 label: 'Blog',
@@ -131,12 +150,19 @@ const config = {
               {
                 label: 'Team',
                 to: '/team'
-              }
+              },
+
             ]
           },
           {
             type: 'localeDropdown',
             position: 'right',
+            dropdownItemsAfter: [
+              {
+                to: 'https://my-site.com/help-us-translate',
+                label: 'Help us translate',
+              },
+            ],
           },
           {
             href: 'https://github.com/kitiplex',
@@ -144,8 +170,6 @@ const config = {
             position: 'right',
             className: 'header-github-link',
           },
-
-
         ],
       },
 
@@ -157,7 +181,7 @@ const config = {
           from: '/docs/', // or as RegExp: /\/docs\//
           to: '/',
         },
-        searchPagePath: 'search',
+        // searchPagePath: '/',
 
       },
 
@@ -189,6 +213,7 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/kitiplex',
               },
+
             ],
           },
           {
@@ -202,21 +227,33 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/kitiplex',
               },
+
             ],
           },
+
         ],
         logo: {
           alt: 'Kitiplex Logo',
           src: 'img/header_blue.png',
           href: 'https://github.com/kitiplex',
-          height: "42",
+          // width: 160,
+          height: 38,
           target: "_blank"
         },
+        
         copyright: `Copyright © ${new Date().getFullYear()} Kitiplex. Built with Docusaurus`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ['bash', 'diff', 'json',]
+      },
+      liveCodeBlock: {
+        /**
+         * The position of the live playground, above or under the editor
+         * Possible values: "top" | "bottom"
+         */
+        playgroundPosition: 'bottom',
       },
     }),
 };

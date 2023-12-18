@@ -27,18 +27,32 @@ const sidebars = {
         'security-policy'
       ]
     },
+    // {
+    //   type: 'category',
+    //   label: 'Guides',
+    //   collapsed: true,
+    //   items: 
+    //   [
+    //     'guides/openai-api',
+    //     'guides/basic-python',
+    //     'guides/wsl-kali'
+    //   ]
+    // },
+    
+  ],
+
+  gists: [
     {
       type: 'category',
-      label: 'Guides',
-      collapsed: true,
-      items: 
+      label: 'Gists',
+      collapsed: false,
+      items:
       [
-        'guides/openai-api',
-        'guides/basic-python',
-        'guides/wsl-kali'
+        'gists/openai-api',
+        'gists/basic-python',
+        'gists/wsl-kali'
       ]
-    },
-    
+    }
   ],
 
   projects: [
