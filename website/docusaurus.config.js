@@ -114,6 +114,20 @@ const config = {
 
         ],
       },
+
+      algolia: {
+        apiKey: '40077a4dd90af814060e8382ae520ea6',
+        appId: '76NGSLM9E1',
+        indexName: 'kitiplex-dev',
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
+        searchPagePath: 'search',
+
+      },
+
+      
       footer: {
         style: 'dark',
         links: [
