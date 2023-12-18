@@ -1,6 +1,7 @@
 ---
-title: Hello world!
+title: Hi there!
 sidebar_label: Introduction
+sidebar_position: 1
 ---
 ## 👋 Introduction {#introduction}
 
@@ -8,7 +9,7 @@ Kitiplex is the official documention site for **some projects**, demos, as well 
 
 
 
-### 🚅 Straightforward {#straightforward}
+## 🚅 Straightforward {#straightforward}
 
 
 

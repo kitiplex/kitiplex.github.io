@@ -4,13 +4,16 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
+// @ts-ignore
 import { themes as prismThemes } from 'prism-react-renderer';
-
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'kitiplex',
   tagline: 'Projects, samples and demos from Kitimi Platforms',
   favicon: 'img/favicon.ico',
+
 
   // Set the production url of your site here
   url: 'https://kitiplex-dev.vercel.app/',
@@ -41,6 +44,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          path: 'docs',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -127,7 +133,7 @@ const config = {
 
       },
 
-      
+
       footer: {
         style: 'dark',
         links: [

@@ -20,7 +20,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Getting started',
-      collapsed: false,
+      collapsed: true,
       items: [
         'introduction',
         'code-of-conduct',
@@ -30,7 +30,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Guides',
-      collapsed: false,
+      collapsed: true,
       items: 
       [
         'guides/basic-python',
