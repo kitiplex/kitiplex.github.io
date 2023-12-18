@@ -94,7 +94,7 @@ export function ActiveTeamRow(): JSX.Element {
         githubUrl="https://github.com/mkeithX"
         twitterUrl="https://twitter.com/mkeithtan">
         <Translate id="team.profile.Keith Tan.body">
-          Kitiplex founder & socially awkward.
+          Kitiplex founder & socially awkward. 🚀🌍
         </Translate>
       </TeamProfileCardCol>
       {/* <TeamProfileCardCol
@@ -125,7 +125,7 @@ export function ActiveTeamRow(): JSX.Element {
         githubUrl="https://github.com/Portiaporkshap"
         twitterUrl="https://twitter.com/">
         <Translate id="team.profile.Venic.body">
-            Teammate is about to update profile. Be right back!
+            Trust me, I'm always an Engineer. 24/7 365. 🛠️
         </Translate>
       </TeamProfileCardCol>
       <TeamProfileCardCol
@@ -172,7 +172,7 @@ export function HonoraryAlumniTeamRow(): JSX.Element {
         githubUrl="https://github.com/wgao19"
         twitterUrl="https://twitter.com/wgao19">
         <Translate id="team.profile.Wei Gao.body">
-          🏻‍🌾 Work in progress React developer, maintains Docusaurus, writes
+          Work in progress React developer, maintains Docusaurus, writes
           docs and spams this world with many websites.
         </Translate>
       </TeamProfileCardCol>

@@ -36,7 +36,24 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fa'],
+    path: 'i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+      fa: {
+        label: 'فارسی',
+        direction: 'rtl',
+        htmlLang: 'fa-IR',
+        calendar: 'persian',
+        path: 'fa',
+      },
+    },
   },
 
   presets: [
@@ -118,11 +135,16 @@ const config = {
             ]
           },
           {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/kitiplex',
             'aria-label': 'GitHub repository',
             position: 'right',
             className: 'header-github-link',
           },
+
 
         ],
       },
@@ -157,15 +179,15 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discordapp.com/',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/kitiplex',
               },
             ],
           },
@@ -187,10 +209,10 @@ const config = {
           alt: 'Kitiplex Logo',
           src: 'img/header_blue.png',
           href: 'https://github.com/kitiplex',
-          height: "32",
+          height: "42",
           target: "_blank"
         },
-        copyright: `Copyright © ${new Date().getFullYear()} kitiplex`,
+        copyright: `Copyright © ${new Date().getFullYear()} Kitiplex. Built with Docusaurus`,
       },
       prism: {
         theme: prismThemes.github,
