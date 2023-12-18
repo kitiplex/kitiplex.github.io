@@ -33,6 +33,7 @@ const sidebars = {
       collapsed: true,
       items: 
       [
+        'guides/openai-api',
         'guides/basic-python',
         'guides/wsl-kali'
       ]
