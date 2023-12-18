@@ -109,7 +109,7 @@ const config = {
           },
 
           {
-            label: 'Projects',
+            label: 'Demos',
             position: 'left',
             to: 'docs/projects',
 
