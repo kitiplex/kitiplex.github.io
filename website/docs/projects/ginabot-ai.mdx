@@ -2,11 +2,6 @@
 title: Ginabot AI
 description: A demo chat assist project extended by mkeithX.
 ---
-import Tabs from '@theme/Tabs';
-
-import TabItem from '@theme/TabItem';
-
-
 
 
 :::info[About]
@@ -18,46 +13,38 @@ Check out **[Live Demo](https://ginabot-ai.vercel.app)**.
 
 :::
 
+1. Clone repo
 
-**1. Clone Repo**
-
-```bash
+```
 git clone https://github.com/mkeithx/ginabot-ai.git
 ```
 
-**2. Install Dependencies**
+2. Install Dependencies
 
-```bash
+```
 npm i
 ```
+3. Create a .env.local file in the root of the repo with your OpenAI API Key:
 
-**3. Provide OpenAI API Key**
-
-Create a .env.local file in the root of the repo with your OpenAI API Key:
-
-
-
-```bash
+```
 OPENAI_API_KEY=YOUR_KEY
 ```
 
-> You can set `OPENAI_API_HOST` where access to the official OpenAI host is restricted or unavailable, allowing users to configure an alternative host for their specific needs.
+:::tip
+You can set `OPENAI_API_HOST` where access to the official OpenAI host is restricted or unavailable, allowing users to configure an alternative host for their specific needs.
 
-> Additionally, if you have multiple OpenAI Organizations, you can set `OPENAI_ORGANIZATION` to specify one.
+Additionally, if you have multiple OpenAI Organizations, you can set `OPENAI_ORGANIZATION` to specify one.
+:::
 
-**4. Run App**
+4. Run locally.
 
-```bash
+```
 npm run dev
 ```
 
-**5. Use It**
-
-You should be able to start chatting.
-
-## Configuration
-
+:::info[Configuration]
 When deploying the application, the following environment variables can be set:
+:::
 
 | Environment Variable              | Default value                  | Description                                                                                                                               |
 | --------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -68,7 +55,7 @@ When deploying the application, the following environment variables can be set:
 | AZURE_DEPLOYMENT_ID               |                                | Needed when Azure OpenAI, Ref [Azure OpenAI API](https://learn.microsoft.com/zh-cn/azure/cognitive-services/openai/reference#completions) |
 | OPENAI_ORGANIZATION               |                                | Your OpenAI organization ID                                                                                                               |
 | DEFAULT_MODEL                     | `gpt-3.5-turbo`                | The default model to use on new conversations, for Azure use `gpt-35-turbo`                                                               |
-| NEXT_PUBLIC_DEFAULT_SYSTEM_PROMPT | [see here](utils/app/const.ts) | The default system prompt to use on new conversations                                                                                     |
+| NEXT_PUBLIC_DEFAULT_SYSTEM_PROMPT |                              | The default system prompt to use on new conversations                                                                                     |
 | NEXT_PUBLIC_DEFAULT_TEMPERATURE   | 1                              | The default temperature to use on new conversations                                                                                       |
 | GOOGLE_API_KEY                    |                                | See [Custom Search JSON API documentation][GCSE]                                                                                          |
 | GOOGLE_CSE_ID                     |                                | See [Custom Search JSON API documentation][GCSE]                                                                                          |
@@ -77,13 +64,7 @@ If you do not provide an OpenAI API key with `OPENAI_API_KEY`, users will have t
 
 If you don't have an OpenAI API key, you can get one [here](https://platform.openai.com/account/api-keys).
 
+Screenshots
 
-:::note[This is a test admonitions]
-
-<Tabs>
-  <TabItem value="apple" label="Apple">This is an apple 🍎</TabItem>
-  <TabItem value="orange" label="Orange">This is an orange 🍊</TabItem>
-  <TabItem value="banana" label="Banana">This is a banana 🍌</TabItem>
-</Tabs>
-
-:::
+![Landingpage](./img/Screenshot_land.png)
+![Samplecmd](./img/Screenshot_cm.png)

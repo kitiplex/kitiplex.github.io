@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Intro
 ---
 
 The quick brown fox

@@ -4,10 +4,12 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-// @ts-ignore
+
 import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'kitiplex',
@@ -103,11 +105,15 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                type: 'docSidebar',
-                sidebarId: 'tutorialSidebar',
+              // {
+              //   type: 'docSidebar',
+              //   sidebarId: 'tutorialSidebar',
 
-                label: 'Tutorial',
+              //   label: 'Tutorial',
+              // },
+              {
+                label: 'Team',
+                to: '/team'
               }
             ]
           },
@@ -142,7 +148,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/introduction',
               },
             ],
           },
