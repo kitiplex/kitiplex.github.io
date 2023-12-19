@@ -241,7 +241,7 @@ const config = {
           target: "_blank"
         },
         
-        copyright: `Copyright © ${new Date().getFullYear()} Kitiplex. Built with Docusaurus`,
+        copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
       },
       prism: {
         theme: prismThemes.github,
