@@ -53,18 +53,11 @@ const sidebars = {
   ],
 
   gists: [
-    // 'gists',
+    'gists',
     {
       type: 'category',
       label: 'Examples',
       collapsed: true,
-      link: {
-        type: 'generated-index',
-        title: 'Gists & guides',
-        description: 'All comes in handy!',
-        slug: '/gists',
-        keywords: ['guides'],
-      },
       items:
       [
         'gists/openai-api',
