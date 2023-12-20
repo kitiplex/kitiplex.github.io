@@ -18,7 +18,7 @@ const config = {
 
 
   // Set the production url of your site here
-  url: 'https://kitiplex-dev.vercel.app/',
+  url: 'https://kitiplex.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -137,16 +137,16 @@ const config = {
 
             ]
           },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-            dropdownItemsAfter: [
-              {
-                to: 'https://my-site.com/help-us-translate',
-                label: 'Help us translate',
-              },
-            ],
-          },
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          //   dropdownItemsAfter: [
+          //     {
+          //       to: 'https://my-site.com/help-us-translate',
+          //       label: 'Help us translate',
+          //     },
+          //   ],
+          // },
           {
             href: 'https://github.com/kitiplex',
             'aria-label': 'GitHub repository',
