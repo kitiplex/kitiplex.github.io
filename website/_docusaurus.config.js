@@ -36,7 +36,24 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fr','ko'],
+    // path: 'i18n',
+    // localeConfigs: {
+    //   en: {
+    //     label: 'English',
+    //     direction: 'ltr',
+    //     htmlLang: 'en-US',
+    //     calendar: 'gregory',
+    //     path: 'en',
+    //   },
+    //   fa: {
+    //     label: 'فارسی',
+    //     direction: 'rtl',
+    //     htmlLang: 'fa-IR',
+    //     calendar: 'persian',
+    //     path: 'fa',
+    //   },
+    // },
   },
 
   presets: [
@@ -107,7 +124,7 @@ const config = {
           {
             label: 'Gists',
             position: 'left',
-            to: 'docs/gists'
+            to: 'docs/gists/openai-api'
           },
           {
             label: 'Demos',
