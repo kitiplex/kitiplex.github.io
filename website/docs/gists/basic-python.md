@@ -2,9 +2,9 @@
 title: Installing Python on Windows
 ---
 
-Installing Python on Windows
+# Installing Python on Windows
 
-To install Python on Windows, you can follow these steps:
+## To install Python on Windows, you can follow these steps:
 
 1. Visit the official Python website by clicking [here](https://www.python.org/downloads).
 2. Click on the "Downloads" tab located at the top of the page.
