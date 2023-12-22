@@ -38,18 +38,6 @@ const sidebars = {
         'policies/security-policy'
       ]
     }
-    // {
-    //   type: 'category',
-    //   label: 'Guides',
-    //   collapsed: true,
-    //   items: 
-    //   [
-    //     'guides/openai-api',
-    //     'guides/basic-python',
-    //     'guides/wsl-kali'
-    //   ]
-    // },
-    
   ],
 
   gists: [
