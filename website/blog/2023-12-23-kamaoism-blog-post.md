@@ -1,6 +1,6 @@
 ---
 slug: kamaoism
-title: kamaoism
+title: Kamaoism
 authors: 
     name: Gina
     title: Front End Engineer
