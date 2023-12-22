@@ -101,18 +101,23 @@ const config = {
 
           {
             label: 'Platform',
+            type: 'doc',
             position: 'left',
-            to: 'docs/introduction'
+            docId: 'introduction',
+
           },
           {
             label: 'Gists',
+            type: 'doc',
             position: 'left',
-            to: 'docs/gists'
+            docId: 'gists'
           },
+          
           {
             label: 'Demos',
             position: 'left',
-            to: 'docs/projects',
+            type: 'doc',
+            docId: 'projects'
 
           },
           {
