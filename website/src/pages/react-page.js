@@ -13,7 +13,7 @@ export default function Hello() {
           fontSize: '20px',
         }}>
         <p>
-          Edit <code>pages/react-page.js</code> and save to reload.
+          Edit <code>pages/helloReact.js</code> and save to reload.
         </p>
       </div>
     </Layout>

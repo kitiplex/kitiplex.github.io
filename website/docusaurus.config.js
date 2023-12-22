@@ -116,6 +116,21 @@ const config = {
 
           },
           {
+            label: 'Scribble',
+            position: 'left',
+            type: 'dropdown',
+            items: [
+              {
+                label: 'React',
+                to: '/react-page'
+              },
+              {
+                label: 'MD',
+                to: '/markdown-page'
+              },
+            ]
+          },
+          {
             label: 'Resources',
             position: 'left',
             type: 'dropdown',
@@ -124,19 +139,15 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              // {
-              //   type: 'docSidebar',
-              //   sidebarId: 'tutorialSidebar',
-
-              //   label: 'Tutorial',
-              // },
               {
                 label: 'Team',
                 to: '/team'
               },
 
+
             ]
           },
+
           // {
           //   type: 'localeDropdown',
           //   position: 'right',
