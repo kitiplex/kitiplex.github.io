@@ -20,7 +20,7 @@ const sidebars = {
     'introduction',
     {
       type: 'category',
-      label: 'Getting started',
+      label: 'About',
       collapsed: true,
       items: [
         'about/about-us',
