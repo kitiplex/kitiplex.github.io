@@ -40,6 +40,9 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  customFields:{
+    mendableAnonKey: process.env.MENDABLE_ANON_KEY,
+  },
 
   presets: [
     [
@@ -71,7 +74,7 @@ const config = {
       }),
     ],
   ],
-  plugins: ['@docusaurus/theme-live-codeblock'],
+  plugins: ['@docusaurus/theme-live-codeblock',],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -92,6 +95,8 @@ const config = {
       
       navbar: {
         title: 'Kitiplex',
+        hideOnScroll: true,
+
         logo: {
           alt: 'My Site Logo',
           src: 'img/kitim_bb.png',
@@ -139,6 +144,7 @@ const config = {
           //     },
           //   ]
           // },
+
           {
             label: 'Resources',
             position: 'right',
@@ -157,6 +163,7 @@ const config = {
             ]
           },
 
+
           // {
           //   type: 'localeDropdown',
           //   position: 'right',
@@ -173,68 +180,70 @@ const config = {
             position: 'right',
             className: 'header-github-link',
           },
+          // {
+          //   type: 'search',
+          //   position: 'right',
+          // },
         ],
       },
 
       algolia: {
-        apiKey: '40077a4dd90af814060e8382ae520ea6',
-        appId: '76NGSLM9E1',
-        indexName: 'kitiplex-dev',
-        replaceSearchResultPathname: {
-          from: '/docs/', // or as RegExp: /\/docs\//
-          to: '/',
-        },
-        // searchPagePath: '/',
+        container: '#docsearch',
+        appId: 'R2IYF7ETH7',
+        apiKey: '599cec31baffa4868cae4e79f180729b',
+        indexName: 'docsearch',
+
 
       },
+      
 
 
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/introduction',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/kitiplex',
-              },
+        // links: [
+        //   {
+        //     title: 'Docs',
+        //     items: [
+        //       {
+        //         label: 'Tutorial',
+        //         to: '/docs/introduction',
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: 'Community',
+        //     items: [
+        //       {
+        //         label: 'Stack Overflow',
+        //         href: 'https://stackoverflow.com/',
+        //       },
+        //       {
+        //         label: 'Discord',
+        //         href: 'https://discordapp.com/',
+        //       },
+        //       {
+        //         label: 'Twitter',
+        //         href: 'https://twitter.com/kitiplex',
+        //       },
 
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/kitiplex',
-              },
+        //     ],
+        //   },
+        //   {
+        //     title: 'More',
+        //     items: [
+        //       {
+        //         label: 'Blog',
+        //         to: '/blog',
+        //       },
+        //       {
+        //         label: 'GitHub',
+        //         href: 'https://github.com/kitiplex',
+        //       },
 
-            ],
-          },
+        //     ],
+        //   },
 
-        ],
+        // ],
         logo: {
           alt: 'Kitiplex Logo',
           src: 'img/header_blue.png',

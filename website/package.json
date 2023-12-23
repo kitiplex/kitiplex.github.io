@@ -18,13 +18,15 @@
     "@docusaurus/preset-classic": "3.0.1",
     "@docusaurus/theme-live-codeblock": "^3.0.1",
     "@mdx-js/react": "^3.0.0",
+    "@mendable/search": "^0.0.191",
     "clsx": "^2.0.0",
     "color": "^4.2.3",
     "prism-react-renderer": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rehype-katex": "^7.0.0",
-    "remark-math": "^6.0.0"
+    "remark-math": "^6.0.0",
+    "swizzle": "^1.1.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.0.1",
