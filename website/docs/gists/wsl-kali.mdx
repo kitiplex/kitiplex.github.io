@@ -1,3 +1,28 @@
 ---
-title: WSL
+title: Kali WSL
+sidebar_label: Kali WSL
+slug: /kali-wsl
 ---
+
+
+## Quick Method
+
+Our recommended method to get Kali running on WSL 2:
+
+1. Open a administrator command prompt and run:
+
+```sh
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+```sh
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all
+```
+2. Restart when prompt
+3. Download and install the WSL 2 Linux Kernel from [here](https://aka.ms/wsl2kernel): 
+4. Restart
+5. Open a command prompt and run:
+
+```sh
+wsl --set-default-version 2
+```
+

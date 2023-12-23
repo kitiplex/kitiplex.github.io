@@ -31,6 +31,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -47,6 +49,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           path: 'docs',
+
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           // Please change this to your repo.
@@ -56,6 +59,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -76,7 +80,7 @@ const config = {
         sidebar: {
           hideable: true,
           autoCollapseCategories: false,
-        }
+        },
       },
       colorMode: {
         defaultMode: 'dark',
@@ -87,12 +91,12 @@ const config = {
       image: 'img/kitiplex-social-card.png',
       
       navbar: {
-        title: 'kitiplex',
+        title: 'Kitiplex',
         logo: {
           alt: 'My Site Logo',
           src: 'img/kitim_bb.png',
-          // width: 40,
-          height: 40,
+          // width: 180,
+          // height: 32,
           className: 'custom-navbar-logo-class',
           target: '_self',
         },
@@ -102,51 +106,51 @@ const config = {
           {
             label: 'Platform',
             type: 'doc',
-            position: 'left',
+            position: 'right',
             docId: 'introduction',
 
           },
           {
-            label: 'Gists',
+            label: 'Guides',
             type: 'doc',
-            position: 'left',
+            position: 'right',
             docId: 'gists'
           },
           
           {
             label: 'Demos',
-            position: 'left',
+            position: 'right',
             type: 'doc',
             docId: 'projects'
 
           },
-          {
-            label: 'Scribble',
-            position: 'left',
-            type: 'dropdown',
-            items: [
-              {
-                label: 'React',
-                to: '/react-page'
-              },
-              {
-                label: 'MD',
-                to: '/markdown-page'
-              },
-            ]
-          },
+          // {
+          //   label: 'Scribble',
+          //   position: 'right',
+          //   type: 'dropdown',
+          //   items: [
+          //     {
+          //       label: 'React',
+          //       to: '/react-page'
+          //     },
+          //     {
+          //       label: 'MD',
+          //       to: '/markdown-page'
+          //     },
+          //   ]
+          // },
           {
             label: 'Resources',
-            position: 'left',
+            position: 'right',
             type: 'dropdown',
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: 'blog',
               },
               {
                 label: 'Team',
-                to: '/team'
+                to: 'team'
               },
 
 
@@ -234,10 +238,10 @@ const config = {
         logo: {
           alt: 'Kitiplex Logo',
           src: 'img/header_blue.png',
-          href: 'https://github.com/kitiplex',
+          href: '/',
           // width: 160,
-          height: 38,
-          target: "_blank"
+          height: 28,
+          // target: "_blank"
         },
         
         copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
