@@ -17,6 +17,9 @@ dependencies:
   '@mdx-js/react':
     specifier: ^3.0.0
     version: 3.0.0(@types/react@18.2.45)(react@18.2.0)
+  '@mendable/search':
+    specifier: ^0.0.191
+    version: 0.0.191(react-dom@18.2.0)(react@18.2.0)
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
@@ -38,6 +41,9 @@ dependencies:
   remark-math:
     specifier: ^6.0.0
     version: 6.0.0
+  swizzle:
+    specifier: ^1.1.0
+    version: 1.1.0
 
 devDependencies:
   '@docusaurus/module-type-aliases':
@@ -2470,6 +2476,18 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@mendable/search@0.0.191(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-uWw5MAAFsTMpjqU7brkbJhykA5sG74PiHS0nyeB8EQQCDZ5VjOvnS3HboqH+w05o+E3QUtq4lInWQwGkJd9Jcg==}
+    peerDependencies:
+      react: ^17.x || ^18.x
+      react-dom: ^17.x || ^18.x
+    dependencies:
+      html-react-parser: 4.2.10(react@18.2.0)
+      posthog-js: 1.96.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -4755,6 +4773,10 @@ packages:
       xml-js: 1.6.11
     dev: false
 
+  /fflate@0.4.8:
+    resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
+    dev: false
+
   /file-loader@6.2.0(webpack@5.89.0):
     resolution: {integrity: sha512-qo3glqyTa61Ytg4u73GultjHGjdRyig3tG6lPtyX/jOEJvHif9uB0/OCI2Kif6ctF3caQTW2G5gym21oAsI4pw==}
     engines: {node: '>= 10.13.0'}
@@ -5330,6 +5352,13 @@ packages:
       wbuf: 1.7.3
     dev: false
 
+  /html-dom-parser@5.0.3:
+    resolution: {integrity: sha512-slsc6ipw88OUZjAayRs5NTmfOQCwcUa3hNyk6AdsbQxY09H5Lr1Y3CZ4ZlconMKql3Ga6sWg3HMoUzo7KSItaQ==}
+    dependencies:
+      domhandler: 5.0.3
+      htmlparser2: 9.0.0
+    dev: false
+
   /html-entities@2.4.0:
     resolution: {integrity: sha512-igBTJcNNNhvZFRtm8uA6xMY6xYleeDwn3PeBCkDz7tHttv4F2hsDI2aPgNERWzvRcNYHNT3ymRaQzllmXj4YsQ==}
     dev: false
@@ -5364,6 +5393,18 @@ packages:
       param-case: 3.0.4
       relateurl: 0.2.7
       terser: 5.26.0
+    dev: false
+
+  /html-react-parser@4.2.10(react@18.2.0):
+    resolution: {integrity: sha512-JyKZVQ+kQ8PdycISwkuLbEEvV/k4hWhU6cb6TT7yGaYwdqA7cPt4VRYXkCZcix2vlQtgDBSMJUmPI2jpNjPGvg==}
+    peerDependencies:
+      react: 0.14 || 15 || 16 || 17 || 18
+    dependencies:
+      domhandler: 5.0.3
+      html-dom-parser: 5.0.3
+      react: 18.2.0
+      react-property: 2.0.2
+      style-to-js: 1.1.8
     dev: false
 
   /html-tags@3.3.1:
@@ -5406,6 +5447,15 @@ packages:
 
   /htmlparser2@8.0.2:
     resolution: {integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==}
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      domutils: 3.1.0
+      entities: 4.5.0
+    dev: false
+
+  /htmlparser2@9.0.0:
+    resolution: {integrity: sha512-uxbSI98wmFT/G4P2zXx4OVx04qWUmyFPrD2/CNepa2Zo3GPNaCaaxElDgwUrwYWkK1nr9fft0Ya8dws8coDLLQ==}
     dependencies:
       domelementtype: 2.3.0
       domhandler: 5.0.3
@@ -7632,6 +7682,12 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
+  /posthog-js@1.96.1:
+    resolution: {integrity: sha512-kv1vQqYMt2BV3YHS+wxsbGuP+tz+M3y1AzNhz8TfkpY1HT8W/ONT0i0eQpeRr9Y+d4x/fZ6M4cXG5GMvi9lRCA==}
+    dependencies:
+      fflate: 0.4.8
+    dev: false
+
   /pretty-error@4.0.0:
     resolution: {integrity: sha512-AoJ5YMAcXKYxKhuJGdcvse+Voc6v1RgnsR3nWcYU7q4t6z0Q6T86sv5Zq8VIRbOWWFpvdGE83LtdSMNd+6Y0xw==}
     dependencies:
@@ -7886,6 +7942,10 @@ packages:
       '@babel/runtime': 7.23.6
       react-loadable: /@docusaurus/react-loadable@5.5.2(react@18.2.0)
       webpack: 5.89.0
+    dev: false
+
+  /react-property@2.0.2:
+    resolution: {integrity: sha512-+PbtI3VuDV0l6CleQMsx2gtK0JZbZKbpdu5ynr+lbsuvtmgbNcS3VM0tuY2QjFNOcWxvXeHjDpy42RO+4U2rug==}
     dev: false
 
   /react-router-config@5.1.1(react-router@5.3.4)(react@18.2.0):
@@ -8726,10 +8786,22 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+  /style-to-js@1.1.8:
+    resolution: {integrity: sha512-bPSspCXkkhETLXnEgDbaoWRWyv3lF2bj32YIc8IElok2IIMHUlZtQUrxYmAkKUNxpluhH0qnKWrmuoXUyTY12g==}
+    dependencies:
+      style-to-object: 1.0.3
+    dev: false
+
   /style-to-object@0.4.4:
     resolution: {integrity: sha512-HYNoHZa2GorYNyqiCaBgsxvcJIn7OHq6inEga+E6Ke3m5JkoqpQbnFssk4jwe+K7AhGa2fcha4wSOf1Kn01dMg==}
     dependencies:
       inline-style-parser: 0.1.1
+    dev: false
+
+  /style-to-object@1.0.3:
+    resolution: {integrity: sha512-xOpx7S53E0V3DpVsvt7ySvoiumRpfXiC99PUXLqGB3wiAnN9ybEIpuzlZ8LAZg+h1sl9JkEUwtSQXxcCgFqbbg==}
+    dependencies:
+      inline-style-parser: 0.2.2
     dev: false
 
   /style-to-object@1.0.5:
@@ -8804,6 +8876,10 @@ packages:
       csso: 4.2.0
       picocolors: 1.0.0
       stable: 0.1.8
+    dev: false
+
+  /swizzle@1.1.0:
+    resolution: {integrity: sha512-L5wVfkVqNbYsz6xAPgPLo/ra7TyA+7nYvNm4i+LH6naTm8p7VKlVu/WmQWJ5yU03Gcabb34KfVppHcrGNdzi5Q==}
     dev: false
 
   /tapable@1.1.3:
