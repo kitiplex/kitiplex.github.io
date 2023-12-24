@@ -74,7 +74,7 @@ const config = {
       }),
     ],
   ],
-  plugins: ['@docusaurus/theme-live-codeblock',],
+  plugins: ['@docusaurus/theme-live-codeblock',][require.resolve('docusaurus-lunr-search')],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -187,14 +187,14 @@ const config = {
         ],
       },
 
-      algolia: {
-        // container: '#docsearch',
-        appId: 'R2IYF7ETH7',
-        apiKey: '599cec31baffa4868cae4e79f180729b',
-        indexName: 'docsearch',
+      // algolia: {
+      //   // container: '#docsearch',
+      //   appId: 'R2IYF7ETH7',
+      //   apiKey: '599cec31baffa4868cae4e79f180729b',
+      //   indexName: 'docsearch',
 
 
-      },
+      // },
       
 
 
