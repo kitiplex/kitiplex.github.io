@@ -74,7 +74,8 @@ const config = {
       }),
     ],
   ],
-  plugins: ['@docusaurus/theme-live-codeblock',][require.resolve('docusaurus-lunr-search')],
+  plugins: ['@docusaurus/theme-live-codeblock'],
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
