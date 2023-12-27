@@ -11,6 +11,7 @@ sidebar_label: Live editor
 ```jsx live
 function Clock(props) {
   const [date, setDate] = useState(new Date());
+
   useEffect(() => {
     const timerID = setInterval(() => tick(), 1000);
 
@@ -25,7 +26,8 @@ function Clock(props) {
 
   return (
     <div>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
+    <h2>Date: {date.toLocaleDateString()}, {date.toLocaleDateString(undefined, { weekday: 'long' })}</h2>
+    <h2>Time: {date.toLocaleTimeString([], { hour12: false })} | {date.toLocaleTimeString([], {})}</h2>
     </div>
   );
 }
