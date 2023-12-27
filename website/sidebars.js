@@ -59,6 +59,7 @@ const sidebars = {
       },
       items:
       [
+        'gists/celestial-distance',
         'gists/openai-api',
         'gists/basic-python',
         'gists/wsl-kali',
