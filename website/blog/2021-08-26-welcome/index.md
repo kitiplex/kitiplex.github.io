@@ -1,7 +1,7 @@
 ---
 slug: welcome
 title: Welcome
-authors: [kitiplex, mkeithX, JoeiX, Gina]
+authors: [kitiplex, mkeithX, JoeiX, Gina, Venice]
 tags: [facebook, hello, docusaurus]
 ---
 

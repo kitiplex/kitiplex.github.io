@@ -19,7 +19,7 @@ slorber:
 #
 mkeithX:
   name: Keith WT
-  title: Engineer
+  title: Founder - Kitimi Platforms
   url: https://github.com/mkeithX
   image_url: https://github.com/mkeithX.png
 
@@ -42,4 +42,8 @@ Gina:
   url: https://github.com/botgina
   image_url: https://github.com/botgina.png
 
-
+Venice:
+  name: Venice
+  title: Front End Engineer @ Kitiplex
+  url: https://github.com/Portiaporkshap
+  image_url: https://github.com/Portiaporkshap/Portiaporkshap.png
