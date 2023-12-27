@@ -64,7 +64,20 @@ const sidebars = {
         'gists/basic-python',
         'gists/wsl-kali',
       ]
-    }
+    },
+    {
+      type: 'category',
+      label: 'Guides',
+      collapsed: true,
+      link: {
+        type: 'generated-index',
+      },
+      items: [
+        'gists/guides/foobar',
+        'gists/guides/pwsh-cli',
+      ]
+    },
+
   ],
   projects: [
     'projects',

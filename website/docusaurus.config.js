@@ -188,14 +188,11 @@ const config = {
         ],
       },
 
-      // algolia: {
-      //   // container: '#docsearch',
-      //   appId: 'R2IYF7ETH7',
-      //   apiKey: '599cec31baffa4868cae4e79f180729b',
-      //   indexName: 'docsearch',
-
-
-      // },
+      algolia: {
+        appId: '42F3TCLUFM',
+        apiKey: 'c7f96b2b9683ab7098674644f6a9b3dc',
+        indexName: 'gina-vercel',
+      },
       
 
 
