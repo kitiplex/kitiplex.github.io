@@ -9,7 +9,7 @@ authors:
 # tags: [hello, docusaurus]
 ---
 
-Kamaoism is the term used to describe a fictional collective of individuals who identify themselves as Kamoists. Although the exact origin of this group remains unverified, there are theories suggesting that it originated in the vicinity of Point Nemo. (48°52.6′S 123°23.6′W). 
+Kamaoism is the term used to describe a fictional collective of individuals who identify themselves as Kamoists. Although the exact origin of this group remains unverified, there are theories suggesting that it originated in the vicinity of Point Nemo. [48°52.6′S 123°23.6′W](https://maps.app.goo.gl/oUkKPM37V3ymEKDB6). 
 
 
 
