@@ -50,12 +50,25 @@ const sidebars = {
     'gists',
     {
       type: 'category',
-      label: 'Gists',
+      label: 'Guides',
       collapsed: true,
       link: {
         type: 'generated-index',
         description:
         "🌍 Gists and guides that comes in handy!",
+      },
+      items: [
+        'gists/guides/browser-dev',
+        'gists/guides/pwsh-cli',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Gists',
+      collapsed: true,
+      link: {
+        type: 'generated-index',
+
       },
       items:
       [
@@ -65,18 +78,7 @@ const sidebars = {
         'gists/wsl-kali',
       ]
     },
-    {
-      type: 'category',
-      label: 'Guides',
-      collapsed: true,
-      link: {
-        type: 'generated-index',
-      },
-      items: [
-        'gists/guides/foobar',
-        'gists/guides/pwsh-cli',
-      ]
-    },
+
 
   ],
   projects: [
