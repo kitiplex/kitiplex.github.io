@@ -189,9 +189,9 @@ const config = {
       },
 
       algolia: {
-        appId: '42F3TCLUFM',
-        apiKey: 'c7f96b2b9683ab7098674644f6a9b3dc',
-        indexName: 'gina-vercel',
+        appId: 'TCL1EGIV8Y',
+        apiKey: '4aa25a3d3017427ab202499bee6cc0a7',
+        indexName: 'dev_kitiplex',
       },
       
 
