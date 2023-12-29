@@ -79,6 +79,19 @@ const sidebars = {
       ]
     },
 
+    {
+      type: 'category',
+      label: 'Nerds',
+      collapsed: true,
+      link: {
+        type: 'generated-index',
+        description: 'Nerds stuff.'
+      },
+      items:[
+        'gists/nerds/calculus',
+      ]
+    },
+
 
   ],
   projects: [
