@@ -11,8 +11,8 @@ slug: /projects-and-demos
 
 💥 Ready for more? Use **advanced features** like versioning, i18n, search and theme customizations. 💸
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import constants from '@site/core/TabsConstants';
 
 ### Warming up
 
@@ -36,7 +36,13 @@ def hello_world():
 </TabItem>
 <TabItem value="java" label="Java">
 
-
+```java
+class HelloWorld {
+  public static void main(String args[]) {
+    System.out.println("Hello, World");
+  }
+}
+```
 
 </TabItem>
 </Tabs>
