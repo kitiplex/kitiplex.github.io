@@ -6,11 +6,13 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+// import header from '../css'
+
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero hero--dark', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
@@ -47,5 +49,29 @@ export default function Home() {
         <HomepageFeatures />
       </main>
     </Layout>
+  );
+}
+
+function HeaderHero() {
+  return (
+    <Section background="dark" className="HeaderHero">
+      <div className="socialLinks">
+        <TwitterButton accountName="reactnative" />
+        <GitHubStarButton />
+      </div>
+      <TwoColumns
+        reverse
+        columnOne={<LogoAnimation />}
+        columnTwo={
+          <>
+            <h1 className="title">React Native</h1>
+            <p className="tagline">Learn once, write&nbsp;anywhere.</p>
+            <div className="buttons">
+              <HomeCallToAction />
+            </div>
+          </>
+        }
+      />
+    </Section>
   );
 }

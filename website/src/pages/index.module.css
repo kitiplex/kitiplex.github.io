@@ -5,10 +5,10 @@
 
 .heroBanner {
   padding: 6rem 0;
-  text-align: center;
+  /* text-align: center;
   position: relative;
-  overflow: hidden;
-  background-color: #1da1f2;
+  overflow: hidden; */
+  background-color: #245a75;
 }
 
 @media screen and (max-width: 996px) {
@@ -19,10 +19,6 @@
 
 .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  /* flex-wrap: wrap;
-  align-items: center;
-  margin-top: 24px;
-  margin-left: 24px; */
+  /* align-items: center;
+  justify-content: center; */
 }

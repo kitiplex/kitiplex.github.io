@@ -8,16 +8,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 :root {
   --ifm-color-primary: #1da1f2;
-  --ifm-color-primary-dark: #0d94e7;
-  --ifm-color-primary-darker: #0d8cda;
-  --ifm-color-primary-darkest: #0a73b3;
-  --ifm-color-primary-light: #37acf3;
-  --ifm-color-primary-lighter: #43b1f4;
-  --ifm-color-primary-lightest: #6ac1f6;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
-
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #1da1f2;
@@ -114,4 +106,15 @@
     var(--ifm-color-emphasis-200) 0%,
     var(--ifm-color-emphasis-100) 100%
   );
+}
+
+
+.banner {
+  padding: 4rem;
+}
+/** In mobile view, reduce the padding */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
 }

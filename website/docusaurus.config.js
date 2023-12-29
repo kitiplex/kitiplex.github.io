@@ -65,9 +65,18 @@ const config = {
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        // theme: {
+        //   customCss: './src/css/custom.css',
+        // },
         theme: {
-          customCss: './src/css/custom.css',
-        },
+          customCss: [
+            // require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/customTheme.scss'),
+            require.resolve('./src/css/index.scss'),
+            require.resolve('./src/css/showcase.scss'),
+            require.resolve('./src/css/versions.scss'),
+          ]
+        }
       }),
     ],
   ],
@@ -84,7 +93,7 @@ const config = {
   ],
 
 
-  plugins: ['@docusaurus/theme-live-codeblock'],
+  plugins: ['@docusaurus/theme-live-codeblock','docusaurus-plugin-sass'],
   
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -106,7 +115,7 @@ const config = {
       
       navbar: {
         title: 'Kitiplex',
-        hideOnScroll: true,
+        style: 'dark',
 
 
         logo: {
@@ -187,10 +196,10 @@ const config = {
           //   ],
           // },
           {
-            href: 'https://github.com/kitiplex',
+            href: 'https://github.com/kitiplex/kitiplex-dev',
             'aria-label': 'GitHub repository',
             position: 'right',
-            className: 'header-github-link',
+            className: 'navbar-github-link',
           },
           // {
           //   type: 'search',
@@ -203,6 +212,7 @@ const config = {
         appId: 'TCL1EGIV8Y',
         apiKey: '4aa25a3d3017427ab202499bee6cc0a7',
         indexName: 'dev_kitiplex',
+        contextualSearch: true,
       },
       
 
@@ -258,7 +268,7 @@ const config = {
           src: 'img/header_blue.png',
           href: '/',
           // width: 160,
-          height: 28,
+          // height: 20,
           // target: "_blank"
         },
         
