@@ -1,0 +1,18 @@
+{
+  "name": "kitiplex-dev-website-monorepo",
+  "private":"true",
+  "version": "1.0.0",
+  "description": "This repository contains the website configuration and documentation powering the Kitiplex website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kitiplex",
+    "kitiplex-dev",
+    "kitiplex-website",
+    "kitimi-platforms"
+  ],
+  "author": "Contributors of Kitiplex.",
+  "license": "MIT"
+}
