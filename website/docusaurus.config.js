@@ -108,6 +108,7 @@ const config = {
         title: 'Kitiplex',
         hideOnScroll: true,
 
+
         logo: {
           alt: 'My Site Logo',
           src: 'img/kitim_bb.png',
@@ -264,9 +265,10 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
       },
       prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-        additionalLanguages: ['bash', 'diff', 'json',]
+        defaultLanguage: 'jsx',
+        theme: require('./core/PrismTheme'),
+        
+        additionalLanguages: ['bash', 'diff', 'json', 'java', 'swift', 'python']
       },
       liveCodeBlock: {
         /**
@@ -275,6 +277,18 @@ const config = {
          */
         playgroundPosition: 'bottom',
       },
+      metadata: [
+        {
+          property: 'og:image',
+          content: 'https://kitiplex.vercel.app/img/logo-og.png',
+        },
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {
+          name: 'twitter:image',
+          content: 'summary_large_image',
+        },
+        {name: 'twitter:site', content: '@kitiplex'},
+      ],
     }),
 };
 
