@@ -11,7 +11,7 @@ This repository contains the website configuration and documentation powering th
 - [Contributing](#contents)
 - [License](#contents)
 
-## ✈️ Getting started
+## Getting started
 
 ### Prerequisites
 
@@ -19,12 +19,39 @@ This repository contains the website configuration and documentation powering th
 1.  [Node](https://nodejs.org/en/download/) _(version 12 or greater)_.
 1.  [Yarn](https://yarnpkg.com/lang/en/docs/install/) _(version 1.5 or greater)_.
 1.  A fork of the repo _(for any contributions)_.
-1.  A clone of the `react-native-website` repo.
+1.  A clone of the `kitiplex-dev` repo.
+
+### Run locally
+
+1. Change directory to ``website`` from root:
+
+```
+cd website
+```
+2. Install dependencies:
+
+```
+pnpm install
+```
+3. Start locally:
+
+```
+pnpm build
+```
+```
+pnpm serve
+```
+
+4. (Optional) Should you need to clear ``build cache``:
+
+```
+pnpm run clear
+```
 
 
+## Vercel
 
 
-Root **Vercel CLI**:
 
 ```
 vercel dev
