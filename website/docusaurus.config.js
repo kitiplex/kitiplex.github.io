@@ -31,6 +31,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  trailingSlash: false,
+
   
 
   // Even if you don't use internationalization, you can use this field to set
@@ -74,7 +76,7 @@ const config = {
             require.resolve('./src/css/customTheme.scss'),
             require.resolve('./src/css/index.scss'),
             require.resolve('./src/css/showcase.scss'),
-            require.resolve('./src/css/versions.scss'),
+            // require.resolve('./src/css/versions.scss'),
           ]
         }
       }),
@@ -100,7 +102,7 @@ const config = {
       // Replace with your project's social card
       docs: {
         sidebar: {
-          hideable: true,
+          hideable: false,
           autoCollapseCategories: false,
         },
       },
