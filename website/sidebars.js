@@ -20,9 +20,11 @@ const sidebars = {
     'introduction',
     {
       type: 'category',
-      label: 'Platform',
+      label: 'Overview',
       link: {
         type: 'generated-index',
+        description:
+        "Our goals towards the future.",
       },
       collapsed: true,
       items: [

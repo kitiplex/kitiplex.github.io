@@ -52,26 +52,3 @@ export default function Home() {
   );
 }
 
-function HeaderHero() {
-  return (
-    <Section background="dark" className="HeaderHero">
-      <div className="socialLinks">
-        <TwitterButton accountName="reactnative" />
-        <GitHubStarButton />
-      </div>
-      <TwoColumns
-        reverse
-        columnOne={<LogoAnimation />}
-        columnTwo={
-          <>
-            <h1 className="title">React Native</h1>
-            <p className="tagline">Learn once, write&nbsp;anywhere.</p>
-            <div className="buttons">
-              <HomeCallToAction />
-            </div>
-          </>
-        }
-      />
-    </Section>
-  );
-}

@@ -86,8 +86,7 @@ const config = {
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
       type: 'text/css',
-      integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
       crossorigin: 'anonymous',
     },
   ],
@@ -130,26 +129,72 @@ const config = {
         items: [
 
           {
-            label: 'Platform',
-            type: 'doc',
+            label: 'Development',
+            position: 'right',
+            type: 'dropdown',
+            items: [
+              {
+                label: 'Guides',
+                type: 'doc',
+                docId: 'gists',
+              },
+              {
+                label: 'Demos',
+                type: 'doc',
+                docId: 'projects'
+              },
+
+              // {
+              //   label: 'React',
+              //   to: '/react-page'
+              // },
+              // {
+              //   label: 'Markdown',
+              //   to: '/markdown-page',
+              // }
+            ]
+          },
+
+          {
+            label: 'Guidelines',
             position: 'right',
             docId: 'introduction',
+            type: 'doc'
+          },
 
-          },
           {
-            label: 'Guides',
-            type: 'doc',
-            position: 'right',
-            docId: 'gists'
+            label: 'Blog',
+            to: '/blog',
+            position: 'right'
           },
+
+          {
+            label: 'Team',
+            to: '/team',
+            position: 'right'
+          },
+// 
+          // {
+          //   label: 'Platform',
+          //   type: 'doc',
+          //   position: 'right',
+          //   docId: 'introduction',
+
+          // },
+          // {
+          //   label: 'Guides',
+          //   type: 'doc',
+          //   position: 'right',
+          //   docId: 'gists'
+          // },
           
-          {
-            label: 'Demos',
-            position: 'right',
-            type: 'doc',
-            docId: 'projects'
+          // {
+          //   label: 'Demos',
+          //   position: 'right',
+          //   type: 'doc',
+          //   docId: 'projects'
 
-          },
+          // },
           // {
           //   label: 'Scribble',
           //   position: 'right',
@@ -166,23 +211,23 @@ const config = {
           //   ]
           // },
 
-          {
-            label: 'Resources',
-            position: 'right',
-            type: 'dropdown',
-            items: [
-              {
-                label: 'Blog',
-                to: 'blog',
-              },
-              {
-                label: 'Team',
-                to: 'team'
-              },
+          // {
+          //   label: 'Resources',
+          //   position: 'right',
+          //   type: 'dropdown',
+          //   items: [
+          //     {
+          //       label: 'Blog',
+          //       to: 'blog',
+          //     },
+          //     {
+          //       label: 'Team',
+          //       to: 'team'
+          //     },
 
 
-            ]
-          },
+          //   ]
+          // },
 
 
           // {
@@ -219,56 +264,13 @@ const config = {
 
       footer: {
         style: 'dark',
-        // links: [
-        //   {
-        //     title: 'Docs',
-        //     items: [
-        //       {
-        //         label: 'Tutorial',
-        //         to: '/docs/introduction',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Community',
-        //     items: [
-        //       {
-        //         label: 'Stack Overflow',
-        //         href: 'https://stackoverflow.com/',
-        //       },
-        //       {
-        //         label: 'Discord',
-        //         href: 'https://discordapp.com/',
-        //       },
-        //       {
-        //         label: 'Twitter',
-        //         href: 'https://twitter.com/kitiplex',
-        //       },
-
-        //     ],
-        //   },
-        //   {
-        //     title: 'More',
-        //     items: [
-        //       {
-        //         label: 'Blog',
-        //         to: '/blog',
-        //       },
-        //       {
-        //         label: 'GitHub',
-        //         href: 'https://github.com/kitiplex',
-        //       },
-
-        //     ],
-        //   },
-
-        // ],
+        
         logo: {
           alt: 'Kitiplex Logo',
           src: 'img/header_blue.png',
           href: '/',
-          // width: 160,
-          // height: 20,
+          // width: 200,
+          // height: 100,
           // target: "_blank"
         },
         
