@@ -49,15 +49,16 @@ const sidebars = {
   ],
 
   gists: [
-    'gists',
+    'dev-overview',
+    // 'gists',
     {
       type: 'category',
       label: 'Guides',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'generated-index',
         description:
-        "🌍 Gists and guides that comes in handy!",
+        "Gists and guides that comes in handy!",
       },
       items: [
         'gists/guides/browser-dev',

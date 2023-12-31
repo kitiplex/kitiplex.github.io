@@ -11,12 +11,12 @@
   background-color: #245a75; 
   /* background-color: #1da1f2; */
 }
-
+/* 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
-}
+} */
 
 .buttons {
   display: flex;

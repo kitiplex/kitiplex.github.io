@@ -72,7 +72,7 @@ const config = {
         // },
         theme: {
           customCss: [
-            // require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/custom.css'),
             require.resolve('./src/css/customTheme.scss'),
             require.resolve('./src/css/index.scss'),
             require.resolve('./src/css/showcase.scss'),
@@ -135,6 +135,12 @@ const config = {
             position: 'right',
             type: 'dropdown',
             items: [
+              {
+                label: 'DevOverview',
+                type: 'doc',
+                docId: 'dev-overview'
+              },
+
               {
                 label: 'Guides',
                 type: 'doc',
@@ -282,7 +288,7 @@ const config = {
         defaultLanguage: 'jsx',
         theme: require('./core/PrismTheme'),
         
-        additionalLanguages: ['bash', 'diff', 'json', 'java', 'swift', 'python']
+        additionalLanguages: ['bash', 'diff', 'json', 'java', 'swift', 'python', 'PowerShell']
       },
       liveCodeBlock: {
         /**
