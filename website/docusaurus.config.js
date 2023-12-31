@@ -143,8 +143,9 @@ const config = {
 
               {
                 label: 'Guides',
-                type: 'doc',
-                docId: 'gists',
+                // type: 'doc',
+                // docId: 'gists',
+                to: '/docs/category/guides'
               },
               {
                 label: 'Demos',

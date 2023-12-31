@@ -57,10 +57,6 @@ pnpm run clear
 vercel dev
 ```
 
-**NEVER** use VERCEL CLI other than running in dev server.
-
-**ALWAYS** build using ``pnpm`` command inside website dir.
-
 ```
 cd website
 ```
