@@ -112,7 +112,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
 
-      image: 'img/kitiplex-social-card.png',
+      image: 'img/kitiplex_banner.png',
       
       navbar: {
         title: 'Kitiplex',
@@ -301,7 +301,7 @@ const config = {
       metadata: [
         {
           property: 'og:image',
-          content: 'https://kitiplex.vercel.app/img/logo-og.png',
+          content: 'https://kitiplex.vercel.app/img/kitiplex_banner.png',
         },
         {name: 'twitter:card', content: 'summary_large_image'},
         {
