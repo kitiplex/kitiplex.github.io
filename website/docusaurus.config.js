@@ -263,9 +263,9 @@ const config = {
       },
 
       algolia: {
-        appId: 'TCL1EGIV8Y',
-        apiKey: '4aa25a3d3017427ab202499bee6cc0a7',
-        indexName: 'dev_kitiplex',
+        appId: 'C8HUEW9O04',
+        apiKey: '405252b256717768fac679da5dd93c8d',
+        indexName: 'kitiplex',
         contextualSearch: true,
       },
       
