@@ -91,6 +91,10 @@ const config = {
       integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
       crossorigin: 'anonymous',
     },
+    {
+      href: 'https://cdn.jsdelivr.net/npm/@docsearch/js@3',
+      type: 'text/javascript',
+    },
   ],
 
 
@@ -266,7 +270,7 @@ const config = {
         appId: 'C8HUEW9O04',
         apiKey: '405252b256717768fac679da5dd93c8d',
         indexName: 'kitiplex',
-        contextualSearch: true,
+        // contextualSearch: true,
       },
       
 
