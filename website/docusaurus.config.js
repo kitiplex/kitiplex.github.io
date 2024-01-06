@@ -18,7 +18,7 @@ const config = {
 
 
   // Set the production url of your site here
-  url: 'https://kitiplex.vercel.app/',
+  url: 'https://kitiplex.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -266,7 +266,7 @@ const config = {
         appId: 'C8HUEW9O04',
         apiKey: '405252b256717768fac679da5dd93c8d',
         indexName: 'kitiplex',
-        contextualSearch: true,
+        // contextualSearch: true,
       },
       
 
