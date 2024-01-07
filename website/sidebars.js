@@ -19,33 +19,22 @@ const sidebars = {
   docs: [
     'introduction',
   
-    {
-      type: 'category',
-      label: 'Overview',
-      link: {
-        type: 'generated-index',
-        description:
-        "Our goals towards the future.",
-      },
-      collapsed: true,
-      items: [
-        'about/about-us',
-        'about/community',
-        'about/the-platform',
-      ]
-    },
-    {
-      type: 'category',
-      label: 'Guides',
-      link: {
-        type: 'generated-index',
-      },
-      items: [
-        'gists/guides/browser-dev',
-        'gists/guides/pwsh-cli',
+    // {
+    //   type: 'category',
+    //   label: 'Overview',
+    //   link: {
+    //     type: 'generated-index',
+    //     description:
+    //     "Our goals towards the future.",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     'about/about-us',
+    //     'about/community',
+    //     'about/the-platform',
+    //   ]
+    // },
 
-      ]
-    },
     {
       type: 'category',
       label: 'Policies',
@@ -54,8 +43,8 @@ const sidebars = {
         type: 'generated-index',
       },
       items: [
-        'about/policies/code-of-conduct',
-        'about/policies/security-policy'
+        'guidelines/code-of-conduct',
+        'guidelines/security-policy'
       ]
     }
   ],
@@ -73,8 +62,11 @@ const sidebars = {
         "Gists and guides that comes in handy!",
       },
       items: [
-        'gists/guides/browser-dev',
-        'gists/guides/pwsh-cli',
+        'development/guides/installing-python',
+        'development/guides/openai-api',
+        'development/guides/wsl-kali',
+        'development/gists/browser-dev',
+        'development/gists/pwsh-cli',
 
       ]
     },
@@ -89,11 +81,9 @@ const sidebars = {
       },
       items:
       [
+        'development/gists/live-editor',
         'development/gists/py-starters',
-        'gists/celestial-distance',
-        'gists/openai-api',
-        'gists/basic-python',
-        'gists/wsl-kali',
+        'development/gists/celestial-distance',
       ]
     },
 
@@ -106,7 +96,7 @@ const sidebars = {
         description: 'Nerds stuff.'
       },
       items:[
-        'gists/nerds/calculus',
+        'development/nerds/calculus',
       ]
     },
 
@@ -122,7 +112,6 @@ const sidebars = {
         type: 'generated-index',
       },
       items: [
-        'projects/live-editor',
         'projects/ginabot-ai'
       ]
     }

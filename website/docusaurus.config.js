@@ -75,7 +75,7 @@ const config = {
             require.resolve('./src/css/custom.css'),
             // require.resolve('./src/css/customTheme.scss'),
             // require.resolve('./src/css/index.scss'),
-            require.resolve('./src/css/showcase.scss'),
+            // require.resolve('./src/css/showcase.scss'),
             // require.resolve('./src/css/versions.scss'),
           ]
         }
@@ -91,10 +91,10 @@ const config = {
       integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
       crossorigin: 'anonymous',
     },
-    {
-      href: 'https://cdn.jsdelivr.net/npm/@docsearch/js@3',
-      type: 'text/javascript',
-    },
+    // {
+    //   href: 'https://cdn.jsdelivr.net/npm/@docsearch/js@3',
+    //   type: 'text/javascript',
+    // },
   ],
 
 
@@ -298,7 +298,7 @@ const config = {
         defaultLanguage: 'jsx',
         theme: require('./core/PrismTheme'),
         
-        additionalLanguages: ['bash', 'diff', 'json', 'java', 'swift', 'python', 'PowerShell']
+        additionalLanguages: ['bash','json', 'java','python', 'powershell']
       },
       liveCodeBlock: {
         /**

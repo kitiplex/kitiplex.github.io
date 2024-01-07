@@ -1,9 +1,10 @@
 ---
-title: Getting OpenAI API Keys
+title: Openai API
+sidebar_label: Openai API
 ---
-# Getting OpenAI API Keys
 
-## To obtain OpenAI API keys, follow these steps:
+
+### To obtain OpenAI API:
 
 1. Visit the OpenAI website by clicking [here](https://openai.com/).
 2. Click on the "Get started" button on the homepage, or you can directly go to the signup page [here](https://openai.com/signup/).
@@ -11,7 +12,7 @@ title: Getting OpenAI API Keys
 4. Carefully review and agree to the OpenAI terms of service and privacy policy.
 5. Click on the "Create account" button to complete the signup process.
 
-Once your account is created, you will be redirected to the OpenAI dashboard. To acquire the API keys:
+### To acquire the API keys:
 
 1. Click on your username located in the top right corner of the dashboard.
 2. A dropdown menu will appear, where you should select the "API Keys" option.
