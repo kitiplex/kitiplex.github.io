@@ -1,0 +1,166 @@
+---
+title: Python starters
+sidebar_label: Python starters
+slug: /guides/python-eggs
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Admonition from '@theme/Admonition';
+import IframeWindow from '@site/src/components/BrowserWindow/IframeWindow';
+
+:::info[Getting started]
+Python eggs for starters.
+:::
+
+### Hello, world
+
+```python
+print("\nHello, world!\n")
+```
+
+```python
+msg = ("\nHello, world!\n")
+print(msg)
+```
+Output: 
+```md
+Hello, world!
+```
+
+```python
+the_earth_is_flat = True
+
+if the_earth_is_flat:
+    print("Be careful not to fall off!")
+```
+
+### For statements
+
+```py
+words = ["cat", "dog", "monkey"]
+
+for w in words:
+    print(w, len(w))
+```
+:::note[Output]
+```md
+cat 3
+dog 3
+monkey 6
+```
+:::
+
+```py
+a = ['Mary', 'had', 'a', 'little', 'lamb']
+
+for i in range(len(a)):
+    
+    print(i, a[i])
+```
+:::note[Output]
+```0 Mary
+1 had
+2 a
+3 little
+4 lamb
+```
+:::
+
+```py
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'equals', x, '*', n//x)
+            break
+    else:
+        # loop fell through without finding a factor
+        print(n, 'is a prime number')
+```
+
+:::note[Output]
+```2 is a prime number
+3 is a prime number
+4 equals 2 * 2
+5 is a prime number
+6 equals 2 * 3
+7 is a prime number
+8 equals 2 * 4
+9 equals 3 * 3
+```
+:::
+
+```py
+for num in range(2, 10):
+
+    if num % 2 == 0:
+        print("Found an even number", num)
+        continue
+    
+    print("Found an odd number", num)
+```
+
+:::note[Output]
+```
+Found an even number 2
+Found an odd number 3
+Found an even number 4
+Found an odd number 5
+Found an even number 6
+Found an odd number 7
+Found an even number 8
+Found an odd number 9
+```
+:::
+
+```py
+a = []
+
+for x in range(1,11):
+    b = x**2
+    a.append(b)
+    
+    print(a)
+
+```
+:::note[OUTPUT]
+```
+[1]
+[1, 4]
+[1, 4, 9]
+[1, 4, 9, 16]
+[1, 4, 9, 16, 25]
+[1, 4, 9, 16, 25, 36]
+[1, 4, 9, 16, 25, 36, 49]
+[1, 4, 9, 16, 25, 36, 49, 64]
+[1, 4, 9, 16, 25, 36, 49, 64, 81]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+```
+:::
+
+### Array
+
+
+```py
+def print_triangle(height):
+    for i in range(1, height + 1):
+        print(' ' * (height - i) + '*' * (2 * i - 1))
+
+# Example usage
+print_triangle(5 * 2)
+```
+:::note[OUTPUT]
+```
+         *
+        ***
+       *****
+      *******
+     *********
+    ***********
+   *************
+  ***************
+ *****************
+*******************
+```

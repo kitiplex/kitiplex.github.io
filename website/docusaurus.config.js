@@ -73,8 +73,8 @@ const config = {
         theme: {
           customCss: [
             require.resolve('./src/css/custom.css'),
-            require.resolve('./src/css/customTheme.scss'),
-            require.resolve('./src/css/index.scss'),
+            // require.resolve('./src/css/customTheme.scss'),
+            // require.resolve('./src/css/index.scss'),
             require.resolve('./src/css/showcase.scss'),
             // require.resolve('./src/css/versions.scss'),
           ]
@@ -140,19 +140,24 @@ const config = {
             type: 'dropdown',
             items: [
               {
-                label: 'DevOverview',
+                label: 'Overview',
                 type: 'doc',
                 docId: 'dev-overview'
               },
+              // {
+              //   label: 'Intro',
+              //   type: 'doc',
+              //   docId: 'intro',
+              // },
 
+              // {
+              //   label: 'Guides',
+              //   // type: 'doc',
+              //   // docId: 'gists',
+              //   to: '/docs/category/guides'
+              // },
               {
-                label: 'Guides',
-                // type: 'doc',
-                // docId: 'gists',
-                to: '/docs/category/guides'
-              },
-              {
-                label: 'Demos',
+                label: 'Projects',
                 type: 'doc',
                 docId: 'projects'
               },
@@ -282,7 +287,7 @@ const config = {
           alt: 'Kitiplex Logo',
           src: 'img/header_blue.png',
           href: '/',
-          // width: 200,
+          width: 200,
           // height: 100,
           // target: "_blank"
         },

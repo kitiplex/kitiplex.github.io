@@ -18,6 +18,7 @@ const sidebars = {
   
   docs: [
     'introduction',
+  
     {
       type: 'category',
       label: 'Overview',
@@ -33,7 +34,18 @@ const sidebars = {
         'about/the-platform',
       ]
     },
+    {
+      type: 'category',
+      label: 'Guides',
+      link: {
+        type: 'generated-index',
+      },
+      items: [
+        'gists/guides/browser-dev',
+        'gists/guides/pwsh-cli',
 
+      ]
+    },
     {
       type: 'category',
       label: 'Policies',
@@ -54,7 +66,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Guides',
-      collapsed: false,
+      collapsed: true,
       link: {
         type: 'generated-index',
         description:
@@ -63,8 +75,10 @@ const sidebars = {
       items: [
         'gists/guides/browser-dev',
         'gists/guides/pwsh-cli',
+
       ]
     },
+    // Sidebar Gists
     {
       type: 'category',
       label: 'Gists',
@@ -75,6 +89,7 @@ const sidebars = {
       },
       items:
       [
+        'development/gists/py-starters',
         'gists/celestial-distance',
         'gists/openai-api',
         'gists/basic-python',

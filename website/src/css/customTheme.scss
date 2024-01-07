@@ -539,7 +539,7 @@ a[class*="tagRegular"] {
   }
 
   .navbar__inner {
-    max-width: 1360px;
+    // max-width: 1360px;
     margin: 0 auto;
   }
 
@@ -688,7 +688,7 @@ So we need to "revert" some CSS vars to not enforce dark mode
   .navbar-sidebar__items {
     > .navbar-sidebar__item.menu {
       > ul.menu__list {
-        margin: 4px;
+        margin: auto;
       }
     }
 
@@ -698,8 +698,8 @@ So we need to "revert" some CSS vars to not enforce dark mode
     }
 
     .menu__list-item-collapsible a[class*="menuLinkText"] {
-      font-weight: 600;
-      font-size: 14px;
+      // font-weight: 600;
+      // font-size: 14px;
       background: var(--ifm-background-color) !important;
     }
   }
@@ -800,10 +800,10 @@ aside[class^="theme-doc-sidebar-container"] {
   }
 
   .theme-doc-sidebar-item-category {
-    margin-bottom: 6px;
+    margin-bottom: auto;
 
     .menu__list .menu__list-item-collapsible {
-      margin-top: 6px;
+      margin-top: auto;
     }
   }
 
