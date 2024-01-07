@@ -31,7 +31,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // trailingSlash: true,
+  trailingSlash: false,
 
   
 
@@ -42,10 +42,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  // customFields:{
-  //   mendableAnonKey: process.env.MENDABLE_ANON_KEY,
-  // },
-
+  
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -82,19 +79,14 @@ const config = {
       }),
     ],
   ],
-
-  
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
       type: 'text/css',
-      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
       crossorigin: 'anonymous',
     },
-    // {
-    //   href: 'https://cdn.jsdelivr.net/npm/@docsearch/js@3',
-    //   type: 'text/javascript',
-    // },
   ],
 
 
@@ -144,32 +136,13 @@ const config = {
                 type: 'doc',
                 docId: 'dev-overview'
               },
-              // {
-              //   label: 'Intro',
-              //   type: 'doc',
-              //   docId: 'intro',
-              // },
 
-              // {
-              //   label: 'Guides',
-              //   // type: 'doc',
-              //   // docId: 'gists',
-              //   to: '/docs/category/guides'
-              // },
               {
                 label: 'Projects',
                 type: 'doc',
                 docId: 'projects'
               },
 
-              // {
-              //   label: 'React',
-              //   to: '/react-page'
-              // },
-              // {
-              //   label: 'Markdown',
-              //   to: '/markdown-page',
-              // }
             ]
           },
 
@@ -191,83 +164,13 @@ const config = {
             to: '/team',
             position: 'right'
           },
-// 
-          // {
-          //   label: 'Platform',
-          //   type: 'doc',
-          //   position: 'right',
-          //   docId: 'introduction',
 
-          // },
-          // {
-          //   label: 'Guides',
-          //   type: 'doc',
-          //   position: 'right',
-          //   docId: 'gists'
-          // },
-          
-          // {
-          //   label: 'Demos',
-          //   position: 'right',
-          //   type: 'doc',
-          //   docId: 'projects'
-
-          // },
-          // {
-          //   label: 'Scribble',
-          //   position: 'right',
-          //   type: 'dropdown',
-          //   items: [
-          //     {
-          //       label: 'React',
-          //       to: '/react-page'
-          //     },
-          //     {
-          //       label: 'MD',
-          //       to: '/markdown-page'
-          //     },
-          //   ]
-          // },
-
-          // {
-          //   label: 'Resources',
-          //   position: 'right',
-          //   type: 'dropdown',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: 'blog',
-          //     },
-          //     {
-          //       label: 'Team',
-          //       to: 'team'
-          //     },
-
-
-          //   ]
-          // },
-
-
-          // {
-          //   type: 'localeDropdown',
-          //   position: 'right',
-          //   dropdownItemsAfter: [
-          //     {
-          //       to: 'https://my-site.com/help-us-translate',
-          //       label: 'Help us translate',
-          //     },
-          //   ],
-          // },
           {
             href: 'https://github.com/kitiplex/kitiplex-dev',
             'aria-label': 'GitHub repository',
             position: 'right',
             className: 'navbar-github-link',
           },
-          // {
-          //   type: 'search',
-          //   position: 'right',
-          // },
         ],
       },
 
@@ -275,7 +178,7 @@ const config = {
         appId: 'C8HUEW9O04',
         apiKey: '405252b256717768fac679da5dd93c8d',
         indexName: 'kitiplex',
-        // contextualSearch: true,
+        contextualSearch: true,
       },
       
 
