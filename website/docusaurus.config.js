@@ -169,7 +169,8 @@ const config = {
             href: 'https://github.com/kitiplex/kitiplex-dev',
             'aria-label': 'GitHub repository',
             position: 'right',
-            className: 'navbar-github-link',
+            // className: 'navbar-github-link','
+            className: 'header-github-link',
           },
         ],
       },
@@ -179,6 +180,10 @@ const config = {
         apiKey: '405252b256717768fac679da5dd93c8d',
         indexName: 'kitiplex',
         contextualSearch: true,
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
       },
       
 
