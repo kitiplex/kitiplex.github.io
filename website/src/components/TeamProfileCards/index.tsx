@@ -94,7 +94,7 @@ export function ActiveTeamRow(): JSX.Element {
         githubUrl="https://github.com/mkeithX"
         twitterUrl="https://twitter.com/mkeithtan">
         <Translate id="team.profile.Keith Tan.body">
-          Kitiplex founder & socially awkward. 🚀🌍
+        01001001 01101101 00100000 01100110 01100101 01100101 01101100 01101001 01101110 01100111 00100000 01101100 01110101 01100011 01101011 01111001
         </Translate>
       </TeamProfileCardCol>
       {/* <TeamProfileCardCol
@@ -115,9 +115,9 @@ export function ActiveTeamRow(): JSX.Element {
       <TeamProfileCardCol
         name="Joei"
         githubUrl="https://github.com/JoeiX"
-        twitterUrl="https://twitter.com/">
+        twitterUrl="https://twitter.com/angajoei">
         <Translate id="team.profile.Joei.body">
-          Former bully. Front End Engineer at @ Kitiplex. Eat's a lot. 🌾 
+          Busy upskilling. 🌾 
         </Translate>
       </TeamProfileCardCol>
       <TeamProfileCardCol
