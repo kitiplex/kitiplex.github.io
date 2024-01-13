@@ -6,31 +6,37 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-// import header from '../css'
 
+// Import your new background image
+import backgroundImage from '/img/kitiplex_banner_tx.png';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--dark', styles.heroBanner)}>
+    <header
+      className={clsx('hero hero--dark', styles.heroBanner)}
+
+      // style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-
           <Link
             className="button button--secondary button--lg"
-            to="docs/dev">
-            Get started
+            to="docs/dev"
+          >
+            🎉Get started🥳
           </Link>
         </div>
-        <br></br>
+        <br />
         <Link
           className="button button--secondary button--lg"
-          to="/team">
-          Team Kitimi
+          to="/team" // Update this with a valid route
+        >
+          📦Team Kitimi📦
         </Link>
       </div>
     </header>
@@ -41,9 +47,9 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      // title={`Hello from ${siteConfig.title}`}
-      title={``}
-      description="Description will go into a meta tag in <head />">
+      title=""
+      description="Description will go into a meta tag in <head />"
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
@@ -51,4 +57,3 @@ export default function Home() {
     </Layout>
   );
 }
-
