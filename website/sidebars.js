@@ -96,7 +96,9 @@ const sidebars = {
         type: 'generated-index',
       },
       items: [
-        'projects/ginabot-ai'
+        'projects/django-mono-repo',
+        'projects/ginabot-ai',
+        'projects/py-mono-repo',
       ]
     }
   ],
