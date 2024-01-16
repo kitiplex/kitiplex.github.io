@@ -13,7 +13,7 @@ import rehypeKatex from 'rehype-katex';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'kitiplex',
-  tagline: 'Projects, samples and demos from Kitimi Platforms',
+  tagline: 'Projects and demos from Kitimi Platforms',
   favicon: 'img/favicon.ico',
 
 
