@@ -1,18 +1,18 @@
 mkeithX:
-  name: Keith Tan
+  name: Keith
   title: Engineer @ Kitiplex
   url: https://github.com/mkeithX
   image_url: https://github.com/mkeithX.png
 
 kitiplex:
   name: Kitiplex
-  title: Organization
+  title: Admin
   url: https://github.com/kitiplex
   image_url: https://github.com/kitiplex.png
 
 
 JoeiX:
-  name: Joei
+  name: JoeiX
   title: Front End Engineer @ Kitiplex
   url: https://github.com/JoeiX
   image_url: https://github.com/JoeiX.png

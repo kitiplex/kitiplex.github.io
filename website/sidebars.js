@@ -18,22 +18,6 @@ const sidebars = {
   
   docs: [
     'introduction',
-  
-    // {
-    //   type: 'category',
-    //   label: 'Overview',
-    //   link: {
-    //     type: 'generated-index',
-    //     description:
-    //     "Our goals towards the future.",
-    //   },
-    //   collapsed: true,
-    //   items: [
-    //     'about/about-us',
-    //     'about/community',
-    //     'about/the-platform',
-    //   ]
-    // },
 
     {
       type: 'category',
