@@ -15,16 +15,9 @@ const config = {
   title: 'kitiplex',
   tagline: 'Projects and demos from Kitimi Platforms',
   favicon: 'img/favicon.ico',
-
-
-  // Set the production url of your site here
   url: 'https://kitiplex.vercel.app/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'kitiplex', // Usually your GitHub org/user name.
   projectName: 'kitiplex-dev', // Usually your repo name.
 
@@ -32,17 +25,13 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
 
   trailingSlash: false,
-
   
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
   
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -101,7 +90,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+
+      algolia: {
+        appId: 'C8HUEW9O04', // RWCGZ2IUQS 
+        apiKey: '3dcd23a69a487d41354e2662bc354ef8', // 17715e233eab11ccdd48dead8bf9a708
+        indexName: 'kitiplex' // kitiplex-dev
+      },
+
       docs: {
         sidebar: {
           hideable: false,
@@ -181,16 +176,6 @@ const config = {
         ],
       },
 
-      algolia: {
-        appId: 'C8HUEW9O04',
-        apiKey: '405252b256717768fac679da5dd93c8d',
-        indexName: 'kitiplex',
-        contextualSearch: true,
-        replaceSearchResultPathname: {
-          from: '/docs/', // or as RegExp: /\/docs\//
-          to: '/',
-        },
-      },
       
 
 
