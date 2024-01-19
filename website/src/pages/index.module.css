@@ -8,21 +8,18 @@
   text-align: left;
   position: relative;
   overflow: hidden;
-  background-color: #166a94; 
+  /* background-color: #166a94;  */
   /* background-color: #1da1f2; */
-  background-size: cover;
-  background-position: right;
+  /* background-size: cover; */
+  /* background-position: right; */
   height: 400px;
 }
 
-.hero__title {
-  color: #000; /* Set the color for the title, use your preferred dark color */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
 }
-
-.hero__subtitle {
-  color: #333; /* Set the color for the subtitle, use your preferred dark color */
-}
-
 .buttons {
   display: block;
   justify-content: center;
