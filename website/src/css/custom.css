@@ -59,13 +59,13 @@
 
 /* Reduce width on mobile for Mendable Search */
 @media (max-width: 767px) {
-  .mendable-search {
+  .DocSearch {
     width: 200px;
   }
 }
 
 @media (max-width: 500px) {
-  .mendable-search {
+  .DocSearch {
     width: 150px;
   }
 }
@@ -118,9 +118,7 @@
 }
 
 
-.banner {
-  padding: 4rem;
-}
+
 /** In mobile view, reduce the padding */
 @media screen and (max-width: 996px) {
   .heroBanner {
