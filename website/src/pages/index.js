@@ -8,7 +8,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 // Import your new background image
-import backgroundImage from '/img/kitiplex_banner_tx.png';
+// import backgroundImage from '/img/home_banner_blue.png';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,6 +18,7 @@ function HomepageHeader() {
 
       // style={{ backgroundImage: `url(${backgroundImage})` }}
     >
+      {/* <img class="hero--image" src="/img/kitiplex_banner.png" width="400" alt="hero home"></img> */}
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
@@ -38,6 +39,7 @@ function HomepageHeader() {
         >
           📦Team Kitimi📦
         </Link>
+        
       </div>
     </header>
   );

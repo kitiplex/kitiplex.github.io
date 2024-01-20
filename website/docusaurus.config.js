@@ -167,7 +167,7 @@ const config = {
           },
 
           {
-            href: 'https://github.com/kitiplex/kitiplex-dev',
+            href: 'https://github.com/kitiplex/',
             'aria-label': 'GitHub repository',
             position: 'right',
             // className: 'navbar-github-link','
