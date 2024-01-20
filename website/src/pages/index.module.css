@@ -9,18 +9,19 @@
   position: relative;
   overflow: hidden;
   /* background-color: #166a94;  */
-  background-color: #2a2a2a; 
+  /* background-color: #657786;  */
   /* background-color: #1da1f2; */
-  background-size: cover;
-  background-position: right;
+  /* background-size: cover; */
+  background-position: center;
   height: 400px;
 }
 
-@media screen and (max-width: 966px) {
+/* @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
+
   }
-}
+} */
 
 .buttons {
   display: block;

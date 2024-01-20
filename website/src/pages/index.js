@@ -8,7 +8,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 // Import your new background image
-// import backgroundImage from '/img/home_banner_blue.png';
+import backgroundImage from '/img/kitiplex-social-card.png';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
