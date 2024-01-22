@@ -182,3 +182,27 @@ cscript ospp.vbs /sethst:e8.us.to
 cscript ospp.vbs /act
 ```
 ---
+
+<details>
+<summary>Installation steps when not using <code>@docusaurus/preset-classic</code></summary>
+
+1. Install the package:
+
+```bash npm2yarn
+npm install --save @docusaurus/theme-search-algolia
+```
+
+2. Register the theme in `docusaurus.config.js`:
+
+```js title="docusaurus.config.js"
+export default {
+  title: 'My site',
+  // ...
+  themes: ['@docusaurus/theme-search-algolia'],
+  themeConfig: {
+    // ...
+  },
+};
+```
+
+</details>
