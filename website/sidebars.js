@@ -49,8 +49,7 @@ const sidebars = {
         'development/guides/installing-python',
         'development/guides/openai-api',
         'development/guides/wsl-kali',
-        'development/gists/browser-dev',
-        'development/gists/pwsh-cli',
+
 
       ]
     },
@@ -65,6 +64,8 @@ const sidebars = {
       },
       items:
       [
+        'development/gists/browser-dev',
+        'development/gists/pwsh-cli',
         'development/gists/live-editor',
         'development/gists/py-starters',
         'development/gists/celestial-distance',

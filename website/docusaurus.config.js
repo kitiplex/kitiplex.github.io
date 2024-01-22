@@ -26,6 +26,7 @@ const config = {
 
   trailingSlash: false,
   
+  
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -40,6 +41,8 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           path: 'docs',
+          showLastUpdateTime: true,
+          
 
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
@@ -92,17 +95,19 @@ const config = {
     ({
 
       algolia: {
-        appId: 'C8HUEW9O04', // RWCGZ2IUQS 
-        apiKey: '3dcd23a69a487d41354e2662bc354ef8', // 17715e233eab11ccdd48dead8bf9a708
-        indexName: 'kitiplex' // kitiplex-dev
+        appId: 'C8HUEW9O04', 
+        apiKey: '3dcd23a69a487d41354e2662bc354ef8',
+        indexName: 'kitiplex',
       },
-
+      
       docs: {
         sidebar: {
-          hideable: false,
+          hideable: true,
           autoCollapseCategories: false,
         },
+        
       },
+      
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,

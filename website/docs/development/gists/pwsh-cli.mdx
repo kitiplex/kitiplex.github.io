@@ -109,6 +109,7 @@ Check for disk errors
 ```
 DISM /Online /Cleanup-Image /ScanHealth
 ```
+
 ```
 DISM /Online /Cleanup /RestoreHealth
 ```
@@ -116,33 +117,12 @@ DISM /Online /Cleanup /RestoreHealth
 
 
 ### Upgrades
+
+
+
 :::warning[Note]
 This only applies for Windows 10 only.
 :::
-
-<details>
-<summary>Check License</summary>
-
-For OEM.
-
-```sh
-wmic path softwarelicensingservice get OA3xOriginalProductKey
-```
-
-* For Volumes. Check Host.
-```sh
-slmgr.vbs /dli
-```
-* Disable KMS host caching:
-```sh
-slmgr.vbs /ckhc
-```
-* Enable KMS host cahing:
-
-```sh
-slmgr.vbs /skhc
-```
-</details>
 
 ### Pro to Enterprise (Windows 10)
 
@@ -200,3 +180,27 @@ cscript ospp.vbs /sethst:e8.us.to
 cscript ospp.vbs /act
 ```
 ---
+
+<details>
+<summary>Check License</summary>
+
+For OEM.
+
+```sh
+wmic path softwarelicensingservice get OA3xOriginalProductKey
+```
+
+* For Volumes. Check Host.
+```sh
+slmgr.vbs /dli
+```
+* Disable KMS host caching:
+```sh
+slmgr.vbs /ckhc
+```
+* Enable KMS host cahing:
+
+```sh
+slmgr.vbs /skhc
+```
+</details>
