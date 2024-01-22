@@ -5,11 +5,12 @@
 /* index.module.css */
 
 .heroBanner {
-  text-align: left;
+  text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
   /* background-color: #166a94;  */
-  /* background-color: #657786;  */
+  background-color: #0671a7; 
   /* background-color: #1da1f2; */
   /* background-size: cover; */
   background-position: center;

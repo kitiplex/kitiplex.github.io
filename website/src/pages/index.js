@@ -29,16 +29,16 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="docs/dev"
           >
-            🎉Get started🥳
+            Learn more
           </Link>
         </div>
         <br />
-        <Link
+        {/* <Link
           className="button button--secondary button--lg"
-          to="/team" // Update this with a valid route
+          to="/team" 
         >
           📦Team Kitimi📦
-        </Link>
+        </Link> */}
         
       </div>
     </header>
