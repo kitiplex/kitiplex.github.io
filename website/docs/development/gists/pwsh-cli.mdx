@@ -11,7 +11,7 @@ import IframeWindow from '@site/src/components/BrowserWindow/IframeWindow';
 
 ### Common Commands
 
-:::info[Common Commands]
+:::tip[About]
 Some frequently used command that comes in handy.
 :::
 
@@ -31,10 +31,6 @@ To know more, you can run:
 </Tabs>
 
 ### Create user profile
-
-<details>
-<summary>Create user profile</summary>
-
 1. Run the ff: command to determine your profile path:
 
 ```
@@ -45,12 +41,11 @@ $profile
 2. Create a file name ``Microsoft.PowerShell_profile.ps1``
 
 3. To customize, see profile.
-</details>
-
 
 
 
 ### Enable / Disable - Superadmin
+
 <details>
 <summary>More</summary>
 ```sh
@@ -65,11 +60,12 @@ Net user administrator /active:no
 
 
 ### Network
+:::warning[Note]
+This requires elevated / admin access and must be execute in the exact order.
+:::
 
-Here's an extended command that might be helpful in fix issues with network. **Note** that this requires elevated / admin access and must be execute in the exact order.
-<details>
 
-
+Here's an extended command that might be helpful in fix issues with network.
 ```sh
 ipconfig /release
 ```
@@ -87,25 +83,28 @@ netsh winsock reset
 ```
 Restart comupter.
 
-</details>
+<details>
 
-### Status and Reports
+<summary>Status and Reports</summary>
 
-```
+```sh
 netsh interface show interface
 ```
-```
+```sh
 netsh wlan show wlanreport
 ```
-```
+```sh
 netsh interface ip show dnsservers
 ```
 
+</details>
 
 
-## Local Machine
 
-### Check for disk errors
+
+### Local Machine
+
+Check for disk errors
 
 ```
 DISM /Online /Cleanup-Image /ScanHealth
@@ -116,12 +115,15 @@ DISM /Online /Cleanup /RestoreHealth
 
 
 
-# Upgrades
+### Upgrades
+:::warning[Note]
+This only applies for Windows 10 only.
+:::
 
-### Check Licenses
+<details>
+<summary>Check License</summary>
 
-
-* For OEM.
+For OEM.
 
 ```sh
 wmic path softwarelicensingservice get OA3xOriginalProductKey
@@ -140,6 +142,7 @@ slmgr.vbs /ckhc
 ```sh
 slmgr.vbs /skhc
 ```
+</details>
 
 ### Pro to Enterprise (Windows 10)
 
@@ -197,27 +200,3 @@ cscript ospp.vbs /sethst:e8.us.to
 cscript ospp.vbs /act
 ```
 ---
-
-<details>
-<summary>Installation steps when not using <code>@docusaurus/preset-classic</code></summary>
-
-1. Install the package:
-
-```bash npm2yarn
-npm install --save @docusaurus/theme-search-algolia
-```
-
-2. Register the theme in `docusaurus.config.js`:
-
-```js title="docusaurus.config.js"
-export default {
-  title: 'My site',
-  // ...
-  themes: ['@docusaurus/theme-search-algolia'],
-  themeConfig: {
-    // ...
-  },
-};
-```
-
-</details>
