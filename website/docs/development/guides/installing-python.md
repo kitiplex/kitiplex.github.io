@@ -3,7 +3,7 @@ title: Installing Python
 sidebar_label: Python on Windows
 ---
 
-:::note[Python Installation on Windows]
+:::info[Py on NT]
 The installation requires downloading the official Python .exe installer and running it on your system. The sections below will explain several options and details during the installation process.
 :::
 
