@@ -10,19 +10,27 @@
   overflow: hidden;
   display: flex;
   /* background-color: #166a94;  */
-  background-color: #0671a7; 
-  /* background-color: #1da1f2; */
+  /* background-color: #0671a7;  */
+  background-color: #1da1f2;
   /* background-size: cover; */
   background-position: center;
   height: 400px;
 }
 
-/* @media screen and (max-width: 966px) {
+.hero__title {
+  color: #000;
+}
+
+.hero__subtitle {
+  color: #333; 
+}
+
+@media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
 
   }
-} */
+}
 
 .buttons {
   display: block;
