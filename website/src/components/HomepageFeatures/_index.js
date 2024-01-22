@@ -7,26 +7,16 @@ const FeatureList = [
     Svg: require('@site/static/img/microsoft_logo.svg').default,
   },
   {
-    Svg: require('@site/static/img/header-blue.svg').default,
+    Svg: require('@site/static/img/vscode.svg').default,
   },
   {
-    Svg: require('@site/static/img/openai_logo.svg').default,
+    Svg: require('@site/static/img/mkjs.svg').default,
+  },
+  {
+    Svg: require('@site/static/img/react_logo.svg').default,
   },
   {
     Svg: require('@site/static/img/logo.svg').default,
-  },
-  {
-    Svg: require('@site/static/img/openai-logomark.svg').default,
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/openai_logo.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
   },
   
 ];
