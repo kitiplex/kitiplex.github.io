@@ -1,6 +1,6 @@
 ---
 title: CLI
-sidebar_label: CLI
+sidebar_label: Common Commands
 slug: /gists/cli-eggs
 ---
 import Tabs from "@theme/Tabs";
@@ -9,7 +9,13 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 import Admonition from '@theme/Admonition';
 import IframeWindow from '@site/src/components/BrowserWindow/IframeWindow';
 
-### CMD and PWSH
+### Common Commands
+
+:::info[Common Commands]
+Some frequently used command that comes in handy.
+:::
+
+To know more, you can run:
 
 <Tabs groupId="command-line-interface">
   <TabItem value="cmd" label="cmd">
@@ -24,9 +30,29 @@ import IframeWindow from '@site/src/components/BrowserWindow/IframeWindow';
   </TabItem>
 </Tabs>
 
+### Create user profile
+
+<details>
+<summary>Create user profile</summary>
+
+1. Run the ff: command to determine your profile path:
+
+```sh
+$profile
+```
+
+
+2. Create a file name ``Microsoft.PowerShell_profile.ps1``
+
+3. To customize, see profile.
+</details>
+
+
+
 
 ### Enable / Disable - Superadmin
-
+<details>
+<summary>More</summary>
 ```sh
 Net user administrator /active:yes
 ```
@@ -34,19 +60,15 @@ Net user administrator /active:yes
 ```sh
 Net user administrator /active:no
 ```
+</details>
 
-### User profile
 
-1. Run the ff: command to determine your profile path:
-
-```sh
-$profile
-```
-2. Create a file name ``Microsoft.PowerShell_profile.ps1``
 
 ### Network
 
 Here's an extended command that might be helpful in fix issues with network. **Note** that this requires elevated / admin access and must be execute in the exact order.
+<details>
+
 
 ```sh
 ipconfig /release
@@ -65,6 +87,7 @@ netsh winsock reset
 ```
 Restart comupter.
 
+</details>
 
 ### Status and Reports
 
@@ -91,14 +114,6 @@ DISM /Online /Cleanup-Image /ScanHealth
 DISM /Online /Cleanup /RestoreHealth
 ```
 
-### Enable/Disable Superadmin
-
-```
-Net user administrator /active:yes
-```
-```
-Net user administrator /active:no
-```
 
 
 # Upgrades

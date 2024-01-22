@@ -1,6 +1,6 @@
 const theme = {
   plain: {
-    color: '#FFFFFF',
+    color: '#AAB8C2',
     backgroundColor: '#282C34',
   },
   styles: [
@@ -49,7 +49,7 @@ const theme = {
     {
       types: ['important', 'variable', 'deleted'],
       style: {
-        color: '#cb4b16',
+        color: '#fe5209',
       },
     },
     {
