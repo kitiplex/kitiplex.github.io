@@ -25,14 +25,14 @@ const config = {
   onBrokenMarkdownLinks: 'throw',
 
   // trailingSlash: false,
-  
-  titleDelimiter: '·', 
-  
+
+  titleDelimiter: '·',
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  
+
 
   presets: [
     [
@@ -40,27 +40,65 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          // routeBasePath: '/docs',
           path: 'docs',
+
+          breadcrumbs: true,
+
           sidebarPath: require.resolve('./sidebars.js'),
+
           showLastUpdateTime: true,
+
+          editLocalizedFiles: false,
+          editCurrentVersion: false,
+
+          routeBasePath: 'docs',
+
+          include: ['**/*.md', '**/*.mdx'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
 
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
-          
+
+        },
+
+        pages: {
+          path: 'src/pages',
+          routeBasePath: '',
+          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+
         },
         blog: {
           showReadingTime: true,
+        },
+
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
         },
 
         theme: {
           customCss: [
             require.resolve('./src/css/custom.css'),
           ]
-        }
+        },
+
 
       }),
     ],
+
   ],
   stylesheets: [
     {
@@ -73,26 +111,26 @@ const config = {
   ],
 
 
-  plugins: ['@docusaurus/theme-live-codeblock','docusaurus-plugin-sass'],
-  
+  plugins: ['@docusaurus/theme-live-codeblock', 'docusaurus-plugin-sass'],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
 
       algolia: {
-        appId: 'C8HUEW9O04', 
+        appId: 'C8HUEW9O04',
         apiKey: '3dcd23a69a487d41354e2662bc354ef8',
         indexName: 'kitiplex',
       },
-      
+
       docs: {
         sidebar: {
           hideable: true,
           autoCollapseCategories: false,
         },
-        
+
       },
-      
+
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
@@ -100,7 +138,7 @@ const config = {
       },
 
       image: '/img/kitiplex_banner.png',
-      
+
       navbar: {
         title: 'Kitiplex',
         style: 'dark',
@@ -112,7 +150,7 @@ const config = {
           className: 'custom-navbar-logo-class',
           target: '_self',
         },
-        
+
         items: [
 
           {
@@ -166,7 +204,7 @@ const config = {
 
       footer: {
         style: 'dark',
-        
+
         logo: {
           alt: 'Kitiplex Logo',
           src: '/img/header_blue.png',
@@ -175,14 +213,14 @@ const config = {
           // height: 100,
           // target: "_blank"
         },
-        
+
         copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
       },
       prism: {
         defaultLanguage: 'jsx',
         theme: require('./src/utils/PrismTheme'),
-        
-        additionalLanguages: ['bash','json', 'java','python', 'powershell']
+
+        additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell']
       },
       liveCodeBlock: {
         /**
