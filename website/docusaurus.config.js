@@ -22,7 +22,7 @@ const config = {
   projectName: 'kitiplex-dev', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
 
   trailingSlash: false,
   
