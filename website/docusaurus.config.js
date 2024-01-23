@@ -14,8 +14,8 @@ import rehypeKatex from 'rehype-katex';
 const config = {
   title: 'kitiplex',
   tagline: 'Projects and demos from Kitimi Platforms',
-  favicon: '/img/favicon.ico',
-  url: 'https://kitiplex.dev',
+  favicon: 'img/favicon.ico',
+  url: 'https://kitiplex.vercel.app',
   baseUrl: '/',
 
   organizationName: 'kitiplex', // Usually your GitHub org/user name.
@@ -138,14 +138,14 @@ const config = {
         respectPrefersColorScheme: false,
       },
 
-      image: '/img/kitiplex_banner.png',
+      image: 'img/kitiplex_banner.png',
 
       navbar: {
         title: 'Kitiplex',
         style: 'dark',
         logo: {
           alt: 'My Site Logo',
-          src: '/img/kitim_bb.png',
+          src: 'img/kitim_bb.png',
           // width: 180,
           // height: 32,
           className: 'custom-navbar-logo-class',
@@ -208,7 +208,7 @@ const config = {
 
         logo: {
           alt: 'Kitiplex Logo',
-          src: '/img/header_blue.png',
+          src: 'img/header_blue.png',
           href: '/',
           width: 200,
           // height: 100,
