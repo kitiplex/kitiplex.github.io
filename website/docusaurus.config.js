@@ -50,30 +50,18 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-
 
         // theme: {
         //   customCss: './src/css/custom.css',
         // },
 
-
         theme: {
           customCss: [
             require.resolve('./src/css/custom.css'),
-        //     // require.resolve('./src/css/customTheme.scss'),
-        //     // require.resolve('./src/css/index.scss'),
-        //     // require.resolve('./src/css/showcase.scss'),
-        //     // require.resolve('./src/css/versions.scss'),
           ]
         }
 
-        
       }),
     ],
   ],
