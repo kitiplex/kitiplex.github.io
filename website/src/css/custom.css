@@ -10,15 +10,19 @@
 
 :root {
   /* font-family: 'Poppins', sans-serif; */
-
-
+  --brand: #61dafb;
   --ifm-color-primary: #1da1f2;
   --ifm-code-font-size: 95%;
+  --doc-sidebar-width: 266px !important;
+  
+  --deepdark: #20232a;
+  --ifm-color-warning: #ffe564;
+  --ifm-navbar-background-color: var(--deepdark);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #1da1f2;
+  --ifm-color-primary: #06bcee;
   --ifm-color-primary-dark: #0d94e7;
   --ifm-color-primary-darker: #0d8cda;
   --ifm-color-primary-darkest: #109cf1;
@@ -29,11 +33,11 @@
 }
 
 [data-theme='light'] {
-
   --ifm-background-color: #F5F8FA;
 }
+
 .header-github-link:hover,
-.header-twitter-link:hover  {
+.header-twitter-link:hover {
   opacity: 0.6;
 }
 
@@ -55,7 +59,6 @@
 }
 
 .avatar__photo {
-
   margin-bottom: 20px;
 }
 
@@ -64,31 +67,9 @@
     no-repeat;
 }
 
-
 .footer--dark {
   --ifm-footer-background-color: #2b3137;
 }
-
-
-/* Reduce width on mobile for Mendable Search */
-/* @media (max-width: 767px) {
-  .DocSearch {
-    width: 200px;
-  }
-}
-
-@media (max-width: 500px) {
-  .DocSearch {
-    width: 150px;
-  }
-}
-
-@media (max-width: 380px) {
-  .DocSearch {
-    width: 140px;
-  }
-} */
-
 
 [data-theme='light'] .DocSearch {
   /* --docsearch-primary-color: var(--ifm-color-primary); */
@@ -130,15 +111,20 @@
   );
 }
 
-
+.banner {
+  padding: 4rem;
+}
 
 /** In mobile view, reduce the padding */
+@media screen and (max-width: 996px) {
+  .banner {
+    padding: 2rem;
+  }
+}
+
 .navbar {
-
-
-  .navbar__inner {
-
-    margin: 0 auto;
+  &.navbar--dark {
+    background-color: var(--deepdark);
   }
 
   .navbar__title {
@@ -152,8 +138,7 @@
 
   .navbar__item {
     &.navbar__link {
-      font-weight: 400;
-      font-size: 17px;
+      font-weight: 600;
       user-select: none;
     }
 
@@ -168,15 +153,13 @@
         left: 0;
       }
     }
-
-    &.dropdown--right {
-      .dropdown__menu {
-        min-width: 168px;
-      }
-    }
   }
 
-
+  .dropdown > .navbar__link:after {
+    margin-left: 8px;
+    top: 1px;
+    opacity: 0.75;
+  }
 
   .navbar__logo {
     width: 38px;

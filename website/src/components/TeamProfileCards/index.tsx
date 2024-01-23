@@ -75,14 +75,7 @@ function TeamProfileCardCol(props: ProfileProps) {
 export function ActiveTeamRow(): JSX.Element {
   return (
     <div className="row">
-      {/* <TeamProfileCardCol
-        name="Alexey Pyltsyn"
-        githubUrl="https://github.com/lex111">
-        <Translate id="team.profile.Alexey Pyltsyn.body">
-          Obsessed open-source enthusiast 👋 Eternal amateur at everything 🤷‍♂️
-          Maintainer of Russian docs on PHP, React, Kubernetes and much more 🧐
-        </Translate>
-      </TeamProfileCardCol> */}
+
       <TeamProfileCardCol
         name="Keith Tan"
         githubUrl="https://github.com/mkeithX"
@@ -91,21 +84,7 @@ export function ActiveTeamRow(): JSX.Element {
         01001001 01101101 00100000 01100110 01100101 01100101 01101100 01101001 01101110 01100111 00100000 01101100 01110101 01100011 01101011 01111001
         </Translate>
       </TeamProfileCardCol>
-      {/* <TeamProfileCardCol
-        name="Sébastien Lorber"
-        githubUrl="https://github.com/slorber"
-        twitterUrl="https://twitter.com/sebastienlorber">
-        <Translate
-          id="team.profile.Sebastien Lorber.body"
-          values={{
-            website: <WebsiteLink to="https://sebastienlorber.com/" />,
-            devto: <Link to="https://dev.to/sebastienlorber">Dev.to</Link>,
-          }}>
-          {
-            'React lover since 2014. Freelance, helping Facebook ship Docusaurus v2. He writes regularly, on his {website} and {devto}.'
-          }
-        </Translate>
-      </TeamProfileCardCol> */}
+
       <TeamProfileCardCol
         name="Joei"
         githubUrl="https://github.com/JoeiX"

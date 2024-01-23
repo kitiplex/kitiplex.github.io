@@ -22,7 +22,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Policies',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'generated-index',
       },
@@ -39,7 +39,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Guides',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'generated-index',
         description:
@@ -57,7 +57,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Gists',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'generated-index',
 
@@ -75,7 +75,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Nerds',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'generated-index',
         description: 'Nerds stuff.'
@@ -92,7 +92,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Examples',
-      collapsed: true,
+      collapsed: false,
       link: {
         type: 'generated-index',
       },

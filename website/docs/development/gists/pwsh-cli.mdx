@@ -12,7 +12,9 @@ import IframeWindow from '@site/src/components/BrowserWindow/IframeWindow';
 ### Common Commands
 
 :::tip[About]
+
 Some frequently used command that comes in handy.
+
 :::
 
 To know more, you can run:
@@ -24,7 +26,7 @@ To know more, you can run:
     ```
   </TabItem>
   <TabItem value="pwsh" label="powershell">
-    ```pwsh
+    ```sh
     Get-Command
     ```
   </TabItem>
@@ -106,11 +108,11 @@ netsh interface ip show dnsservers
 
 Check for disk errors
 
-```
+```sh
 DISM /Online /Cleanup-Image /ScanHealth
 ```
 
-```
+```sh
 DISM /Online /Cleanup /RestoreHealth
 ```
 
@@ -121,7 +123,9 @@ DISM /Online /Cleanup /RestoreHealth
 
 
 :::warning[Note]
+
 This only applies for Windows 10 only.
+
 :::
 
 ### Pro to Enterprise (Windows 10)
@@ -160,26 +164,30 @@ slmgr /ato
 
 
 **STEP 1 - Run cmd as administrator**
-```
+```sh
 cd C:\Program Files\Microsoft Office\Office16
 ```
-```
+
+```sh
 cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
 ```
+
 **OPTIONAL:** This optional step only applies if you don't have a **Volume license** installed in your machine.
-```
+
+```sh
 for /f %x in ('dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
 ```
 
 **STEP 2 - Activate**
-```
+
+```sh
 cscript ospp.vbs /setprt:1688
 cscript ospp.vbs /unpkey:6F7TH >nul
 cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
 cscript ospp.vbs /sethst:e8.us.to
 cscript ospp.vbs /act
 ```
----
+
 
 <details>
 <summary>Check License</summary>
@@ -204,3 +212,4 @@ slmgr.vbs /ckhc
 slmgr.vbs /skhc
 ```
 </details>
+

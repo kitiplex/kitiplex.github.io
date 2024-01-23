@@ -14,7 +14,7 @@ import rehypeKatex from 'rehype-katex';
 const config = {
   title: 'kitiplex',
   tagline: 'Projects and demos from Kitimi Platforms',
-  favicon: 'img/favicon.ico',
+  favicon: '/img/favicon.ico',
   url: 'https://kitiplex.vercel.app/',
   baseUrl: '/',
 
@@ -26,6 +26,7 @@ const config = {
 
   trailingSlash: false,
   
+  titleDelimiter: '·', 
   
   i18n: {
     defaultLocale: 'en',
@@ -39,10 +40,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          routeBasePath: 'docs',
           path: 'docs',
+          sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
-          
 
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
@@ -51,10 +52,6 @@ const config = {
         blog: {
           showReadingTime: true,
         },
-
-        // theme: {
-        //   customCss: './src/css/custom.css',
-        // },
 
         theme: {
           customCss: [
@@ -99,7 +96,7 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
       },
 
       image: 'img/kitiplex_banner.png',
@@ -111,7 +108,7 @@ const config = {
 
         logo: {
           alt: 'My Site Logo',
-          src: 'img/kitim_bb.png',
+          src: '/img/kitim_bb.png',
           // width: 180,
           // height: 32,
           className: 'custom-navbar-logo-class',
@@ -174,7 +171,7 @@ const config = {
         
         logo: {
           alt: 'Kitiplex Logo',
-          src: 'img/header_blue.png',
+          src: '/img/header_blue.png',
           href: '/',
           width: 200,
           // height: 100,
@@ -185,7 +182,7 @@ const config = {
       },
       prism: {
         defaultLanguage: 'jsx',
-        theme: require('./core/PrismTheme'),
+        theme: require('./src/utils/PrismTheme'),
         
         additionalLanguages: ['bash','json', 'java','python', 'powershell']
       },
@@ -196,18 +193,13 @@ const config = {
          */
         playgroundPosition: 'bottom',
       },
-      metadata: [
-        {
-          property: 'og:image',
-          content: 'https://kitiplex.vercel.app/img/kitiplex_banner.png',
-        },
-        {name: 'twitter:card', content: 'summary_large_image'},
-        {
-          name: 'twitter:image',
-          content: 'summary_large_image',
-        },
-        {name: 'twitter:site', content: '@kitiplex'},
-      ],
+      // metadata: [
+      //   { property: 'og:image', content: '/img/kitiplex_banner',},
+      //   { name: 'twitter:card', content: 'summary_large_image'},
+      //   { name: 'twitter:image', content: 'summary_large_image',},
+      //   { name: 'twitter:site', content: '@kitiplex'},
+      //   { name: 'keywords', content: 'cooking, blog'},
+      // ],
     }),
 };
 
