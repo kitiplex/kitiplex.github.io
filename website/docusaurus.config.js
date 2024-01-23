@@ -52,7 +52,6 @@ const config = {
           showReadingTime: true,
         },
 
-
         // theme: {
         //   customCss: './src/css/custom.css',
         // },
