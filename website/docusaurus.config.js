@@ -15,16 +15,9 @@ const config = {
   title: 'kitiplex',
   tagline: 'Projects and demos from Kitimi Platforms',
   favicon: 'img/favicon.ico',
-
-
-  // Set the production url of your site here
   url: 'https://kitiplex.vercel.app/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'kitiplex', // Usually your GitHub org/user name.
   projectName: 'kitiplex-dev', // Usually your repo name.
 
@@ -32,17 +25,14 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
 
   trailingSlash: false,
-
   
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
   
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -51,6 +41,8 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           path: 'docs',
+          showLastUpdateTime: true,
+          
 
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
@@ -58,30 +50,18 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-
-
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-
 
         // theme: {
-        //   customCss: [
-        //     require.resolve('./src/css/custom.css'),
-        //     require.resolve('./src/css/customTheme.scss'),
-        //     require.resolve('./src/css/index.scss'),
-        //     require.resolve('./src/css/showcase.scss'),
-        //     require.resolve('./src/css/versions.scss'),
-        //   ]
-        // }
+        //   customCss: './src/css/custom.css',
+        // },
 
-        
+        theme: {
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+          ]
+        }
+
       }),
     ],
   ],
@@ -101,13 +81,21 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+
+      algolia: {
+        appId: 'C8HUEW9O04', 
+        apiKey: '3dcd23a69a487d41354e2662bc354ef8',
+        indexName: 'kitiplex',
+      },
+      
       docs: {
         sidebar: {
-          hideable: false,
+          hideable: true,
           autoCollapseCategories: false,
         },
+        
       },
+      
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
@@ -172,7 +160,7 @@ const config = {
           },
 
           {
-            href: 'https://github.com/kitiplex/kitiplex-dev',
+            href: 'https://github.com/kitiplex/',
             'aria-label': 'GitHub repository',
             position: 'right',
             // className: 'navbar-github-link','
@@ -180,19 +168,6 @@ const config = {
           },
         ],
       },
-
-      algolia: {
-        appId: 'C8HUEW9O04',
-        apiKey: '405252b256717768fac679da5dd93c8d',
-        indexName: 'kitiplex',
-        contextualSearch: true,
-        replaceSearchResultPathname: {
-          from: '/docs/', // or as RegExp: /\/docs\//
-          to: '/',
-        },
-      },
-      
-
 
       footer: {
         style: 'dark',

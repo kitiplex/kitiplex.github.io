@@ -1,6 +1,6 @@
 ---
 title: CLI
-sidebar_label: CLI
+sidebar_label: Common Commands
 slug: /gists/cli-eggs
 ---
 import Tabs from "@theme/Tabs";
@@ -9,7 +9,13 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 import Admonition from '@theme/Admonition';
 import IframeWindow from '@site/src/components/BrowserWindow/IframeWindow';
 
-### CMD and PWSH
+### Common Commands
+
+:::tip[About]
+Some frequently used command that comes in handy.
+:::
+
+To know more, you can run:
 
 <Tabs groupId="command-line-interface">
   <TabItem value="cmd" label="cmd">
@@ -23,3 +29,178 @@ import IframeWindow from '@site/src/components/BrowserWindow/IframeWindow';
     ```
   </TabItem>
 </Tabs>
+
+### Create user profile
+1. Run the ff: command to determine your profile path:
+
+```
+$profile
+```
+
+
+2. Create a file name ``Microsoft.PowerShell_profile.ps1``
+
+3. To customize, see profile.
+
+
+
+### Enable / Disable - Superadmin
+
+<details>
+<summary>More</summary>
+```sh
+Net user administrator /active:yes
+```
+
+```sh
+Net user administrator /active:no
+```
+</details>
+
+
+
+### Network
+:::warning[Note]
+This requires elevated / admin access and must be execute in the exact order.
+:::
+
+
+Here's an extended command that might be helpful in fix issues with network.
+```sh
+ipconfig /release
+```
+```sh
+ipconfig /flushdns
+```
+```sh
+ipconfig /renew
+```
+```sh
+netsh int ip reset
+```
+```sh
+netsh winsock reset
+```
+Restart comupter.
+
+<details>
+
+<summary>Status and Reports</summary>
+
+```sh
+netsh interface show interface
+```
+```sh
+netsh wlan show wlanreport
+```
+```sh
+netsh interface ip show dnsservers
+```
+
+</details>
+
+
+
+
+### Local Machine
+
+Check for disk errors
+
+```
+DISM /Online /Cleanup-Image /ScanHealth
+```
+
+```
+DISM /Online /Cleanup /RestoreHealth
+```
+
+
+
+### Upgrades
+
+
+
+:::warning[Note]
+This only applies for Windows 10 only.
+:::
+
+### Pro to Enterprise (Windows 10)
+
+**STEP 1 -  Run cmd as administrator**
+
+```sh
+slmgr /ipk {choose_license_key_below}
+```
+|Edition|Product Key|
+|-------|------------|
+|Professional|W269N-WFGWX-YVC9B-4J6C9-T83GX|
+|Professional N|MH37W-N47XK-V7XM9-C7227-GCQG9|
+|Education|NW6C2-QMPVW-D7KKK-3GKT6-VCFB2|
+|Education N|2WH4N-8QGBV-H22JP-CT43Q-MDWWJ|
+|Enterprise|NPPR9-FWDCX-D2C8J-H872K-2YT43|
+|Enterprise N|DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4|
+
+
+**STEP 2 - Connect to KMS server**
+
+```sh
+slmgr /skms kms8.msguides.com
+```
+**STEP 3 - Activation**
+
+```sh
+slmgr /ato
+```
+**STEP 4 - Confirm activation via ```winver``` using run.**
+
+---
+
+### Office 2021 LTSC
+
+
+
+**STEP 1 - Run cmd as administrator**
+```
+cd C:\Program Files\Microsoft Office\Office16
+```
+```
+cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
+```
+**OPTIONAL:** This optional step only applies if you don't have a **Volume license** installed in your machine.
+```
+for /f %x in ('dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+```
+
+**STEP 2 - Activate**
+```
+cscript ospp.vbs /setprt:1688
+cscript ospp.vbs /unpkey:6F7TH >nul
+cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
+cscript ospp.vbs /sethst:e8.us.to
+cscript ospp.vbs /act
+```
+---
+
+<details>
+<summary>Check License</summary>
+
+For OEM.
+
+```sh
+wmic path softwarelicensingservice get OA3xOriginalProductKey
+```
+
+* For Volumes. Check Host.
+```sh
+slmgr.vbs /dli
+```
+* Disable KMS host caching:
+```sh
+slmgr.vbs /ckhc
+```
+* Enable KMS host cahing:
+
+```sh
+slmgr.vbs /skhc
+```
+</details>

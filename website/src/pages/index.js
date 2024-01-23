@@ -8,16 +8,17 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 // Import your new background image
-import backgroundImage from '/img/kitiplex_banner_tx.png';
+// import backgroundImage from '/img/banner_devops.png';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header
-      className={clsx('hero hero--dark', styles.heroBanner)}
+      className={clsx('hero hero--primary', styles.heroBanner)}
 
       // style={{ backgroundImage: `url(${backgroundImage})` }}
     >
+      {/* <img class="hero--image" src="/img/kitiplex_banner.png" alt="hero home"></img> */}
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
@@ -28,16 +29,17 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="docs/dev"
           >
-            🎉Get started🥳
+            Learn more
           </Link>
         </div>
         <br />
-        <Link
+        {/* <Link
           className="button button--secondary button--lg"
-          to="/team" // Update this with a valid route
+          to="/team" 
         >
           📦Team Kitimi📦
-        </Link>
+        </Link> */}
+        
       </div>
     </header>
   );

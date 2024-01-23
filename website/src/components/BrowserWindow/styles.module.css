@@ -28,9 +28,7 @@
     width: 10%;
   }
   
-  [data-theme='light'] {
-    --ifm-background-color: #fff;
-  }
+
   
   .browserWindowAddressBar {
     flex: 1 0;
