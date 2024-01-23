@@ -42,12 +42,13 @@ const config = {
         docs: {
           path: 'docs',
 
+
           breadcrumbs: true,
 
           sidebarPath: require.resolve('./sidebars.js'),
 
           showLastUpdateTime: true,
-
+          disableVersioning: false,
           editLocalizedFiles: false,
           editCurrentVersion: false,
 
