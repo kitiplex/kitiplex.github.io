@@ -1,7 +1,8 @@
 {
     "cleanUrls": true,
     "trailingSlash": false,
-    "rewrites": [{
+    
+    "redirects": [{
         "source": "/(.*)",
         "destination": "/index.html" 
     }]
