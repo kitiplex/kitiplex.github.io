@@ -40,7 +40,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/docs',
+          // routeBasePath: '/docs',
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
@@ -99,13 +99,11 @@ const config = {
         respectPrefersColorScheme: false,
       },
 
-      image: 'img/kitiplex_banner.png',
+      image: '/img/kitiplex_banner.png',
       
       navbar: {
         title: 'Kitiplex',
         style: 'dark',
-
-
         logo: {
           alt: 'My Site Logo',
           src: '/img/kitim_bb.png',
