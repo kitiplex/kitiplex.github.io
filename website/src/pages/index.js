@@ -21,9 +21,9 @@ function HomepageHeader() {
         />
         
 
-        <Heading as="h1" className="hero__title hero--brand">
+        <Heading as="h5" className="hero__title">
           {/* {siteConfig.title} */}
-          Code · Inonnovate · Inspire
+          Code Inonnovate Inspire
         </Heading>
         
         <p className="hero__subtitle">

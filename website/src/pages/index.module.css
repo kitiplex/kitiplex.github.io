@@ -12,9 +12,9 @@
   /* background-color: #166a94;  */
   /* background-color: #0671a7;  */
   /* background-color: #1da1f2; */
-  background-size: cover;
+  /* background-size: cover; */
   /* background-position: center; */
-  height: 420px;
+  height: 350;
   
 }
 .banner {
@@ -23,8 +23,8 @@
 }
 
 .heroBannerLogo {
-  max-width: 175px;
-  max-height: 170px;
+  max-width: 150px;
+  max-height: 150px;
 
 }
 
