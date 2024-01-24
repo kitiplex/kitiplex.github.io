@@ -15,7 +15,7 @@ const config = {
   title: 'kitiplex',
   tagline: 'Projects and demos from Kitimi Platforms',
   favicon: 'img/favicon.ico',
-  url: 'https://kitiplex.vercel.app',
+  url: 'https://kitiplex.vercel.app/',
   baseUrl: '/',
 
   organizationName: 'kitiplex', // Usually your GitHub org/user name.
