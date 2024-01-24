@@ -24,7 +24,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
 
-  trailingSlash: false,
+  trailingSlash: true,
 
   titleDelimiter: '·',
 
