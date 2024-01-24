@@ -5,7 +5,7 @@
 /* index.module.css */
 
 .heroBanner {
-  text-align: center;
+  text-align: start;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -15,19 +15,14 @@
   /* background-size: cover; */
   background-position: center;
   height: 400px;
+  
 }
 
-/* .hero__title {
-  color: #000;
-}
-
-.hero__subtitle {
-  color: #333; 
-} */
 
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
+    
 
   }
 }

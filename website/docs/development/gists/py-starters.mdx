@@ -6,38 +6,84 @@ slug: /gists/python-eggs
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
-import BrowserWindow from '@site/src/components/BrowserWindow';
-import Admonition from '@theme/Admonition';
-import IframeWindow from '@site/src/components/BrowserWindow/IframeWindow';
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import Admonition from "@theme/Admonition";
+import IframeWindow from "@site/src/components/BrowserWindow/IframeWindow";
 
-:::info[Getting started]
+:::tip[]
 
 Python eggs for starters.
 
 :::
 
-### Hello, world
+First off, let's take a quick look how are these three languages different from each other.
 
-```python
-print("\nHello, world!\n")
+<Tabs>
+<TabItem value="js" label="JavaScript">
+
+```js
+function helloWorld() {
+  console.log('Hello, world!');
+}
 ```
 
+</TabItem>
+<TabItem value="py" label="Python">
+
 ```python
-msg = ("\nHello, world!\n")
+msg = ("Hello, world!")
 print(msg)
 ```
 
-Output: 
+</TabItem>
+<TabItem value="java" label="Java">
+
+```java
+class HelloWorld {
+  public static void main(String args[]) {
+    System.out.println("Hello, World");
+  }
+}
+```
+
+</TabItem>
+</Tabs>
+
+
+Yes! they may be different however, the same principles can be applied.
+
+### Let's begin
+
+
+1. Here are two different examples that prints the same output.
+
+<Tabs groupId="web-browsers">
+  <TabItem value="var1" label="var1">
+
+    ```python
+    print("Hello, world!")
+    ```
+
+  </TabItem>
+  <TabItem value="var2" label="var2">
+
+```python
+msg = ("Hello, world!")
+print(msg)
+```
+
+  </TabItem>
+</Tabs>
+
+<details>
+<summary>👉</summary>
+
 ```md
 Hello, world!
 ```
+</details>
 
-```python
-the_earth_is_flat = True
 
-if the_earth_is_flat:
-    print("Be careful not to fall off!")
-```
 
 ### For statements
 
@@ -47,30 +93,42 @@ words = ["cat", "dog", "monkey"]
 for w in words:
     print(w, len(w))
 ```
-:::note[Output]
+
+
+<details>
+<summary>👉</summary>
 
 ```md
 cat 3
 dog 3
 monkey 6
 ```
-:::
+</details>
+
+
 
 ```py
 a = ['Mary', 'had', 'a', 'little', 'lamb']
 
 for i in range(len(a)):
-    
+
     print(i, a[i])
 ```
-:::note[Output]
+
+
+<details>
+<summary>👉</summary>
+
 ```0 Mary
 1 had
 2 a
 3 little
 4 lamb
 ```
-:::
+
+</details>
+
+
 
 ```py
 for n in range(2, 10):
@@ -84,6 +142,7 @@ for n in range(2, 10):
 ```
 
 :::note[Output]
+
 ```2 is a prime number
 3 is a prime number
 4 equals 2 * 2
@@ -93,6 +152,7 @@ for n in range(2, 10):
 8 equals 2 * 4
 9 equals 3 * 3
 ```
+
 :::
 
 ```py
@@ -101,11 +161,12 @@ for num in range(2, 10):
     if num % 2 == 0:
         print("Found an even number", num)
         continue
-    
+
     print("Found an odd number", num)
 ```
 
 :::note[Output]
+
 ```
 Found an even number 2
 Found an odd number 3
@@ -116,6 +177,7 @@ Found an odd number 7
 Found an even number 8
 Found an odd number 9
 ```
+
 :::
 
 ```py
@@ -124,11 +186,13 @@ a = []
 for x in range(1,11):
     b = x**2
     a.append(b)
-    
+
     print(a)
 
 ```
+
 :::note[OUTPUT]
+
 ```
 [1]
 [1, 4]
@@ -142,10 +206,10 @@ for x in range(1,11):
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 ```
+
 :::
 
 ### Array
-
 
 ```py
 def print_triangle(height):
@@ -155,7 +219,9 @@ def print_triangle(height):
 # Example usage
 print_triangle(5 * 2)
 ```
+
 :::note[OUTPUT]
+
 ```
          *
         ***

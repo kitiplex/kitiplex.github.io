@@ -11,7 +11,7 @@
 :root {
   /* font-family: 'Poppins', sans-serif; */
   --brand: #61dafb;
-  --ifm-color-primary: #1da1f2;
+  --ifm-color-primary: #1DA1F2;
   --ifm-code-font-size: 95%;
   --doc-sidebar-width: 266px !important;
   
@@ -24,13 +24,15 @@
 [data-theme='dark'] {
   --ifm-color-primary: #06bcee;
   --ifm-color-primary-dark: #0d94e7;
-  --ifm-color-primary-darker: #0d8cda;
+  --ifm-color-primary-darker: #1782c5;
   --ifm-color-primary-darkest: #109cf1;
   --ifm-color-primary-light: #37acf3;
   --ifm-color-primary-lighter: #43b1f4;
   --ifm-color-primary-lightest: #6ac1f6;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
 
 [data-theme='light'] {
   --ifm-background-color: #F5F8FA;
@@ -39,6 +41,14 @@
 .header-github-link:hover,
 .header-twitter-link:hover {
   opacity: 0.6;
+}
+
+.main {
+  padding: 12px;
+}
+
+.heading {
+  font-weight: bold;
 }
 
 /* .header-github-link::before {
@@ -68,7 +78,7 @@
 }
 
 .footer--dark {
-  --ifm-footer-background-color: #2b3137;
+  --ifm-footer-background-color: #20232a;
 }
 
 [data-theme='light'] .DocSearch {
@@ -113,6 +123,7 @@
 
 .banner {
   padding: 4rem;
+  
 }
 
 /** In mobile view, reduce the padding */

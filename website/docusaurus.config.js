@@ -18,9 +18,9 @@ const config = {
   url: 'https://kitiplex.vercel.app/',
   baseUrl: '/',
 
-  organizationName: 'kitiplex', // Usually your GitHub org/user name.
-  projectName: 'kitiplex-dev', // Usually your repo name.
-
+  organizationName: 'kitiplex',
+  projectName: 'kitiplex-dev',
+  
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
 
@@ -41,17 +41,12 @@ const config = {
       ({
         docs: {
           path: 'docs',
-
-
           breadcrumbs: true,
-
           sidebarPath: require.resolve('./sidebars.js'),
-
           showLastUpdateTime: true,
           disableVersioning: false,
           editLocalizedFiles: false,
           editCurrentVersion: false,
-
           routeBasePath: 'docs',
 
           include: ['**/*.md', '**/*.mdx'],
@@ -80,7 +75,19 @@ const config = {
 
         },
         blog: {
+          path: 'blog',
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'Blog Posts',
           showReadingTime: true,
+          routeBasePath: 'blog',
+          include: ['**/*.{md,mdx}'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          
         },
 
         sitemap: {
@@ -208,7 +215,7 @@ const config = {
 
         logo: {
           alt: 'Kitiplex Logo',
-          src: 'img/header_blue.png',
+          src: 'img/header-blue.svg',
           href: '/',
           width: 200,
           // height: 100,
