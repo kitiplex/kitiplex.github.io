@@ -7,51 +7,50 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-// Import your new background image
-// import backgroundImage from '/img/banner_devops.png';
+import backgroundImage from '/img/banner_devops.png';
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+  const {siteConfig} = useDocusaurusContext();
   return (
-    <header
-      className={clsx('hero hero--primary', styles.heroBanner)}
-
-      // style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
-      {/* <img class="hero--image" src="/img/kitiplex_banner.png" alt="hero home"></img> */}
+    <header className={clsx('hero hero--light', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+      <img
+          className={clsx(styles.heroBannerLogo, 'margin-vert--sm')}
+          src={'/img/kitiplex-dark.png'}
+          alt="kitiplex-dark"
+        />
+        
+
+        <Heading as="h1" className="hero__title hero--brand">
+          {/* {siteConfig.title} */}
+          Code · Inonnovate · Inspire
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        
+        <p className="hero__subtitle">
+          {/* {siteConfig.tagline} */}
+          
+          </p>
+          
+        <div className={(styles.buttons, 'margin-vert--lg')}>
           <Link
             className="button button--secondary button--lg"
-            to="docs/dev"
-          >
+            to="docs/dev">
             Learn more
           </Link>
         </div>
-        <br />
-        {/* <Link
-          className="button button--secondary button--lg"
-          to="/team" 
-        >
-          📦Team Kitimi📦
-        </Link> */}
-        
+      
+
       </div>
     </header>
   );
 }
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title=""
-      description="Description will go into a meta tag in <head />"
-    >
+      title={""}
+      description="Kitiplex website. <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

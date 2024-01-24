@@ -5,37 +5,46 @@
 /* index.module.css */
 
 .heroBanner {
-  text-align: start;
+  text-align: center;
   position: relative;
   overflow: hidden;
   display: flex;
   /* background-color: #166a94;  */
   /* background-color: #0671a7;  */
   /* background-color: #1da1f2; */
-  /* background-size: cover; */
-  background-position: center;
-  height: 400px;
+  background-size: cover;
+  /* background-position: center; */
+  height: 420px;
+  
+}
+.banner {
+  padding: 5rem;
   
 }
 
+.heroBannerLogo {
+  max-width: 175px;
+  max-height: 170px;
+
+}
 
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
     
-
   }
 }
 
 .buttons {
   display: block;
   justify-content: center;
-  position: relative;
-  margin-top: 20px; /* Add spacing between title/subtitle and buttons */
+  
+  margin-top: 12px; /* Add spacing between title/subtitle and buttons */
 }
 
-/* Add more button styles as needed */
-/* .buttons .button {
-  margin: 0 10px;
 
+
+/* .heroButtons {
+  display: flex;
+  justify-content: center
 } */

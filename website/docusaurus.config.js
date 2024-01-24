@@ -152,7 +152,7 @@ const config = {
         style: 'dark',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/kitim_bb.png',
+          src: 'img/kitim-bb.svg',
           // width: 180,
           // height: 32,
           className: 'custom-navbar-logo-class',
