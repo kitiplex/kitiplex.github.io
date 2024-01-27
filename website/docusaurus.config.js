@@ -186,7 +186,7 @@ const config = {
               {
                 label: 'Overview',
                 type: 'doc',
-                docId: 'dev-overview'
+                docId: 'intro'
               },
 
               {
@@ -201,7 +201,7 @@ const config = {
           {
             label: 'Guidelines',
             position: 'right',
-            docId: 'introduction',
+            docId: 'policies',
             type: 'doc'
           },
 
