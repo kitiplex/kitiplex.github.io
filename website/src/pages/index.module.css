@@ -14,32 +14,62 @@
   /* background-color: #1da1f2; */
   /* background-size: cover; */
   /* background-position: center; */
-  height: 350;
+  /* height: 350; */
   
 }
 .banner {
   padding: 5rem;
-  
+}
+
+
+@keyframes kit-in-the-box {
+  0% {
+    opacity: 0;
+    transform: scale(0.1) rotate(45deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .heroBannerLogo {
   max-width: 150px;
   max-height: 150px;
+  /* margin-top: 20px; */
+  padding: 0 20px 20px;
+  animation-duration: 2s;
+  animation-name: kit-in-the-box;
+  /* float: right; */
 
 }
 
-@media screen and (max-width: 966px) {
+@media screen and (max-width: 768px) {
   .heroBanner {
-    padding: 2rem;
-    
+    /* padding: 2rem; */
+    padding-left: 20px;
+    padding-right: 20px;
+
   }
+
 }
+
 
 .buttons {
   display: block;
   justify-content: center;
-  
   margin-top: 12px; /* Add spacing between title/subtitle and buttons */
+  color: var(--ifm-color-primary-dark);
 }
 
 

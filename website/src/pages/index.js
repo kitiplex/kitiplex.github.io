@@ -21,7 +21,7 @@ function HomepageHeader() {
 
         <Heading as="h5" className="hero__title">
           {/* {siteConfig.title} */}
-          Code Inonnovate Inspire
+          Code Innovate Inspire
         </Heading>
         
         <p className="hero__subtitle">
@@ -31,7 +31,7 @@ function HomepageHeader() {
           
         <div className={(styles.buttons, 'margin-vert--lg')}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary button--lg"
             to="docs/dev">
             Learn more
           </Link>
