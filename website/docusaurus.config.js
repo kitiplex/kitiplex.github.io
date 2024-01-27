@@ -20,7 +20,7 @@ const config = {
 
   organizationName: 'kitiplex',
   projectName: 'kitiplex-dev',
-  
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
 
@@ -43,7 +43,7 @@ const config = {
           path: 'docs',
           breadcrumbs: true,
           sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateTime: true,          
+          showLastUpdateTime: true,
           disableVersioning: false,
           editLocalizedFiles: false,
           editCurrentVersion: false,
@@ -57,9 +57,9 @@ const config = {
             '**/__tests__/**',
           ],
 
-          remarkPlugins:  [require('@docusaurus/remark-plugin-npm2yarn'),remarkMath],
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }], remarkMath],
           rehypePlugins: [rehypeKatex],
-          
+
         },
 
         pages: {
@@ -72,7 +72,7 @@ const config = {
             '**/*.test.{js,jsx,ts,tsx}',
             '**/__tests__/**',
           ],
-          remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn'),remarkMath],
+          remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn'), remarkMath],
 
         },
         blog: {
@@ -91,10 +91,10 @@ const config = {
           remarkPlugins: [
             [
               require('@docusaurus/remark-plugin-npm2yarn'),
-              {converters: ['pnpm']},
+              { converters: ['pnpm'] },
             ],
           ],
-          
+
         },
 
         sitemap: {
@@ -125,9 +125,13 @@ const config = {
     },
   ],
 
-
-  plugins: ['@docusaurus/theme-live-codeblock', 'docusaurus-plugin-sass'],
-
+  plugins: [
+    '@docusaurus/theme-live-codeblock',
+    'docusaurus-plugin-sass',
+    '@docusaurus/remark-plugin-npm2yarn',
+    '@docusaurus/theme-mermaid'
+  ],
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -151,6 +155,12 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
+
+      markdown: {
+        mermaid: true,
+        theme: {light: 'neutral', dark: 'forest'},
+      },
+    
 
       image: 'img/kitiplex_banner.png',
 

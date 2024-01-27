@@ -1,10 +1,12 @@
 ---
-title: Installing Python
+title: Installing Python ⚡️ 
 sidebar_label: Python on Windows
 ---
 
 :::info[Py on NT]
+
 The installation requires downloading the official Python .exe installer and running it on your system. The sections below will explain several options and details during the installation process.
+
 :::
 
 ### Step 1: Select Python Version
@@ -12,7 +14,7 @@ Deciding on a version depends on what you want to do in Python. The two major ve
 
 **We recommend Python 3**, as Python 2 reached its end of life in 2020. Download Python 2 only if you work with legacy scripts and older projects. Also, choose a stable release over the newest since the newest release may have bugs and issues.
 
-### Step 2: Download Python Executable Installer
+### Step 2: Download Python
 Start by downloading the Python executable installer for Windows:
 
 1. Open a web browser and navigate to the [Downloads for Windows section](https://www.python.org/downloads/windows/) of the official Python website.

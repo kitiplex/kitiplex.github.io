@@ -82,6 +82,7 @@ const sidebars = {
       },
       items:[
         'development/nerds/calculus',
+        'development/nerds/mermaid-config'
       ]
     },
 
@@ -91,18 +92,29 @@ const sidebars = {
     'projects',
     {
       type: 'category',
-      label: 'Examples',
+      label: 'Basic',
       collapsed: false,
       link: {
         type: 'generated-index',
       },
       items: [
-        'projects/this-website',
-        'projects/django-mono-repo',
-        'projects/ginabot-ai',
-        'projects/py-mono-repo',
+        'projects/basic/this-website',
+        'projects/basic/django-mono-repo',
+        'projects/basic/ginabot-ai',
+        'projects/basic/py-mono-repo',
       ]
-    }
+    },
+    {
+      type:'category',
+      label: 'Advanced',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+      },
+      items:[
+        'projects/advanced/advanced-proj'
+      ]
+    },
   ],
 
 
