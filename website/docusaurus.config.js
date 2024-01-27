@@ -33,6 +33,10 @@ const config = {
     locales: ['en'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+
 
   presets: [
     [
@@ -129,9 +133,9 @@ const config = {
     '@docusaurus/theme-live-codeblock',
     'docusaurus-plugin-sass',
     '@docusaurus/remark-plugin-npm2yarn',
-    '@docusaurus/theme-mermaid'
+    '@docusaurus/theme-mermaid',
   ],
-  
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -156,11 +160,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
 
-      markdown: {
-        mermaid: true,
-        theme: {light: 'neutral', dark: 'forest'},
-      },
-    
+
 
       image: 'img/kitiplex_banner.png',
 
