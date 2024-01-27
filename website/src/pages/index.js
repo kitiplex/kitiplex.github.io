@@ -32,7 +32,7 @@ function HomepageHeader() {
         <div className={(styles.buttons, 'margin-vert--lg')}>
           <Link
             className="button button--primary button--lg"
-            to="docs/dev">
+            to="docs/intro">
             Learn more
           </Link>
         </div>

@@ -4,9 +4,35 @@ description: Building this website
 sidebar_label: This website
 ---
 
-## Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator...
+
+:::tip
+
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+
+:::
+
+
+<details>
+  <summary>Creating new site</summary>
+
+Generate a new Docusaurus site using the **classic template**.
+
+The classic template will automatically be added to your project after you run the command:
+
+```bash npm2yarn
+npm init docusaurus@latest my-website classic
+```
+
+```sh
+cd my-website
+```
+
+```bash npm2yarn
+npm run start
+```
+
+</details>
 
 ### Prerequisites
 
@@ -45,4 +71,12 @@ npm run serve
 npm run clear
 ```
 
+### Extended commands
 
+You can run the dev server on 0.0.0.0 to make it listen on the local IP / local router.
+
+```bash npm2yarn
+npm run start --host 0.0.0.0
+```
+
+Know more about [Docusaurus CLI](https://docusaurus.io/docs/cli).

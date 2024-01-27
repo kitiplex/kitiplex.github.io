@@ -1,0 +1,32 @@
+---
+title: Advanced test
+sidebar_label: Advanced test
+
+---
+
+:::warning[Coming soon]
+
+
+:::
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+
+
+
+```js title="docusaurus.config.js"
+export default {
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          // highlight-next-line
+          sidebarPath: './sidebars.js',
+        },
+      },
+    ],
+  ],
+};
+```
