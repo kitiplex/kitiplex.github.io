@@ -43,7 +43,7 @@ const config = {
           path: 'docs',
           breadcrumbs: true,
           sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateTime: true,
+          showLastUpdateTime: true,          
           disableVersioning: false,
           editLocalizedFiles: false,
           editCurrentVersion: false,
@@ -57,9 +57,9 @@ const config = {
             '**/__tests__/**',
           ],
 
-          remarkPlugins: [remarkMath],
+          remarkPlugins:  [require('@docusaurus/remark-plugin-npm2yarn'),remarkMath],
           rehypePlugins: [rehypeKatex],
-
+          
         },
 
         pages: {
@@ -72,6 +72,7 @@ const config = {
             '**/*.test.{js,jsx,ts,tsx}',
             '**/__tests__/**',
           ],
+          remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn'),remarkMath],
 
         },
         blog: {
@@ -86,6 +87,12 @@ const config = {
             '**/_*/**',
             '**/*.test.{js,jsx,ts,tsx}',
             '**/__tests__/**',
+          ],
+          remarkPlugins: [
+            [
+              require('@docusaurus/remark-plugin-npm2yarn'),
+              {converters: ['pnpm']},
+            ],
           ],
           
         },

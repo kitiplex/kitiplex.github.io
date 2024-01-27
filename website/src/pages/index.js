@@ -16,10 +16,8 @@ function HomepageHeader() {
       <div className="container">
       <img
           className={clsx(styles.heroBannerLogo, 'margin-vert--sm')}
-          src={'/img/kitiplex-dark.png'}
-          alt="kitiplex-dark"
+          src={require('@site/static/img/kitiplex-dark.png').default} alt="kitiplex-dark"
         />
-        
 
         <Heading as="h5" className="hero__title">
           {/* {siteConfig.title} */}

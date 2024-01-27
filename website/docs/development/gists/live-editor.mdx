@@ -4,9 +4,7 @@ sidebar_label: Live editor
 slug: /gists/live-editor
 ---
 
-
 ### Let's code
-
 
 ```jsx live
 function Clock(props) {
@@ -26,10 +24,15 @@ function Clock(props) {
 
   return (
     <div>
-    <h4>Date: {date.toLocaleDateString()}, {date.toLocaleDateString(undefined, { weekday: 'long' })}</h4>
-    <h4>Time: {date.toLocaleTimeString([], { hour12: false })} | {date.toLocaleTimeString([], {})}</h4>
+      <h4>
+        Date: {date.toLocaleDateString()},{" "}
+        {date.toLocaleDateString(undefined, { weekday: "long" })}
+      </h4>
+      <h4>
+        Time: {date.toLocaleTimeString([], { hour12: false })} |{" "}
+        {date.toLocaleTimeString([], {})}
+      </h4>
     </div>
   );
 }
 ```
-

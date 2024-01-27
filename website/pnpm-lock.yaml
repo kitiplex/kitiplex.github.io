@@ -8,12 +8,18 @@ dependencies:
   '@docusaurus/core':
     specifier: ^3.1.0
     version: 3.1.0(@docusaurus/types@3.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+  '@docusaurus/plugin-content-pages':
+    specifier: ^3.1.0
+    version: 3.1.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
   '@docusaurus/plugin-sitemap':
     specifier: ^3.1.0
     version: 3.1.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
   '@docusaurus/preset-classic':
     specifier: ^3.1.0
     version: 3.1.0(@algolia/client-search@4.22.1)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)(search-insights@2.13.0)(typescript@5.3.3)
+  '@docusaurus/remark-plugin-npm2yarn':
+    specifier: ^3.1.0
+    version: 3.1.0
   '@docusaurus/theme-live-codeblock':
     specifier: ^3.1.0
     version: 3.1.0(@docusaurus/types@3.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
@@ -2101,6 +2107,19 @@ packages:
       '@types/react': 18.2.48
       prop-types: 15.8.1
       react: 18.2.0
+
+  /@docusaurus/remark-plugin-npm2yarn@3.1.0:
+    resolution: {integrity: sha512-+dUortlwU8kEmEyrI/b5e1eu6BPIjaS4T/iU54pxVGo4thwj4luB8eqXDLgz2OjBqfUsEFf/Of3dgRueph7mXQ==}
+    engines: {node: '>=18.0'}
+    dependencies:
+      mdast-util-mdx: 3.0.0
+      npm-to-yarn: 2.1.0
+      tslib: 2.6.2
+      unified: 11.0.4
+      unist-util-visit: 5.0.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /@docusaurus/theme-classic@3.1.0(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3):
     resolution: {integrity: sha512-/+jMl2Z9O8QQxves5AtHdt91gWsEZFgOV3La/6eyKEd7QLqQUtM5fxEJ40rq9NKYjqCd1HzZ9egIMeJoWwillw==}
@@ -6862,6 +6881,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       path-key: 3.1.1
+    dev: false
+
+  /npm-to-yarn@2.1.0:
+    resolution: {integrity: sha512-2C1IgJLdJngq1bSER7K7CGFszRr9s2rijEwvENPEgI0eK9xlD3tNwDc0UJnRj7FIT2aydWm72jB88uVswAhXHA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
   /nprogress@0.2.0:

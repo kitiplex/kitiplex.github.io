@@ -6,14 +6,18 @@ slug: /gists/celestial-dist
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import constants from '@site/src/utils/TabsConstants';
 
 :::info
-In this example, we'll demonstrate the approximate distances of celestial bodies in light minutes.
+
+In this example, we'll demonstrate the **approximate distances** of celestial bodies in light minutes.
+
 :::
 
 :::tip[Note]
+
 While the entire code is written in Python, the same principles can be applied to other programming languages as well.
+
 :::
 
-## Approximate distance from Earth.
+### From Earth.
 
 
 ```py
@@ -51,7 +55,10 @@ if __name__ == "__main__":
     main()
 ```
 
-Result:
+<details>
+<summary>Show output</summary>
+
+
 
 ```md
 Approximate distance from Earth (in Light Minutes):
@@ -70,7 +77,12 @@ Kuiper Belt: 407.5 light minutes
 Oort Cloud: 415837.76 light minutes
 ```
 
-## Approximate distance from the Sun.
+</details>
+
+
+
+
+### From the Sun.
 
 ```py
 LIGHT_SPEED = 299792
@@ -97,8 +109,10 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+<details>
+<summary>Show out</summary>
 
-Result:
+
 
 ```md
 Approximate distance the Sun (in Light Minutes):
@@ -113,7 +127,14 @@ Uranus: 159.61 light minutes
 Neptune: 250.01 light minutes
 ```
 
-:::tip[Conclusion]
+</details>
+
+
+
+
+:::tip[Fun fact]
+
 Great! Now that we've learned how to code basic calculations, we've also discovered that we are actually looking back in time.
+
 :::
 
