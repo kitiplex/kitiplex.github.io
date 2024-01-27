@@ -33,8 +33,8 @@
     "swizzle": "^1.1.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.1.0",
-    "@docusaurus/types": "3.1.0"
+    "@docusaurus/module-type-aliases": "3.1.1",
+    "@docusaurus/types": "3.1.1"
   },
   "browserslist": {
     "production": [
