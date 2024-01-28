@@ -14,7 +14,7 @@ import rehypeKatex from 'rehype-katex';
 const config = {
   title: 'kitiplex',
   tagline: 'Projects and demos from Kitimi Platforms',
-  favicon: 'img/favicon.ico',
+  favicon: 'icons/favicon.ico',
   url: 'https://kitiplex.vercel.app/',
   baseUrl: '/',
 
@@ -160,8 +160,6 @@ const config = {
         respectPrefersColorScheme: false,
       },
 
-
-
       image: 'img/kitiplex_banner.png',
 
       navbar: {
@@ -169,7 +167,7 @@ const config = {
         style: 'dark',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/kitim-bb.svg',
+          src: 'img/main/logo-blue.svg',
           // width: 180,
           // height: 32,
           className: 'custom-navbar-logo-class',
@@ -185,14 +183,14 @@ const config = {
             items: [
               {
                 label: 'Overview',
-                type: 'doc',
-                docId: 'intro'
+                sidebarId: 'development',
+                type: 'docSidebar'
               },
 
               {
                 label: 'Projects',
-                type: 'doc',
-                docId: 'projects'
+                sidebarId: 'projects',
+                type: 'docSidebar'
               },
 
             ]
@@ -201,8 +199,8 @@ const config = {
           {
             label: 'Guidelines',
             position: 'right',
-            docId: 'policies',
-            type: 'doc'
+            sidebarId: 'policies',
+            type: 'docSidebar'
           },
 
           {
@@ -229,10 +227,9 @@ const config = {
 
       footer: {
         style: 'dark',
-
         logo: {
           alt: 'Kitiplex Logo',
-          src: 'img/header-blue.svg',
+          src: 'img/main/kitimi-blue.svg',
           href: '/',
           width: 200,
           // height: 100,
