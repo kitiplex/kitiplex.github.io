@@ -1,4 +1,3 @@
-import logo from '/img/react_logo.svg'
 import React from 'react';
 import Layout from '@theme/Layout';
 

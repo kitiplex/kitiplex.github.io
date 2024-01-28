@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/react_logo.svg').default,
+    Svg: require('@site/static/img/vendor/react_logo.svg').default,
     description: (
       <>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Developer program',
-    Svg: require('@site/static/img/microsoft_logo.svg').default,
+    Svg: require('@site/static/img/vendor/microsoft_logo.svg').default,
     description: (
       <>
         Lorem ipsum dolor sit amet, <code>consectetur adipiscing elit</code>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -24,7 +24,7 @@ const FeatureList = [
   },
   {
     title: 'Powered by React',
-    Svg: require('@site/static/img/logo.svg').default,
+    Svg: require('@site/static/img/vendor/docusaurus_logo.svg').default,
     description: (
       <>
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
