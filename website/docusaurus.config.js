@@ -45,6 +45,11 @@ const config = {
       ({
         docs: {
           path: 'docs',
+
+          // editUrl: 'https://github.com/kitiplex/kitiplex-dev/edit/main/website/',
+          
+          showLastUpdateAuthor: true,
+
           breadcrumbs: true,
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
@@ -76,6 +81,7 @@ const config = {
             '**/*.test.{js,jsx,ts,tsx}',
             '**/__tests__/**',
           ],
+          mdxPageComponent: '@theme/MDXPage',
           remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn'), remarkMath],
 
         },
