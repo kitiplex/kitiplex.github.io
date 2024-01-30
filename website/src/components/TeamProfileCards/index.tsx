@@ -102,6 +102,14 @@ export function ActiveTeamRow(): JSX.Element {
         </Translate>
       </TeamProfileCardCol>
       <TeamProfileCardCol
+        name="PriMx"
+        githubUrl="https://github.com/PriMaxima"
+        twitterUrl="https://twitter.com/">
+        <Translate id="team.profile.PriMx.body">
+        Teammate is about to update profile. Be right back!
+        </Translate>
+      </TeamProfileCardCol>
+      <TeamProfileCardCol
         name="Gina"
         githubUrl="https://github.com/botgina"
         twitterUrl="https://twitter.com/">
