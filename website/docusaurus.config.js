@@ -194,7 +194,7 @@ const config = {
               },
 
               {
-                label: 'Projects',
+                label: 'Project Docs',
                 sidebarId: 'projects',
                 type: 'docSidebar'
               },

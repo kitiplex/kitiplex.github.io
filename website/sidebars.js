@@ -72,12 +72,13 @@ const sidebars = {
 
     {
       type: 'category',
-      label: 'Basic',
+      label: 'Getting started',
       collapsed: false,
       link: {
         type: 'generated-index',
       },
       items: [
+        'projects/basic/py-genesis',
         'projects/basic/this-website',
         'projects/basic/django-mono-repo',
         'projects/basic/ginabot-ai',
