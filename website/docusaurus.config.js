@@ -155,7 +155,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: false,
+          autoCollapseCategories: true,
         },
 
       },
@@ -171,6 +171,7 @@ const config = {
       navbar: {
         title: 'Kitiplex',
         style: 'dark',
+        hideOnScroll: true,
         logo: {
           alt: 'My Site Logo',
           src: 'img/main/logo-blue.svg',
@@ -178,6 +179,7 @@ const config = {
           // height: 32,
           className: 'custom-navbar-logo-class',
           target: '_self',
+          
         },
 
         items: [
@@ -188,10 +190,17 @@ const config = {
             type: 'dropdown',
             items: [
               {
-                label: 'Overview',
+                label: 'Introduction',
+                sidebarId: 'demo',
+                type: 'docSidebar'
+              },
+
+              {
+                label: 'Guides',
                 sidebarId: 'development',
                 type: 'docSidebar'
               },
+
 
               {
                 label: 'Project Docs',
