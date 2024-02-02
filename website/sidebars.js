@@ -36,7 +36,7 @@ const sidebars = {
 
     {
       type: 'category',
-      label: 'Project Genesis',
+      label: 'Project Guides',
       collapsed: true,
       link: {
         type: 'generated-index',

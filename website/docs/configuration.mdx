@@ -1,18 +1,142 @@
 ---
-title: Configuration
-sidebar_label: Configuration
+title: Configs
+sidebar_label: Configs
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import Admonition from "@theme/Admonition";
 
 
-:::tip[a little refresher]
+## Virtual environments ⚡️
+
+:::tip[What's this]
 
 Here are some configuration that comes in handy
 
 :::
 
-### Python
 
-### Flask
 
-### Django
+:::info[.venv]
+
+A virtual environment in Python is crucial as it helps keep projects organized by creating separate spaces for development. This ensures a smooth workflow, avoids conflicts with different parts of the project, and makes version control easier, making Python programming projects more organized and manageable.
+
+:::
+
+ To display a list of all installed packages and their versions within the current virtual environment, run the following:
+
+<Tabs groupId="Windows">
+  <TabItem value="Windows" label="Windows">
+
+```pwsh
+pip freeze
+```
+
+  </TabItem>
+  <TabItem value="Linux" label="Linux">
+  
+```bash
+$ pip freeze
+```
+  </TabItem>
+</Tabs>
+
+
+This information is often utilized for documenting dependencies, enabling others to recreate the same development environment with identical package versions.
+
+To export the list in ``.txt`` in your project directory:
+
+<Tabs groupId="Windows">
+  <TabItem value="Windows" label="Windows">
+
+```pwsh
+pip freeze > requirements.txt
+```
+
+  </TabItem>
+  <TabItem value="Linux" label="Linux">
+  
+```bash
+$ pip freeze > requirements.txt
+```
+  </TabItem>
+</Tabs>
+
+
+### Create
+
+<Tabs groupId="Windows">
+  <TabItem value="Windows" label="Windows">
+
+```sh
+py -m venv .venv
+```
+
+  </TabItem>
+  <TabItem value="Linux" label="Linux">
+  
+```bash
+$ python3 -m venv .venv
+```
+  </TabItem>
+</Tabs>
+
+
+### Activate
+
+<Tabs groupId="Windows">
+  <TabItem value="Windows" label="Windows">
+
+```sh
+.\venv\scripts\activate
+```
+
+  </TabItem>
+  <TabItem value="Linux" label="Linux">
+  
+```bash
+$ source .venv/bin/activate
+```
+  </TabItem>
+</Tabs>
+
+
+### Update / Upgrade
+
+Updating your enviroment libraries to ensure smooth development is considered best practices. Once a ``requirements.txt`` is present in your project dir, run the following:
+
+<Tabs groupId="Windows">
+  <TabItem value="Windows" label="Windows">
+
+```sh
+py -m pip install --upgrade -r requirements.txt
+```
+
+  </TabItem>
+  <TabItem value="Linux" label="Linux">
+  
+```bash
+$ python3 -m pip install --upgrade -r requirements.txt
+```
+  </TabItem>
+</Tabs>
+
+To update ``pip`` it itself, run the following:
+
+<Tabs groupId="Windows">
+  <TabItem value="Windows" label="Windows">
+
+```sh
+py -m pip install --upgrade pip
+```
+
+  </TabItem>
+  <TabItem value="Linux" label="Linux">
+  
+```bash
+$ python3 -m pip install --upgrade pip
+```
+  </TabItem>
+</Tabs>
