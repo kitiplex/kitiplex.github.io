@@ -166,7 +166,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
 
-      image: 'img/kitiplex_banner.png',
+      image: 'img/social-banner-01.png',
 
       navbar: {
         title: 'Kitiplex',
@@ -244,7 +244,7 @@ const config = {
         style: 'dark',
         logo: {
           alt: 'Kitiplex Logo',
-          src: 'img/main/kitimi-blue.svg',
+          src: 'img/main/kitimi-svg-banner-2.svg',
           href: '/',
           width: 200,
           // height: 100,

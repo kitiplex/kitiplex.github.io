@@ -28,6 +28,7 @@ const sidebars = {
         type: 'generated-index',
       },
       items: [
+
         'documentation',
         'configuration',
         
@@ -36,7 +37,7 @@ const sidebars = {
 
     {
       type: 'category',
-      label: 'Project Guides',
+      label: 'Demos',
       collapsed: true,
       link: {
         type: 'generated-index',
@@ -47,6 +48,7 @@ const sidebars = {
         'demo/flask-genesis',
         'demo/dj-mono-repo',
         'demo/ginabot-ai',
+        'demo/this-website',
       ]
     }
   ],
@@ -71,6 +73,7 @@ const sidebars = {
       label: 'Gists',
       collapsed: true,
       link: {
+        
         type: 'generated-index',
 
       },
@@ -112,7 +115,6 @@ const sidebars = {
         type: 'generated-index',
       },
       items: [
-        'projects/basic/this-website',
         'projects/basic/django-mono-repo',
         'projects/basic/py-mono-repo',
       ]
