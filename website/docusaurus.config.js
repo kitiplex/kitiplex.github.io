@@ -155,7 +155,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: false,
+          autoCollapseCategories: true,
         },
 
       },
@@ -166,11 +166,12 @@ const config = {
         respectPrefersColorScheme: false,
       },
 
-      image: 'img/kitiplex_banner.png',
+      image: 'img/social-banner-01a.png',
 
       navbar: {
         title: 'Kitiplex',
         style: 'dark',
+        hideOnScroll: true,
         logo: {
           alt: 'My Site Logo',
           src: 'img/main/logo-blue.svg',
@@ -178,6 +179,7 @@ const config = {
           // height: 32,
           className: 'custom-navbar-logo-class',
           target: '_self',
+          
         },
 
         items: [
@@ -188,10 +190,17 @@ const config = {
             type: 'dropdown',
             items: [
               {
-                label: 'Overview',
+                label: 'Introduction',
+                sidebarId: 'demo',
+                type: 'docSidebar'
+              },
+
+              {
+                label: 'Guides',
                 sidebarId: 'development',
                 type: 'docSidebar'
               },
+
 
               {
                 label: 'Project Docs',
@@ -235,7 +244,7 @@ const config = {
         style: 'dark',
         logo: {
           alt: 'Kitiplex Logo',
-          src: 'img/main/kitimi-blue.svg',
+          src: 'img/main/kitimi-svg-banner-2.svg',
           href: '/',
           width: 200,
           // height: 100,

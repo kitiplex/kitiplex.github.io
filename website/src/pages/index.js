@@ -21,7 +21,7 @@ function HomepageHeader() {
 
         <Heading as="h5" className="hero__title">
           {/* {siteConfig.title} */}
-          Code Innovate Inspire
+          Build Innovate Inspire
         </Heading>
         
         <p className="hero__subtitle">
