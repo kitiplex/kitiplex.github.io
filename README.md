@@ -3,7 +3,7 @@
 This repository contains the website configuration and documentation powering the [Kitiplex website](https://kitiplex.vercel.app/). 
 
 
-Read the [docs](http://kitiplex.vercel.app/docs/projects/basic/this-website/) to learn more.
+Read the [docs](https://kitiplex.vercel.app/docs/this-website/) to learn more.
 
 <div align="center">
   <div>
