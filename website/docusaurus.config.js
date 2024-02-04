@@ -166,7 +166,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
 
-      image: 'img/social-banner-01a.png',
+      image: 'img/main/social-banner-01a.png',
 
       navbar: {
         title: 'Kitiplex',
