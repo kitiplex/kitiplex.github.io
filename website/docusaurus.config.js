@@ -159,7 +159,7 @@ const config = {
 
       algolia: {
         appId: 'C8HUEW9O04',
-        apiKey: '3dcd23a69a487d41354e2662bc354ef8',
+        apiKey: '405252b256717768fac679da5dd93c8d',
         indexName: 'kitiplex',
       },
 
