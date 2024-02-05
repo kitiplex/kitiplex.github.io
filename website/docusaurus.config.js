@@ -8,6 +8,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+const path = require('path')
 
 
 /** @type {import('@docusaurus/types').Config} */
@@ -140,6 +141,16 @@ const config = {
     'docusaurus-plugin-sass',
     '@docusaurus/remark-plugin-npm2yarn',
     '@docusaurus/theme-mermaid',
+    '@docusaurus/plugin-client-redirects',
+    [
+      "content-docs",
+      ({
+        id: "community",
+        path: "community",
+        routeBasePath: "community",
+        sidebarPath: path.join(__dirname, "./sidebarsCommunity.json",)
+      }),
+    ]
   ],
 
   themeConfig:
@@ -185,12 +196,12 @@ const config = {
         items: [
 
           {
-            label: 'Development',
+            label: "Docs",
             position: 'right',
             type: 'dropdown',
             items: [
               {
-                label: 'Introduction',
+                label: 'Core',
                 sidebarId: 'demo',
                 type: 'docSidebar'
               },
@@ -203,19 +214,12 @@ const config = {
 
 
               {
-                label: 'Project Docs',
+                label: 'Project CTD',
                 sidebarId: 'projects',
                 type: 'docSidebar'
               },
 
             ]
-          },
-
-          {
-            label: 'Guidelines',
-            position: 'right',
-            sidebarId: 'policies',
-            type: 'docSidebar'
           },
 
           {
@@ -225,10 +229,16 @@ const config = {
           },
 
           {
-            label: 'Team',
-            to: '/team',
-            position: 'right'
+            to: "/community/resources",
+            label: "Community",
+            position: 'right',           
           },
+
+          // {
+          //   label: 'Team',
+          //   to: '/community/team',
+          //   position: 'right'
+          // },
 
           {
             href: 'https://github.com/kitiplex/',
