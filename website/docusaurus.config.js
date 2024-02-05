@@ -223,22 +223,16 @@ const config = {
           },
 
           {
-            label: 'Blog',
-            to: '/blog',
-            position: 'right'
-          },
-
-          {
             to: "/community/resources",
             label: "Community",
             position: 'right',           
           },
 
-          // {
-          //   label: 'Team',
-          //   to: '/community/team',
-          //   position: 'right'
-          // },
+          {
+            label: 'Blog',
+            to: '/blog',
+            position: 'right'
+          },
 
           {
             href: 'https://github.com/kitiplex/',
