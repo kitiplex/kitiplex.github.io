@@ -133,24 +133,26 @@ const sidebars = {
       ]
     },
   ],
-  policies: [
+
+  community: [
     
+    'policies',
+
     {
       type: 'category',
-      label: 'Policies',
+      label: 'Guidelines',
       collapsed: false,
       link: {
         type: 'generated-index',
-        description: "Engineers, developers, members, authors and future contributors, as we aim to create a welcoming, peaceful, friendly and inclusive community, are encouraged to foster collaboration, embrace diversity, and uphold a culture of mutual respect, ensuring that every individual's voice is valued and heard in our collective pursuit of innovation and shared success.",
       },
       items: [
-        'guidelines/code-of-conduct',
-        'guidelines/security-policy'
+        'community/support',
+        'community/code-of-conduct',
+        'community/security-policy'
       ]
     }
   ],
 
-    
   
 
 };

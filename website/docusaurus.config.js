@@ -140,6 +140,7 @@ const config = {
     'docusaurus-plugin-sass',
     '@docusaurus/remark-plugin-npm2yarn',
     '@docusaurus/theme-mermaid',
+    '@docusaurus/plugin-client-redirects',
   ],
 
   themeConfig:
@@ -190,7 +191,7 @@ const config = {
             type: 'dropdown',
             items: [
               {
-                label: 'Introduction',
+                label: 'Core',
                 sidebarId: 'demo',
                 type: 'docSidebar'
               },
@@ -203,7 +204,7 @@ const config = {
 
 
               {
-                label: 'Project Docs',
+                label: 'Project CTD',
                 sidebarId: 'projects',
                 type: 'docSidebar'
               },
@@ -212,11 +213,12 @@ const config = {
           },
 
           {
-            label: 'Guidelines',
+            label: 'Community',
             position: 'right',
-            sidebarId: 'policies',
+            sidebarId: 'community',
             type: 'docSidebar'
           },
+
 
           {
             label: 'Blog',
