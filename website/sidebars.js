@@ -134,24 +134,24 @@ const sidebars = {
     },
   ],
 
-  community: [
+  // community: [
     
-    'policies',
+  //   'policies',
 
-    {
-      type: 'category',
-      label: 'Guidelines',
-      collapsed: false,
-      link: {
-        type: 'generated-index',
-      },
-      items: [
-        'community/support',
-        'community/code-of-conduct',
-        'community/security-policy'
-      ]
-    }
-  ],
+  //   {
+  //     type: 'category',
+  //     label: 'Guidelines',
+  //     collapsed: false,
+  //     link: {
+  //       type: 'generated-index',
+  //     },
+  //     items: [
+  //       'community/support',
+  //       'community/code-of-conduct',
+  //       'community/security-policy'
+  //     ]
+  //   }
+  // ],
 
   
 
