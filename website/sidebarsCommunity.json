@@ -1,8 +1,26 @@
 {
     "community": [
-        "resources",
-        "team",
-        "code-of-conduct",
-        "security-policy"
+        {
+            "type": "category",
+            "label": "Community",
+            "collapsed": false,
+            "collapsible": true,
+            "items": [
+                "resources",
+                "team",
+                "code-of-conduct",
+                "security-policy"
+            ]
+        },
+        {
+            "type": "category",
+            "label": "Support",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+                "support/user-experience",
+                "support/terms-of-service"
+            ]
+        }
     ]
 }

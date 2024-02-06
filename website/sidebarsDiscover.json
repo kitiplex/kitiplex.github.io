@@ -1,0 +1,14 @@
+{
+    "discover": [
+        {
+            "type": "category",
+            "label": "Discover",
+            "collapsed": false,
+            "collapsible": true,
+            "items": [
+                "case-studies",
+                "future-developments"
+            ]
+        }
+    ]
+}

@@ -142,13 +142,47 @@ const config = {
     '@docusaurus/remark-plugin-npm2yarn',
     '@docusaurus/theme-mermaid',
     '@docusaurus/plugin-client-redirects',
+    
     [
       "content-docs",
       ({
         id: "community",
         path: "community",
         routeBasePath: "community",
-        sidebarPath: path.join(__dirname, "./sidebarsCommunity.json",)
+        // sidebarPath: path.join(__dirname, "./sidebarsCommunity.json",)
+        sidebarPath: require.resolve('./sidebarsCommunity.json'),
+        include: ['**/*.md', '**/*.mdx'],
+        exclude: [
+          '**/_*.{js,jsx,ts,tsx,md,mdx}',
+          '**/_*/**',
+          '**/*.test.{js,jsx,ts,tsx}',
+          '**/__tests__/**',
+        ],
+
+        remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }], remarkMath],
+        rehypePlugins: [rehypeKatex],
+      }),
+
+
+    ],
+    [
+      "content-docs",
+
+      ({
+        id: "discover",
+        path: "discover",
+        routeBasePath: "discover",
+        sidebarPath: require.resolve('./sidebarsDiscover.json'),
+        include: ['**/*.md', '**/*.mdx'],
+        exclude: [
+          '**/_*.{js,jsx,ts,tsx,md,mdx}',
+          '**/_*/**',
+          '**/*.test.{js,jsx,ts,tsx}',
+          '**/__tests__/**',
+        ],
+
+        remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }], remarkMath],
+        rehypePlugins: [rehypeKatex],
       }),
     ]
   ],
@@ -196,7 +230,7 @@ const config = {
         items: [
 
           {
-            label: "Docs",
+            label: "Development",
             position: 'right',
             type: 'dropdown',
             items: [
@@ -222,11 +256,31 @@ const config = {
             ]
           },
 
+          // {
+          //   to: "/community/resources",
+          //   label: "Community",
+          //   position: 'right',           
+          // },
+
+
           {
-            to: "/community/resources",
-            label: "Community",
-            position: 'right',           
+            type: 'doc',
+            docId: 'resources',
+            label: 'Community',
+            position: 'right',
+            docsPluginId: 'community',
+
           },
+
+          {
+            type: 'doc',
+            docId: 'case-studies',
+            label: 'Updates',
+            position: 'right',
+            docsPluginId: 'discover',
+
+          },
+
 
           {
             label: 'Blog',
