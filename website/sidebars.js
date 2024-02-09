@@ -32,7 +32,7 @@ const sidebars = {
 
         {
             type: "category",
-            label: "Project Genesis",
+            label: "Python Genesis",
             collapsed: true,
             collapsible: true,
             link: {
