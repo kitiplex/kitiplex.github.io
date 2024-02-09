@@ -16,7 +16,7 @@ function HomepageHeader() {
       <div className="container">
       <img
           className={clsx(styles.heroBannerLogo, 'margin-vert--sm')}
-          src={require('@site/static/img/main/logo-blue.png').default} alt="logo-blue"
+          src={require('@site/static/img/main/logo-dark.png').default} alt="logo-dark"
         />
 
         <Heading as="h5" className="hero__title">

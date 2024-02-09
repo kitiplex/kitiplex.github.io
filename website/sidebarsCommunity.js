@@ -1,5 +1,8 @@
 /**
- * Authored by: Keith Tan [https://github.com/mkeithX]
+ * Copyright Kitimi Platforms and affiliates, including Kitiplex
+ * 
+ * Kitiplex - The hub for contributors, authors, and maintainers in the Kitimi ecosystem.
+ * Licensed under MIT. See LICENSE file in the root directory.
  */
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */

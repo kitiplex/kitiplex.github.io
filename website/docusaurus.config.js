@@ -1,5 +1,8 @@
 /**
+ * Copyright Kitimi Platforms and affiliates, including Kitiplex
  * 
+ * Kitiplex - The hub for contributors, authors, and maintainers in the Kitimi ecosystem.
+ * Licensed under MIT. See LICENSE file in the root directory.
  */
 
 import { themes as prismThemes } from 'prism-react-renderer';
@@ -229,7 +232,7 @@ const config = {
         {
           type: 'doc',
           docId: 'case-studies',
-          label: 'Updates',
+          label: 'Insights',
           position: 'right',
           docsPluginId: 'discover',
         },

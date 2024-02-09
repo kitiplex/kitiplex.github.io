@@ -3,6 +3,16 @@ title: Installing Python ⚡️
 sidebar_label: Installing Python
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import React from 'react'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+
+
+
+
 :::info[Py on NT]
 
 The installation requires downloading the official Python .exe installer and running it on your system. The sections below will explain several options and details during the installation process.
@@ -21,7 +31,12 @@ Start by downloading the Python executable installer for Windows:
 
 2. Locate the desired Python version.
 
+<Zoom>
+
 ![Alt text](./img/py_nt_0.png)
+</Zoom>
+
+
 
 3. Click the link to download the file. Choose either the Windows 32-bit or 64-bit installer.
 
@@ -36,7 +51,12 @@ The steps below guide you through the installation process:
 Admin privileges. The parameter controls whether to install Python for the current or all system users. This option allows you to change the installation folder for Python.
 Add Python to PATH. The second option places the executable in the PATH variable after installation. You can also add Python to the PATH environment variable manually later.
 
+<Zoom>
+
 ![Alt text](./img/py_nt_1.png)
+</Zoom>
+
+
 
 For the most straightforward installation, we recommend ticking both checkboxes.
 
@@ -44,7 +64,12 @@ For the most straightforward installation, we recommend ticking both checkboxes.
 
 To adjust the default installation options, choose Customize installation instead and proceed to the following step:
 
+<Zoom>
+
 ![Alt text](./img/py_nt_2.png)
+</Zoom>
+
+
 
 The default installation installs Python to ``C:\Users\[user]\AppData\Local\Programs\Python\Python[version]`` for the current user. It includes IDLE (the default Python editor), the PIP package manager, and additional documentation. The installer also creates necessary shortcuts and file associations.
 
@@ -53,7 +78,12 @@ Customizing the installation allows changing these installation options and para
 4. Choose the optional installation features. Python works without these features, but adding them improves the program's usability.
 
 
+<Zoom>
+
 ![Alt text](./img/py_nt_3.png)
+</Zoom>
+
+
 
 Click **Next** to proceed to the Advanced Options screen.
 
@@ -63,7 +93,13 @@ Choose whether to install Python for all users. The option changes the install l
 
 Other advanced options include creating shortcuts, file associations, and adding Python to PATH.
 
+
+<Zoom>
+
 ![Alt text](./img/py_nt_4.png)
+</Zoom>
+
+
 
 
 After picking the appropriate options, click Install to start the installation.
@@ -71,7 +107,13 @@ After picking the appropriate options, click Install to start the installation.
 6. Select whether to disable the path length limit. Choosing this option will allow Python to bypass the 260-character MAX_PATH limit.
 
 
+<Zoom>
+
 ![Alt text](./img/py_nt_5.png)
+</Zoom>
+
+
+
 
 The option will not affect any other system settings, and disabling it resolves potential name-length issues. We recommend selecting the option and closing the setup.
 
