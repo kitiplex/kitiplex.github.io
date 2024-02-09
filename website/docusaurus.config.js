@@ -72,7 +72,7 @@ const config = {
             remarkMath,
           ],
         },
-        
+
         blog: {
           path: 'blog',
           blogSidebarCount: 'ALL',
@@ -115,7 +115,7 @@ const config = {
       crossorigin: 'anonymous',
     },
   ],
-  
+
   plugins: [
     '@docusaurus/theme-live-codeblock',
     'docusaurus-plugin-sass',
@@ -167,7 +167,7 @@ const config = {
       },
     ],
   ],
-  
+
   themeConfig: {
     algolia: {
       appId: 'C8HUEW9O04',
@@ -203,18 +203,18 @@ const config = {
           type: 'dropdown',
           items: [
             {
-              label: 'Core',
-              sidebarId: 'demo',
+              label: 'Docs',
+              sidebarId: 'projectSidebar',
               type: 'docSidebar',
             },
             {
               label: 'Guides',
-              sidebarId: 'development',
+              sidebarId: 'guidesSidebar',
               type: 'docSidebar',
             },
             {
-              label: 'Project CTD',
-              sidebarId: 'projects',
+              label: 'Snippets',
+              sidebarId: 'snippetsSidebar',
               type: 'docSidebar',
             },
           ],

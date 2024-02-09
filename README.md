@@ -7,6 +7,6 @@
 
 </div>
 
-This repo contains the website configuration and [documentation](https://kitiplex.vercel.app/docs/this-website/) powering the [Kitiplex website](https://kitiplex.vercel.app/). 
+This repo contains the website configuration and [documentation](https://kitiplex.vercel.app/docs/projects/featured/kitiplex-web/) powering the [Kitiplex website](https://kitiplex.vercel.app/). 
 
 ***
