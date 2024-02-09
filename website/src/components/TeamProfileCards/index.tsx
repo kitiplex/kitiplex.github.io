@@ -1,10 +1,10 @@
 
-import React, {type ReactNode} from 'react';
+import React, { type ReactNode } from 'react';
 import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 
-function WebsiteLink({to, children}: {to: string; children?: ReactNode}) {
+function WebsiteLink({ to, children }: { to: string; children?: ReactNode }) {
   return (
     <Link to={to}>
       {children ?? (
@@ -81,7 +81,7 @@ export function ActiveTeamRow(): JSX.Element {
         githubUrl="https://github.com/mkeithX"
         twitterUrl="https://twitter.com/mkeithtan">
         <Translate id="team.profile.Keith Tan.body">
-        01001001 01101101 00100000 01100110 01100101 01100101 01101100 01101001 01101110 01100111 00100000 01101100 01110101 01100011 01101011 01111001
+          01001001 01101101 00100000 01100110 01100101 01100101 01101100 01101001 01101110 01100111 00100000 01101100 01110101 01100011 01101011 01111001
         </Translate>
       </TeamProfileCardCol>
 
@@ -90,7 +90,7 @@ export function ActiveTeamRow(): JSX.Element {
         githubUrl="https://github.com/JoeiX"
         twitterUrl="https://twitter.com/angajoei">
         <Translate id="team.profile.Joei.body">
-          Busy upskilling. 🌾 
+          Busy upskilling. 🌾
         </Translate>
       </TeamProfileCardCol>
       <TeamProfileCardCol
@@ -98,7 +98,7 @@ export function ActiveTeamRow(): JSX.Element {
         githubUrl="https://github.com/Portiaporkshap"
         twitterUrl="https://twitter.com/">
         <Translate id="team.profile.Venic.body">
-            Trust me, I'm always an Engineer. 24/7 365. 🛠️
+          Trust me, I'm always an Engineer. 24/7 365. 🛠️
         </Translate>
       </TeamProfileCardCol>
       <TeamProfileCardCol
@@ -106,7 +106,7 @@ export function ActiveTeamRow(): JSX.Element {
         githubUrl="https://github.com/PriMaxima"
         twitterUrl="https://twitter.com/">
         <Translate id="team.profile.PriMx.body">
-        Teammate is about to update profile. Be right back!
+          Teammate is about to update profile. Be right back!
         </Translate>
       </TeamProfileCardCol>
       <TeamProfileCardCol
@@ -114,7 +114,7 @@ export function ActiveTeamRow(): JSX.Element {
         githubUrl="https://github.com/botgina"
         twitterUrl="https://twitter.com/">
         <Translate id="team.profile.Gina.body">
-        Teammate is about to update profile. Be right back!
+          Teammate is about to update profile. Be right back!
         </Translate>
       </TeamProfileCardCol>
       <TeamProfileCardCol
@@ -122,7 +122,7 @@ export function ActiveTeamRow(): JSX.Element {
         githubUrl="https://github.com/topsykretts8520"
         twitterUrl="https://twitter.com/">
         <Translate id="team.profile.Topsy.body">
-        Teammate is about to update profile. Be right back!
+          Teammate is about to update profile. Be right back!
         </Translate>
       </TeamProfileCardCol>
       <TeamProfileCardCol
@@ -130,7 +130,7 @@ export function ActiveTeamRow(): JSX.Element {
         githubUrl="https://github.com/kitimi88"
         twitterUrl="https://twitter.com/">
         <Translate id="team.profile.Kiti.body">
-        Teammate is about to update profile. Be right back!
+          Teammate is about to update profile. Be right back!
         </Translate>
       </TeamProfileCardCol>
     </div>

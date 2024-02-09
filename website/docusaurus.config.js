@@ -1,15 +1,14 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
+/**
+ * Copyright (c) Kitimi Platforms and affiliates.
+ * 
+ * Kitiplex - The hub for contributors, authors, and maintainers in the Kitimi ecosystem.
+ * Licensed under MIT. See LICENSE file in the root directory.
+ */
 
 import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-const path = require('path')
-
+import path from 'path';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -18,39 +17,27 @@ const config = {
   favicon: 'icons/favicon.ico',
   url: 'https://kitiplex.vercel.app/',
   baseUrl: '/',
-
   organizationName: 'kitiplex',
   projectName: 'kitiplex-dev',
-
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
-
   trailingSlash: true,
-
   titleDelimiter: '·',
-
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   markdown: {
     mermaid: true,
   },
-
-
   presets: [
     [
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           path: 'docs',
-
-          // editUrl: 'https://github.com/kitiplex/kitiplex-dev/edit/main/website/',
-          
           showLastUpdateAuthor: true,
-
           breadcrumbs: true,
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
@@ -58,7 +45,6 @@ const config = {
           editLocalizedFiles: false,
           editCurrentVersion: false,
           routeBasePath: 'docs',
-
           include: ['**/*.md', '**/*.mdx'],
           exclude: [
             '**/_*.{js,jsx,ts,tsx,md,mdx}',
@@ -66,10 +52,11 @@ const config = {
             '**/*.test.{js,jsx,ts,tsx}',
             '**/__tests__/**',
           ],
-
-          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }], remarkMath],
+          remarkPlugins: [
+            [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+            remarkMath,
+          ],
           rehypePlugins: [rehypeKatex],
-
         },
 
         pages: {
@@ -83,9 +70,12 @@ const config = {
             '**/__tests__/**',
           ],
           mdxPageComponent: '@theme/MDXPage',
-          remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn'), remarkMath],
-
+          remarkPlugins: [
+            require('@docusaurus/remark-plugin-npm2yarn'),
+            remarkMath,
+          ],
         },
+
         blog: {
           path: 'blog',
           blogSidebarCount: 'ALL',
@@ -105,27 +95,20 @@ const config = {
               { converters: ['pnpm'] },
             ],
           ],
-
         },
-
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
         },
-
         theme: {
-          customCss: [
-            require.resolve('./src/css/custom.css'),
-          ]
+          customCss: [require.resolve('./src/css/custom.css')],
         },
-
-
-      }),
+      },
     ],
-
   ],
+
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
@@ -142,142 +125,149 @@ const config = {
     '@docusaurus/remark-plugin-npm2yarn',
     '@docusaurus/theme-mermaid',
     '@docusaurus/plugin-client-redirects',
+
     [
-      "content-docs",
-      ({
-        id: "community",
-        path: "community",
-        routeBasePath: "community",
-        sidebarPath: path.join(__dirname, "./sidebarsCommunity.json",)
-      }),
-    ]
+      'content-docs',
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: require.resolve('./sidebarsCommunity.js'),
+        include: ['**/*.md', '**/*.mdx'],
+        exclude: [
+          '**/_*.{js,jsx,ts,tsx,md,mdx}',
+          '**/_*/**',
+          '**/*.test.{js,jsx,ts,tsx}',
+          '**/__tests__/**',
+        ],
+        remarkPlugins: [
+          [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+          remarkMath,
+        ],
+        rehypePlugins: [rehypeKatex],
+      },
+    ],
+
+    [
+      'content-docs',
+      {
+        id: 'discover',
+        path: 'discover',
+        routeBasePath: 'discover',
+        sidebarPath: require.resolve('./sidebarsDiscover.js'),
+        include: ['**/*.md', '**/*.mdx'],
+        exclude: [
+          '**/_*.{js,jsx,ts,tsx,md,mdx}',
+          '**/_*/**',
+          '**/*.test.{js,jsx,ts,tsx}',
+          '**/__tests__/**',
+        ],
+        remarkPlugins: [
+          [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+          remarkMath,
+        ],
+        rehypePlugins: [rehypeKatex],
+      },
+    ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-
-      algolia: {
-        appId: 'C8HUEW9O04',
-        apiKey: '405252b256717768fac679da5dd93c8d',
-        indexName: 'kitiplex',
+  themeConfig: {
+    algolia: {
+      appId: 'C8HUEW9O04',
+      apiKey: '405252b256717768fac679da5dd93c8d',
+      indexName: 'kitiplex',
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
       },
-
-      docs: {
-        sidebar: {
-          hideable: true,
-          autoCollapseCategories: true,
+    },
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
+    image: 'img/main/social-banner-01a.png',
+    navbar: {
+      title: 'Kitiplex',
+      style: 'dark',
+      hideOnScroll: true,
+      logo: {
+        alt: 'My Site Logo',
+        src: 'img/main/logo-blue.svg',
+        className: 'custom-navbar-logo-class',
+        target: '_self',
+      },
+      items: [
+        {
+          label: 'Development',
+          position: 'right',
+          type: 'dropdown',
+          items: [
+            {
+              label: 'Docs',
+              sidebarId: 'projectSidebar',
+              type: 'docSidebar',
+            },
+            {
+              label: 'Guides',
+              sidebarId: 'guidesSidebar',
+              type: 'docSidebar',
+            },
+            {
+              label: 'Snippets',
+              sidebarId: 'snippetsSidebar',
+              type: 'docSidebar',
+            },
+          ],
         },
-
-      },
-
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: false,
-        respectPrefersColorScheme: false,
-      },
-
-      image: 'img/main/social-banner-01a.png',
-
-      navbar: {
-        title: 'Kitiplex',
-        style: 'dark',
-        hideOnScroll: true,
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/main/logo-blue.svg',
-          // width: 180,
-          // height: 32,
-          className: 'custom-navbar-logo-class',
-          target: '_self',
-          
+        {
+          type: 'doc',
+          docId: 'resources',
+          label: 'Community',
+          position: 'right',
+          docsPluginId: 'community',
         },
-
-        items: [
-
-          {
-            label: "Docs",
-            position: 'right',
-            type: 'dropdown',
-            items: [
-              {
-                label: 'Core',
-                sidebarId: 'demo',
-                type: 'docSidebar'
-              },
-
-              {
-                label: 'Guides',
-                sidebarId: 'development',
-                type: 'docSidebar'
-              },
-
-
-              {
-                label: 'Project CTD',
-                sidebarId: 'projects',
-                type: 'docSidebar'
-              },
-
-            ]
-          },
-
-          {
-            to: "/community/resources",
-            label: "Community",
-            position: 'right',           
-          },
-
-          {
-            label: 'Blog',
-            to: '/blog',
-            position: 'right'
-          },
-
-          {
-            href: 'https://github.com/kitiplex/',
-            'aria-label': 'GitHub repository',
-            position: 'right',
-            // className: 'navbar-github-link','
-            className: 'header-github-link',
-          },
-        ],
-      },
-
-      footer: {
-        style: 'dark',
-        logo: {
-          alt: 'Kitiplex Logo',
-          src: 'img/main/kitimi-svg-banner-2.svg',
-          href: '/',
-          width: 200,
-          // height: 100,
-          // target: "_blank"
+        {
+          type: 'doc',
+          docId: 'case-studies',
+          label: 'Insights',
+          position: 'right',
+          docsPluginId: 'discover',
         },
-
-        copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
+        {
+          label: 'Blog',
+          to: '/blog',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/kitiplex/',
+          'aria-label': 'GitHub repository',
+          position: 'right',
+          className: 'header-github-link',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      logo: {
+        alt: 'Kitiplex Logo',
+        src: 'img/main/kitimi-svg-banner-2.svg',
+        href: '/',
+        width: 200,
       },
-      prism: {
-        defaultLanguage: 'jsx',
-        theme: require('./src/utils/PrismTheme'),
-
-        additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell']
-      },
-      liveCodeBlock: {
-        /**
-         * The position of the live playground, above or under the editor
-         * Possible values: "top" | "bottom"
-         */
-        playgroundPosition: 'bottom',
-      },
-      // metadata: [
-      //   { property: 'og:image', content: '/img/kitiplex_banner',},
-      //   { name: 'twitter:card', content: 'summary_large_image'},
-      //   { name: 'twitter:image', content: 'summary_large_image',},
-      //   { name: 'twitter:site', content: '@kitiplex'},
-      //   { name: 'keywords', content: 'cooking, blog'},
-      // ],
-    }),
+      copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
+    },
+    prism: {
+      defaultLanguage: 'jsx',
+      theme: require('./src/utils/PrismTheme'),
+      additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell'],
+    },
+    liveCodeBlock: {
+      playgroundPosition: 'bottom',
+    },
+  },
 };
 
 export default config;
