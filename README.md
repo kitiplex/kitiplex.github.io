@@ -1,4 +1,4 @@
-# [kitiplex-dev](https://github.com/kitiplex) &middot;
+# [kitiplex-dev](https://kitiplex.github.io/) &middot;
 
 <div align="center">
   <div>
@@ -7,6 +7,6 @@
 
 </div>
 
-This repo contains the website configuration and [documentation](https://kitiplex.github.io/docs/projects/featured/kitiplex-web/) powering the [Kitiplex website](https://kitiplex.github.io/). 
+This repo contains the website configuration and [documentation](https://kitiplex.github.io/docs/projects/featured/kitiplex-web) powering the [Kitiplex website](https://kitiplex.github.io/). 
 
 ***
