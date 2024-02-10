@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[4296],{82416:e=>{e.exports=JSON.parse('[{"label":"Demo","permalink":"/docs/tags/demo","count":1},{"label":"Python","permalink":"/docs/tags/python","count":1},{"label":"Getting started","permalink":"/docs/tags/getting-started","count":1}]')}}]);

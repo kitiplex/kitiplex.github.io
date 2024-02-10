@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://kitiplex.github.io/blog</id>
+    <title>kitiplex Blog</title>
+    <updated>2024-01-07T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://kitiplex.github.io/blog"/>
+    <subtitle>kitiplex Blog</subtitle>
+    <icon>https://kitiplex.github.io/icons/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[New year spoiler]]></title>
+        <id>https://kitiplex.github.io/blog/new-year-spoiler</id>
+        <link href="https://kitiplex.github.io/blog/new-year-spoiler"/>
+        <updated>2024-01-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🚀 Exciting start to 2024! Just announced a major spoiler: delving into the world of Django with a new monorepository! From beginners to experts, we're creating a unified space for all. Coming soon! #Django2024 #MonorepoSpoiler]]></summary>
+        <content type="html"><![CDATA[<p>🚀 Exciting start to 2024! Just announced a major spoiler: delving into the world of Django with a new monorepository! From beginners to experts, we're creating a unified space for all. Coming soon! #Django2024 #MonorepoSpoiler</p>
+<p><a href="https://twitter.com/kitiplex/status/1743776854996340891" target="_blank" rel="noopener noreferrer">Original post</a></p>]]></content>
+        <author>
+            <name>Kitiplex</name>
+            <uri>https://github.com/kitiplex</uri>
+        </author>
+        <category label="spoilers" term="spoilers"/>
+        <category label="twitter" term="twitter"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kamaoism]]></title>
+        <id>https://kitiplex.github.io/blog/kamaoism</id>
+        <link href="https://kitiplex.github.io/blog/kamaoism"/>
+        <updated>2023-12-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Kamaoism is the term used to describe a fictional collective of individuals who identify themselves as Kamoists. Although the exact origin of this group remains unverified, there are theories suggesting that it originated in the vicinity of Point Nemo. 48°52.6′S 123°23.6′W.]]></summary>
+        <content type="html"><![CDATA[<p>Kamaoism is the term used to describe a fictional collective of individuals who identify themselves as Kamoists. Although the exact origin of this group remains unverified, there are theories suggesting that it originated in the vicinity of Point Nemo. <a href="https://maps.app.goo.gl/oUkKPM37V3ymEKDB6" target="_blank" rel="noopener noreferrer">48°52.6′S 123°23.6′W</a>.</p>
+<p>The Ostrich Event</p>]]></content>
+        <author>
+            <name>Gina</name>
+            <uri>https://github.com/botgina</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Keyword]]></title>
+        <id>https://kitiplex.github.io/blog/the-keyword</id>
+        <link href="https://kitiplex.github.io/blog/the-keyword"/>
+        <updated>2023-11-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello and welcome to the Kitimi family! It is an honor to collaborate with such talented and dedicated individuals]]></summary>
+        <content type="html"><![CDATA[<p>Hello and welcome to the Kitimi family! It is an honor to collaborate with such talented and dedicated individuals
+In the fast-changing world of technology, being adaptable and collaborating with others are crucial.
+Feel free to share your ideas, challenge the norm, and collaborate fearlessly. We will overcome challenges and seize opportunities together.
+As we commence this exciting journey, please know my door is open for your support, ideas, and personal/professional growth.</p>
+<p>Happy coding!</p>
+<p align="center"></p><p><img decoding="async" loading="lazy" alt="mkeithx" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAyMDAxMDkwNC8vRU4iDQogImh0dHA6Ly93d3cudzMub3JnL1RSLzIwMDEvUkVDLVNWRy0yMDAxMDkwNC9EVEQvc3ZnMTAuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciDQogd2lkdGg9IjQwMS4wMDAwMDBwdCIgaGVpZ2h0PSI4MC4wMDAwMDBwdCIgdmlld0JveD0iMCAwIDQwMS4wMDAwMDAgODAuMDAwMDAwIg0KIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPg0KDQo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCw4MC4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiDQpmaWxsPSIjMURBMUYyIiBzdHJva2U9Im5vbmUiPg0KPHBhdGggZD0iTTMwNjkgNzczIGMxMSAtMTYgMTUyIC0xOTIgMzEzIC0zOTMgbDI5NCAtMzY1IDg3IC0zIGM0OCAtMSA4NyAwIDg3DQozIDAgMyAtNjkgOTIgLTE1NCAxOTcgbC0xNTQgMTkxIDE0NSAxODEgYzgxIDEwMCAxNTMgMTg5IDE2MSAxOTkgMTQgMTYgMTAgMTcNCi03NCAxNyBsLTkwIDAgLTExMyAtMTQwIGMtNjIgLTc3IC0xMTYgLTE0MCAtMTIwIC0xNDAgLTMgMSAtNTUgNjMgLTExNiAxNDANCmwtMTEwIDEzOSAtODggMCAtODggMSAyMCAtMjd6Ii8+DQo8cGF0aCBkPSJNOTUwIDM4NSBsMCAtMzU1IDU1IDAgNTUgMCAwIDEwMyBjMCA1NyAzIDEwNiA2IDExMCAzIDMgNDYgLTQzIDk1DQotMTA0IGw5MCAtMTA5IDcwIDAgNzAgMCAtOTMgMTA2IGMtNTEgNTggLTk5IDExNCAtMTA3IDEyNCAtMTIgMTggLTUgMjkgODMNCjEyOSA1MyA2MSA5NiAxMTIgOTYgMTE2IDAgMyAtMjkgNSAtNjQgNSBsLTY0IDAgLTgzIC0xMDQgYy00NSAtNTggLTg2IC0xMDMNCi05MSAtMTAwIC00IDMgLTggMTAyIC04IDIyMCBsMCAyMTQgLTU1IDAgLTU1IDAgMCAtMzU1eiIvPg0KPHBhdGggZD0iTTE5OTIgNzMwIGMtMzUgLTE1IC00OCAtNTQgLTI4IC04NCAzNiAtNTYgMTE2IC0zNyAxMTYgMjggMCA0OCAtNDENCjc0IC04OCA1NnoiLz4NCjxwYXRoIGQ9Ik0yNTcwIDM4NSBsMCAtMzU1IDU1IDAgNTUgMCAwIDE1MSBjMCAxMzYgMiAxNTUgMjEgMTg5IDI3IDQ3IDU0IDYyDQoxMDQgNTggMjggLTIgNDQgLTEwIDU5IC0zMSAxOSAtMjYgMjEgLTQ0IDI0IC0xOTggbDMgLTE2OSA1NSAwIDU2IDAgLTQgMTg4DQpjLTMgMTY1IC01IDE5MiAtMjQgMjI2IC0yNCA0NyAtNzQgNzYgLTEzMSA3NiAtNTUgMCAtOTEgLTE0IC0xMzAgLTUzIGwtMzMNCi0zMSAwIDE1MiAwIDE1MiAtNTUgMCAtNTUgMCAwIC0zNTV6Ii8+DQo8cGF0aCBkPSJNMjI5MCA2MzYgYy0zMyAtMTIgLTM1IC0xNiAtNDAgLTY3IGwtNSAtNTQgLTQwIC01IGMtMzkgLTUgLTQwIC02DQotNDAgLTQ1IDAgLTQwIDAgLTQwIDQzIC00MyBsNDIgLTMgMCAtMTY0IDAgLTE2NSAyOCAtMzEgYzMxIC0zNSA4NyAtNTAgMTQ5DQotNDAgMzcgNiAzOCA4IDQxIDUwIGwzIDQzIC0zMSAtNyBjLTIxIC01IC0zOSAtMiAtNTUgOSAtMjUgMTYgLTI1IDE4IC0yNSAxNjENCmwwIDE0NSA1NSAwIDU1IDAgMCA0NSAwIDQ1IC01NSAwIC01NSAwIDAgNzAgYzAgNzggLTMgODAgLTcwIDU2eiIvPg0KPHBhdGggZD0iTTI4NSA1MDcgYy0xNiAtOCAtMzkgLTI0IC00OSAtMzYgLTI2IC0yOSAtMzYgLTI2IC0zNiA5IDAgMzAgLTEgMzANCi01NSAzMCBsLTU1IDAgMCAtMjQwIDAgLTI0MCA1NSAwIDU1IDAgMCAxNDggYzEgMTk1IDI0IDI1MiAxMDUgMjUyIDc4IDAgOTUNCi00MyA5NSAtMjQ1IGwwIC0xNTUgNTUgMCA1NSAwIDAgMTQ4IGMxIDIwMyAyNiAyNTggMTE3IDI1MCAyNiAtMiA0MiAtMTEgNTcNCi0zMSAxOSAtMjYgMjEgLTQ0IDI0IC0xOTggbDQgLTE2OSA1NSAwIDU1IDAgLTQgMTg4IGMtMyAxNjUgLTUgMTkyIC0yNCAyMjYNCi0yNCA0NyAtNzQgNzYgLTEzMSA3NiAtNTYgMCAtOTEgLTE1IC0xMzQgLTU2IGwtMzUgLTM0IC0xMyAyMiBjLTMxIDU3IC0xMzANCjg1IC0xOTYgNTV6Ii8+DQo8cGF0aCBkPSJNMTU2NSA1MDUgYy01MCAtMTcgLTExNyAtODkgLTEzMyAtMTQyIC03IC0yMiAtMTIgLTcxIC0xMiAtMTA5IDANCi0xNzAgMTA5IC0yNTggMjg2IC0yMzMgOTggMTQgMTE0IDI0IDExNCA3NiAwIDQ4IC0xIDQ5IC0zNSAyNyAtMzYgLTI0IC0xNDQNCi0zMCAtMTgxIC0xMSAtNDIgMjIgLTY0IDUwIC03MSA5MSBsLTYgMzYgMTY4IDAgMTY4IDAgLTYgNTggYy0xMiAxMTAgLTUzIDE3OQ0KLTEyNCAyMDggLTQxIDE4IC0xMTcgMTcgLTE2OCAtMXogbTEzNCAtODAgYzE2IC04IDM0IC0yOCA0MCAtNDYgMjAgLTU5IDIxDQotNTkgLTk5IC01OSAtNzAgMCAtMTEwIDQgLTExMCAxMCAwIDIxIDMwIDY5IDU2IDg5IDMxIDI1IDc0IDI3IDExMyA2eiIvPg0KPHBhdGggZD0iTTE5NjIgMjY4IGwzIC0yNDMgNTMgLTMgNTIgLTMgMCAyNDUgMCAyNDYgLTU1IDAgLTU1IDAgMiAtMjQyeiIvPg0KPHBhdGggZD0iTTMyMTYgMjE4IGMtNTUgLTY4IC0xMTUgLTE0MiAtMTM0IC0xNjUgbC0zNCAtNDMgODkgMCA4OSAwIDg3IDEwNw0KYzQ4IDYwIDg3IDExMiA4NyAxMTggMCA1IC0xOSAzMiAtNDMgNTggbC00MiA0OCAtOTkgLTEyM3oiLz4NCjwvZz4NCjwvc3ZnPg0K" width="535" height="107" class="img_URbt"></p><p></p>]]></content>
+        <author>
+            <name>Keith</name>
+            <uri>https://github.com/mkeithX</uri>
+        </author>
+        <category label="hello" term="hello"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>https://kitiplex.github.io/blog/welcome</id>
+        <link href="https://kitiplex.github.io/blog/welcome"/>
+        <updated>2023-10-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[kitiplex]]></summary>
+        <content type="html"><![CDATA[<div aria-owns="rmiz-modal-" data-rmiz=""><div data-rmiz-content="not-found" style="visibility:visible"><p><img decoding="async" loading="lazy" alt="kitiplex" src="https://kitiplex.github.io/assets/images/kitimi-banner-c5d942999dba9f262c7e700c82a674dd.png" width="3075" height="540" class="img_URbt"></p></div></div>]]></content>
+        <author>
+            <name>Kitiplex</name>
+            <uri>https://github.com/kitiplex</uri>
+        </author>
+        <author>
+            <name>Keith</name>
+            <uri>https://github.com/mkeithX</uri>
+        </author>
+        <author>
+            <name>JoeiX</name>
+            <uri>https://github.com/JoeiX</uri>
+        </author>
+        <author>
+            <name>Gina</name>
+            <uri>https://github.com/botgina</uri>
+        </author>
+        <author>
+            <name>Venice</name>
+            <uri>https://github.com/Portiaporkshap</uri>
+        </author>
+        <author>
+            <name>PriMx</name>
+            <uri>https://github.com/PriMaxima</uri>
+        </author>
+        <category label="kitiplex" term="kitiplex"/>
+        <category label="hello" term="hello"/>
+    </entry>
+</feed>
