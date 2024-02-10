@@ -1,0 +1,23 @@
+name:  🚀  Feature request
+description: Submit a detailed feature request with a concrete proposal, including an exhaustive API / UI design
+labels: [feature, 'status: needs triage', 'enhancement']
+body:
+  - type: markdown
+      attributes:
+        value: >
+          Pause and verify whether this feature has already been implemented before proceeding any further.
+  
+  - type: textarea
+    attributes:
+      label: Description
+      description:  🚀  A clear and concise description of what the feature is.
+    validations:
+      required: true
+
+
+  - type: textarea
+    attributes:
+      label: Motivation
+      description: Kindly provide an overview of the reasons behind the proposal and explain why its implementation is justified. Has there been significant demand for this from users?
+    validations:
+      required: true
