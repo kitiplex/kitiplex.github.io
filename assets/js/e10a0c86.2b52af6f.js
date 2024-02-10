@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[4354],{62064:e=>{e.exports=JSON.parse('{"label":"new year","permalink":"/blog/tags/new-year","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

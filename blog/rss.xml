@@ -4,10 +4,24 @@
         <title>kitiplex Blog</title>
         <link>https://kitiplex.github.io/blog</link>
         <description>kitiplex Blog</description>
-        <lastBuildDate>Sun, 07 Jan 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Feb 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[On GitHub Pages]]></title>
+            <link>https://kitiplex.github.io/blog/on-gh-pages</link>
+            <guid>https://kitiplex.github.io/blog/on-gh-pages</guid>
+            <pubDate>Sat, 10 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[As we joyfully usher in the auspicious Year of the Dragon, we are thrilled to share a double celebration with our community. Not only are we embracing the festive spirit of Chinese New Year, but we're also excited to announce that our website is now public and proudly served through GitHub Pages.  🎉🥳💥]]></description>
+            <content:encoded><![CDATA[<p>As we joyfully usher in the auspicious Year of the Dragon, we are thrilled to share a double celebration with our community. Not only are we embracing the festive spirit of Chinese New Year, but we're also excited to announce that our website is now public and proudly served through <a href="https://kitiplex.github.io/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.  🎉🥳💥</p>
+<p>Additionally, we've given our online space a facelift with a brand-new banner, too.</p>
+<div aria-owns="rmiz-modal-" data-rmiz=""><div data-rmiz-content="not-found" style="visibility:visible"><p><img decoding="async" loading="lazy" alt="test" src="https://kitiplex.github.io/assets/images/social-banner-01a-e5042f2425f40ffaff345fcb46e91808.png" width="2190" height="948" class="img_URbt"></p></div></div>]]></content:encoded>
+            <category>GitHub</category>
+            <category>gh-pages</category>
+            <category>featured</category>
+            <category>new year</category>
+        </item>
         <item>
             <title><![CDATA[New year spoiler]]></title>
             <link>https://kitiplex.github.io/blog/new-year-spoiler</link>
