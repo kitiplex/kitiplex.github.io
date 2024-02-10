@@ -1,0 +1,35 @@
+---
+title: Git
+sidebar_label: Git
+slug: /git
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import React from 'react'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+import Highlight from '@site/src/components/Highlight';
+
+
+
+### Git Push
+
+```bash
+$ git add --all
+```
+
+```bash
+$ git commit -m "Initial commit"
+```
+
+```bash
+$ git push -u origin main
+```
+
+### Deploy
+
+```sh
+cmd /C 'set "GIT_USER=<username>" && pnpm run deploy'
+```
+

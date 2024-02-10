@@ -103,7 +103,8 @@ const sidebars = {
                 "snippets/calculus",
                 "snippets/mermaid-config",
                 "snippets/foobar-one",
-                "snippets/foobar-two"
+                "snippets/foobar-two",
+                "snippets/git-cheat"
             ]
         }
     ]
