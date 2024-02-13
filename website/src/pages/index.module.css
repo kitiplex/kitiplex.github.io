@@ -54,7 +54,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .heroBanner {
     padding: 5rem;
     padding-left: 20px;
@@ -62,6 +62,12 @@
 
   }
 
+} */
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
 }
 
 

@@ -174,9 +174,9 @@ const config = {
 
   themeConfig: {
     algolia: {
-      appId: 'C8HUEW9O04',
-      apiKey: '3dcd23a69a487d41354e2662bc354ef8',
-      indexName: 'kitiplex',
+      appId: 'KLI8CT6349',
+      apiKey: '5037344df426897d733d0efebb8b6d12',
+      indexName: 'kitiplexio',
     },
     docs: {
       sidebar: {
