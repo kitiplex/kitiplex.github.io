@@ -16,7 +16,7 @@
   "dependencies": {
     "@docsearch/css": "^3.5.2",
     "@docsearch/js": "^3.5.2",
-    "@docsearch/react": "3",
+    "@docsearch/react": "^3.5.2",
     "@docusaurus/core": "^3.1.1",
     "@docusaurus/plugin-client-redirects": "^3.1.1",
     "@docusaurus/plugin-content-pages": "^3.1.1",
