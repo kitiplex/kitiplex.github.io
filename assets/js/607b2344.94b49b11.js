@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[8620],{2904:e=>{e.exports=JSON.parse('{"label":"gh-pages","permalink":"/blog/tags/gh-pages","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
