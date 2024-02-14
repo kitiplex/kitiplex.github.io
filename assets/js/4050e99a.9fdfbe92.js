@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[6944],{74132:(e,i,t)=>{t.r(i),t.d(i,{default:()=>s});var d=t(47884),p=t(2488);const s=function(){return(0,p.jsx)(d.G,{appId:"KLI8CT6349",indexName:"kitiplexio",apiKey:"5037344df426897d733d0efebb8b6d12"})}}}]);
