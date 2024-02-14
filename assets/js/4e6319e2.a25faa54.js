@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[7040],{8742:e=>{e.exports=JSON.parse('{"label":"spoilers","permalink":"/blog/tags/spoilers","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
