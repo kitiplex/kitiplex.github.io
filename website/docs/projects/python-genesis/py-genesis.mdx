@@ -3,17 +3,97 @@ title: PyGenesis
 description: Bite-sized Python projects.
 sidebar_label: PyGenesis
 slug: /py-genesis
-tags:
-  - Demo
-  - Python
-  - Getting started
+# tags:
+#   - Demo
+#   - Python
+#   - Getting started
 ---
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import Admonition from "@theme/Admonition";
 
-:::info[Coming soon]
 
-Keep an eye out for updates, something special is on the way.
+## Getting Started
+
+PyGenesis is a collection of simple, small-scale Python applications for beginners who are curious and for advanced users looking for refreshers and fundamentals.
+
+
+:::tip[note]
+
+Throughout the project's development, our goal was to simplify everything—from the tools and SDKs to all the other details. Feel free to use your personal preferences.
+
+See what's [inside](#whats-inside).
 
 :::
+
+
+
+### Prerequisites
+
+For best practices, it is recommended the most updated version installed in your machnine.
+
+* __[Git](https://git-scm.com/downloads)__
+* __[Python](https://www.python.org/downloads/)__
+
+***
+
+### Installation
+
+#### Clone repo
+
+```bash
+$ git clone https://github.com/kitiplex/PyGenesis.git
+```
+```sh
+cd PyGenesis
+```
+
+
+#### Local Configuration
+
+
+
+<Tabs groupId="Windows">
+  <TabItem value="Windows" label="Windows">
+
+```sh
+py -m venv .venv
+```
+
+```sh
+.venv\scripts\activate
+```
+
+```sh
+py -m pip install -r --upgrade -r requirements.txt
+```
+
+  </TabItem>
+  <TabItem value="Linux" label="Linux">
+  
+```bash
+python3 -m venv .venv
+```
+```bash
+source .venv/bin/activate
+```
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+  </TabItem>
+</Tabs>
+
+
+
+
+
+***
+
+
+
 
 
 ### What's inside
@@ -24,7 +104,48 @@ Keep an eye out for updates, something special is on the way.
 |**Fibonacci sequence generator**|Generates sequence of numbers, in which every term in the sequence is the sum of terms before it.|
 |**BMI Calculator**| * |
 | **Password Generator** | * |
-| Encryption tool | * |
-| Video downloader | * |
-| **QR code generator** | * |
-| **Hangman game** | * |
+| **Caesar Cipher** | * |
+| **Chat Stream** | * |
+| **Video downloader** | * |
+| **QR Code Generator** | * |
+| **Countdown timer** | * |
+| **Guess the word game** | * |
+| **Random quote generator** | * |
+| **** | * |
+
+***
+
+
+
+### Packages
+
+The [requirements.txt](#) has the following packages:
+
+| Package | Description |
+| ------- | ----------- |
+|[python-dotenv](https://pypi.org/project/python-dotenv/) |Read key-value pairs from .env file and set them as environment variables. In this sample app, those variables describe how to connect API. This package is used in the applications to load environment variables.|
+| [OpenAI API](https://pypi.org/project/openai/) | Chatbot application requires integrating with an external API for natural language processing.
+| [OpenWeatherMap API](https://openweathermap.org/api) | Allowing users to obtain essential weather data for a specific location by making only one API call.
+|[pyshorteners](https://pyshorteners.readthedocs.io/en/latest/apis.html#implemented-apis)|A simple URL shortening API wrapper Python library. This modules is essential to be able to shorten urls using various URL shortener services available including [tinyurl](https://tinyurl.com/app).
+|[yt-dlp](https://pypi.org/project/yt-dlp/)|A youtube-dl fork with additional features and fixes|
+|[pyqrcode](https://pypi.org/project/PyQRCode/)| See [documentation](https://pythonhosted.org/PyQRCode/index.html).|
+
+***
+
+## Authors
+
+* **Keith** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](#) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc

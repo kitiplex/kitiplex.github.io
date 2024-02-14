@@ -4,11 +4,14 @@
  * Kitiplex - The hub for contributors, authors, and maintainers in the Kitimi ecosystem.
  * Licensed under MIT. See LICENSE file in the root directory.
  */
+// import docsearch from '@docsearch/js';
 
+// import '@docsearch/css';
 import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import path from 'path';
+// import path from 'path';
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -104,7 +107,10 @@ const config = {
           filename: 'sitemap.xml',
         },
         theme: {
-          customCss: [require.resolve('./src/css/custom.css')],
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/utils/PrismTheme'),
+          ],
         },
       },
     ],
@@ -173,10 +179,11 @@ const config = {
   ],
 
   themeConfig: {
-    algolia: {
-      appId: 'KLI8CT6349',
-      apiKey: '5037344df426897d733d0efebb8b6d12',
-      indexName: 'kitiplexio',
+    prism: {
+      defaultLanguage: 'jsx',
+      // theme: prismThemes.PrismTheme,
+      theme: require('./src/utils/PrismTheme'),
+      additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell'],
     },
     docs: {
       sidebar: {
@@ -190,6 +197,8 @@ const config = {
       respectPrefersColorScheme: false,
     },
     image: 'img/main/social-banner-01a.png',
+
+
     navbar: {
       title: 'Kitiplex',
       style: 'dark',
@@ -248,6 +257,11 @@ const config = {
           position: 'right',
           className: 'header-github-link',
         },
+        {
+          type: 'search',
+          position: 'right',
+        },
+
       ],
     },
     footer: {
@@ -260,14 +274,26 @@ const config = {
       },
       copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
     },
-    prism: {
-      defaultLanguage: 'jsx',
-      theme: require('./src/utils/PrismTheme'),
-      additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell'],
+    themes: ['@docusaurus/theme-search-algolia'],
+    algolia: {
+      appId: 'KLI8CT6349',
+      apiKey: '5037344df426897d733d0efebb8b6d12',
+      indexName: 'kitiplexio',
+      contextualSearch: true,
+      replaceSearchResultPathname: {
+        from: '/docs/', // or as RegExp: /\/docs\//
+        to: '/',
+      },
+      searchParameters: {},
+
+      searchPagePath: 'search',
+
     },
+
     liveCodeBlock: {
       playgroundPosition: 'bottom',
     },
+    
   },
 };
 

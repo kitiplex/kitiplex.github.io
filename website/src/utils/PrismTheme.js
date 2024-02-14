@@ -1,7 +1,7 @@
 const theme = {
   plain: {
     color: '#fff',
-    backgroundColor: '#25282f',
+    backgroundColor: '#282c34',
   },
   styles: [
     {
