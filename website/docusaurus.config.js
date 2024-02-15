@@ -177,8 +177,15 @@ const config = {
       },
     ],
   ],
-
+  // themes: ['],
   themeConfig: {
+    algolia: {
+      appId: 'KLI8CT6349',
+      apiKey: '5037344df426897d733d0efebb8b6d12',
+      indexName: 'kitiplexio',
+      contextualSearch: true,
+
+    },
     prism: {
       defaultLanguage: 'jsx',
       // theme: prismThemes.PrismTheme,
@@ -257,11 +264,7 @@ const config = {
           position: 'right',
           className: 'header-github-link',
         },
-        {
-          type: 'search',
-          position: 'right',
-          // className: 'SearchBar'
-        },
+
 
       ],
     },
@@ -276,25 +279,12 @@ const config = {
       copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
     },
     // themes: ['@docusaurus/theme-search-algolia'],
-    // algolia: {
-    //   appId: 'KLI8CT6349',
-    //   apiKey: '5037344df426897d733d0efebb8b6d12',
-    //   indexName: 'kitiplexio',
-    //   contextualSearch: true,
-    //   replaceSearchResultPathname: {
-    //     from: '/docs/', // or as RegExp: /\/docs\//
-    //     to: '/',
-    //   },
-    //   searchParameters: {},
 
-    //   searchPagePath: 'search',
-
-    // },
 
     liveCodeBlock: {
       playgroundPosition: 'bottom',
     },
-    
+
   },
 };
 
