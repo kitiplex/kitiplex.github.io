@@ -45,7 +45,7 @@ const config = {
       {
         docs: {
           path: 'docs',
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           breadcrumbs: true,
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
@@ -114,8 +114,7 @@ const config = {
           customCss: [
             require.resolve('./src/css/custom.css'),
             require.resolve('@docsearch/css'),
-            require.resolve('./src/utils/PrismTheme'),
-
+            
           ],
         },
       },
@@ -193,6 +192,7 @@ const config = {
     },
     prism: {
       defaultLanguage: 'jsx',
+      themes: require.resolve('./src/utils/PrismTheme'),
       additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell'],
     },
     docs: {

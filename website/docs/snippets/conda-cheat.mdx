@@ -15,6 +15,60 @@ import Highlight from '@site/src/components/Highlight';
 
 ### Quickstart
 
+:::tip[]
+
+It is recommended to create a new environment for any new project or workflow.
+
+:::
+
+
+verify conda install and check version
+
 ```sh
-conda env list
+conda info
+```
+update conda in base environment
+
+```sh
+conda update --all -n base
+```
+```sh
+conda update -n base conda
+```
+create a new environment
+(tip: name environment descriptively)
+
+```sh
+conda create --name myenv
+```
+
+```sh
+conda activate myenv
+```
+
+### Packages
+
+:::tip[]
+
+ Package dependencies and platform specifics are automatically resolved when using conda.
+
+:::
+
+list installed packages.
+
+```sh
+conda list
+```
+
+update all packages
+
+```sh
+conda update --all
+```
+```sh
+conda update --all -n base
+```
+
+```sh
+conda update --all -n myenv
 ```
