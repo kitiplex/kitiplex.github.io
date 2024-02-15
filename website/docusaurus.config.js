@@ -4,13 +4,11 @@
  * Kitiplex - The hub for contributors, authors, and maintainers in the Kitimi ecosystem.
  * Licensed under MIT. See LICENSE file in the root directory.
  */
-// import docsearch from '@docsearch/js';
 
-// import '@docsearch/css';
 import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-// import path from 'path';
+
 
 
 /** @type {import('@docusaurus/types').Config} */
@@ -26,6 +24,12 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   trailingSlash: false,
+
+  scripts: [
+    { src: 'https://cdn.jsdelivr.net/npm/@docsearch/react@3', defer: true },
+    { src: "https://KLI8CT6349-dsn.algolia.net", rel: "preconnect", crossorigin: true },
+  ],
+
   titleDelimiter: '·',
   i18n: {
     defaultLocale: 'en',
@@ -109,7 +113,9 @@ const config = {
         theme: {
           customCss: [
             require.resolve('./src/css/custom.css'),
+            require.resolve('@docsearch/css'),
             require.resolve('./src/utils/PrismTheme'),
+
           ],
         },
       },
@@ -177,19 +183,16 @@ const config = {
       },
     ],
   ],
-  // themes: ['],
+
   themeConfig: {
     algolia: {
       appId: 'KLI8CT6349',
       apiKey: '5037344df426897d733d0efebb8b6d12',
       indexName: 'kitiplexio',
       contextualSearch: true,
-
     },
     prism: {
       defaultLanguage: 'jsx',
-      // theme: prismThemes.PrismTheme,
-      theme: require('./src/utils/PrismTheme'),
       additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell'],
     },
     docs: {
@@ -203,6 +206,7 @@ const config = {
       disableSwitch: false,
       respectPrefersColorScheme: false,
     },
+
     image: 'img/main/social-banner-01a.png',
 
 
@@ -265,7 +269,6 @@ const config = {
           className: 'header-github-link',
         },
 
-
       ],
     },
     footer: {
@@ -278,8 +281,6 @@ const config = {
       },
       copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
     },
-    // themes: ['@docusaurus/theme-search-algolia'],
-
 
     liveCodeBlock: {
       playgroundPosition: 'bottom',

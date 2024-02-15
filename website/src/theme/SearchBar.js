@@ -3,7 +3,6 @@ import { DocSearch } from '@docsearch/react';
 
 import '@docsearch/css';
 
-<link rel="preconnect" href="https://KLI8CT6349-dsn.algolia.net" crossorigin />
 
 export default function SearchBarWrapper(props) {
   return (
@@ -11,12 +10,15 @@ export default function SearchBarWrapper(props) {
       appId="KLI8CT6349"
       indexName="kitiplexio"
       apiKey="5037344df426897d733d0efebb8b6d12"
-      placeholder="Search Kitiplex..."
-      getMissingResultsUrl={({ query }) => {
-        return `https://github.com/algolia/docsearch/issues/new?title=${query}`;
-      }}
+      placeholder="search kitiplex.."
 
-      insights      
+      resultsFooterComponent={({ state }) => {
+        return <h3>{state.context.nbHits} match found</h3>;
+      }}
+      maxResultsPerGroup="5"
+      insights
     />
+
   );
+
 }

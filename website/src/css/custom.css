@@ -46,6 +46,7 @@
 
 [data-theme='light'] {
   --ifm-background-color: #F5F8FA;
+  /* --ifm-background-color: #fff */
 }
 
 .header-github-link:hover,
@@ -94,7 +95,7 @@
 
 
 .navbar.navbar--dark {
-  background-color: var(--twitter-black);
+  background-color: var(--kiti-dark);
 }
 
 .navbar__title {

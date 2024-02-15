@@ -104,7 +104,8 @@ const sidebars = {
                 "snippets/mermaid-config",
                 "snippets/foobar-one",
                 "snippets/foobar-two",
-                "snippets/git-cheat"
+                "snippets/git-cheat",
+                "snippets/conda-cheat"
             ]
         }
     ]
