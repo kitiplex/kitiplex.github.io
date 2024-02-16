@@ -26,9 +26,19 @@ const config = {
   trailingSlash: false,
 
   scripts: [
-    { src: 'https://cdn.jsdelivr.net/npm/@docsearch/react@3', defer: true },
     { src: "https://KLI8CT6349-dsn.algolia.net", rel: "preconnect", crossorigin: true },
   ],
+  
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
+
 
   titleDelimiter: '·',
   i18n: {
@@ -45,7 +55,7 @@ const config = {
       {
         docs: {
           path: 'docs',
-          showLastUpdateAuthor: false,
+          showLastUpdateAuthor: true,
           breadcrumbs: true,
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
@@ -113,23 +123,13 @@ const config = {
         theme: {
           customCss: [
             require.resolve('./src/css/custom.css'),
-            require.resolve('@docsearch/css'),
-            
+
           ],
         },
       },
     ],
   ],
 
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
-    },
-  ],
 
   plugins: [
     '@docusaurus/theme-live-codeblock',
@@ -184,15 +184,18 @@ const config = {
   ],
 
   themeConfig: {
-    algolia: {
-      appId: 'KLI8CT6349',
-      apiKey: '5037344df426897d733d0efebb8b6d12',
-      indexName: 'kitiplexio',
-      contextualSearch: true,
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    announcementBar: {
+      id: 'support_us',
+      content:
+      'Kitoy Edition V2.0.5 (beta). Learn <a target="_blank" rel="noopener noreferrer" href="https://github.com/mkeithX">more</a>', 
+        // 'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a> 🤙',
+      textColor: '#111317',
+      isCloseable: true,
     },
     prism: {
       defaultLanguage: 'jsx',
-      themes: require.resolve('./src/utils/PrismTheme'),
+      themes: require('./src/utils/PrismTheme'),
       additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell'],
     },
     docs: {
@@ -268,7 +271,6 @@ const config = {
           position: 'right',
           className: 'header-github-link',
         },
-
       ],
     },
     footer: {
@@ -281,7 +283,6 @@ const config = {
       },
       copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
     },
-
     liveCodeBlock: {
       playgroundPosition: 'bottom',
     },

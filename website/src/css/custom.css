@@ -12,9 +12,8 @@
 
   --brand: #61dafb;
   --dark: #282c34;
-  --calmdark: #20232a;
   --ifm-color-primary: #1DA1F2;
-  --ifm-code-font-size: 85%;
+  --ifm-code-font-size: 95%;
   /* --doc-sidebar-width: 266px !important; */
  
   --deepdark: #20232a;
@@ -32,14 +31,15 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #06bcee;
+  --ifm-color-primary: #1da1f2;
   --ifm-color-primary-dark: #0d94e7;
-  --ifm-color-primary-darker: #1782c5;
-  --ifm-color-primary-darkest: #109cf1;
+  --ifm-color-primary-darker: #0d8cda;
+  --ifm-color-primary-darkest: #0a73b3;
   --ifm-color-primary-light: #37acf3;
   --ifm-color-primary-lighter: #43b1f4;
   --ifm-color-primary-lightest: #6ac1f6;
-  /* --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3); */
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -140,6 +140,33 @@
 }
 
 
+div[class^='announcementBar_'] {
+  font-size: 20px;
+  background-color: var(--ifm-color-primary-lightest);
+  
+
+  /*
+  --site-announcement-bar-stripe-color1: hsl(
+    var(--site-primary-hue-saturation) 85%
+  );
+  --site-announcement-bar-stripe-color2: hsl(
+    var(--site-primary-hue-saturation) 95%
+  );
+   */
+
+
+  /* --site-announcement-bar-stripe-color1: #aee0ff;
+  --site-announcement-bar-stripe-color2: #f6f6f6; */
+
+  /* background: repeating-linear-gradient(
+    140deg,
+    var(--site-announcement-bar-stripe-color1),
+    var(--site-announcement-bar-stripe-color1) 20px,
+    var(--site-announcement-bar-stripe-color2) 10px,
+    var(--site-announcement-bar-stripe-color2) 40px
+  ); */
+  font-weight: bold;
+}
 
 [data-theme='light'] .DocSearch {
   /* --docsearch-primary-color: var(--ifm-color-primary); */
@@ -180,4 +207,3 @@
     var(--ifm-color-emphasis-100) 100%
   );
 }
-
