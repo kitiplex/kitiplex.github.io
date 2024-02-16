@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[5288],{8408:e=>{e.exports=JSON.parse('{"label":"mkeithX","permalink":"/blog/tags/mkeith-x","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
