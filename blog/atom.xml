@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kitiplex.github.io/blog</id>
     <title>kitiplex Blog</title>
-    <updated>2024-02-10T00:00:00.000Z</updated>
+    <updated>2024-02-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kitiplex.github.io/blog"/>
     <subtitle>kitiplex Blog</subtitle>
     <icon>https://kitiplex.github.io/icons/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Kitoy Edition]]></title>
+        <id>https://kitiplex.github.io/blog/kitoy-edition-beta</id>
+        <link href="https://kitiplex.github.io/blog/kitoy-edition-beta"/>
+        <updated>2024-02-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hey everyone. I'm thrilled to share some exciting news with you all! The documentation landscape is about to undergo a transformation with the introduction of `Kitoy Edition Beta` — a release that places a strong focus on how this website behaves in preparation for the Next Big Thing. {/ truncate /}]]></summary>
+        <content type="html"><![CDATA[<p>Hey everyone. I'm thrilled to share some exciting news with you all! The documentation landscape is about to undergo a transformation with the introduction of <code>Kitoy Edition Beta</code> — a release that places a strong focus on how this website behaves in preparation for the Next Big Thing. </p>
+<h3 class="anchor anchorWithHideOnScrollNavbar_R0SP" id="whats-this">What's this?<a href="https://kitiplex.github.io/blog/kitoy-edition-beta#whats-this" class="hash-link" aria-label="Direct link to What's this?" title="Direct link to What's this?">​</a></h3>
+<p>In the ever-evolving tech landscape, being ahead of the curve is crucial. We are gearing up to set a new standard with a heightened emphasis on how the website behaves in anticipation of the Next Big Thing. This release is a testament to our commitment to staying at the forefront of innovation.</p>
+<h3 class="anchor anchorWithHideOnScrollNavbar_R0SP" id="algolia-search">Algolia Search<a href="https://kitiplex.github.io/blog/kitoy-edition-beta#algolia-search" class="hash-link" aria-label="Direct link to Algolia Search" title="Direct link to Algolia Search">​</a></h3>
+<p><strong>Big thanks to Algolia!</strong> One of the standout features in this release is the integration of <a href="https://docsearch.algolia.com/" target="_blank" rel="noopener noreferrer"><strong>Algolia search</strong></a>. We know how crucial it is for users to quickly find the information they need, and Algolia's powerful search and discovery API makes that happen. It's a game-changer for enhancing the user experience, aligning seamlessly with our focus on preparing for the future. In this release, we utilize the <a href="https://docsearch.algolia.com/docs/templates#docusaurus-v3-template" target="_blank" rel="noopener noreferrer">default configuration</a> with a little bit of tweak.</p>
+<h3 class="anchor anchorWithHideOnScrollNavbar_R0SP" id="running-optional-with-custom-configuration">Running Optional with Custom Configuration<a href="https://kitiplex.github.io/blog/kitoy-edition-beta#running-optional-with-custom-configuration" class="hash-link" aria-label="Direct link to Running Optional with Custom Configuration" title="Direct link to Running Optional with Custom Configuration">​</a></h3>
+<p>Flexibility has always been a priority for us. We're introducing the concept of running optional with custom configuration. It's about giving you the control to make your workflow as efficient as possible, aligning perfectly with our goal of preparing for what comes next.</p>
+<p>Thank you for your time.</p>
+<p><em>-K</em></p>
+<hr>]]></content>
+        <author>
+            <name>Keith</name>
+            <uri>https://github.com/mkeithX</uri>
+        </author>
+        <category label="release" term="release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[On GitHub Pages]]></title>
         <id>https://kitiplex.github.io/blog/on-gh-pages</id>
