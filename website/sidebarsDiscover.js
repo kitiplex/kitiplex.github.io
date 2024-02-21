@@ -16,6 +16,7 @@ const sidebars = {
             items: [
                 'case-studies',
                 'future-developments',
+                'foobar-365',
             ],
         },
     ],
