@@ -4,7 +4,8 @@
  * Kitiplex - The hub for contributors, authors, and maintainers in the Kitimi ecosystem.
  * Licensed under MIT. See LICENSE file in the root directory.
  */
-
+import autoprefixer from "autoprefixer";
+import tailwind from "tailwindcss";
 import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -132,6 +133,16 @@ const config = {
 
 
   plugins: [
+    async function tailwindPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          postcssOptions.plugins.push(tailwind);
+          postcssOptions.plugins.push(autoprefixer);
+          return postcssOptions;
+        },
+      };
+    },
     '@docusaurus/theme-live-codeblock',
     'docusaurus-plugin-sass',
     '@docusaurus/remark-plugin-npm2yarn',
@@ -186,7 +197,7 @@ const config = {
   themeConfig: {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     announcementBar: {
-      id: 'support_us',
+      id: 'kitoy_beta',
       content:
       'Kitoy Edition · <a target="_blank" href="/blog/kitoy-edition-beta">V2.0.5beta</a>', 
         // 'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a> 🤙',
@@ -288,6 +299,7 @@ const config = {
     },
 
   },
+
 };
 
 export default config;

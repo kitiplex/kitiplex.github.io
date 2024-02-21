@@ -29,7 +29,7 @@ function Clock(props) {
         {date.toLocaleDateString(undefined, { weekday: "long" })}
       </h4>
       <h4>
-        Time: {date.toLocaleTimeString([], { hour12: false })} |{" "}
+        Time: {date.toLocaleTimeString([], { hour12: false })} · {" "}
         {date.toLocaleTimeString([], {})}
       </h4>
     </div>

@@ -13,7 +13,7 @@ import 'react-medium-image-zoom/dist/styles.css'
 import Highlight from '@site/src/components/Highlight';
 
 
-### Quickstart
+## Quickstart
 
 :::tip[]
 
@@ -22,12 +22,12 @@ It is recommended to create a new environment for any new project or workflow.
 :::
 
 
-verify conda install and check version
+### Verify and check conda version
 
 ```sh
 conda info
 ```
-update conda in base environment
+### Update conda in base environment
 
 ```sh
 conda update --all -n base
@@ -35,8 +35,13 @@ conda update --all -n base
 ```sh
 conda update -n base conda
 ```
-create a new environment
-(tip: name environment descriptively)
+### Create a new environment
+
+:::tip[]
+Name environment descriptively. ie., `myenv`
+:::
+
+
 
 ```sh
 conda create --name myenv
@@ -46,21 +51,21 @@ conda create --name myenv
 conda activate myenv
 ```
 
-### Packages
+## Packages
 
-:::tip[]
+:::note[]
 
  Package dependencies and platform specifics are automatically resolved when using conda.
 
 :::
 
-list installed packages.
+### List installed packages.
 
 ```sh
 conda list
 ```
 
-update all packages
+### Update all packages
 
 ```sh
 conda update --all

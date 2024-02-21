@@ -3,7 +3,7 @@ slug: kamaoism
 title: Kamaoism
 authors: 
     name: Gina
-    title: Front End Engineer
+    title: Contributor @ Kitiplex
     url: https://github.com/botgina
     image_url: https://github.com/botgina.png
 tags: [kamaoism]

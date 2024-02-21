@@ -28,9 +28,11 @@
     "@docusaurus/theme-search-algolia": "^3.1.1",
     "@mdx-js/react": "^3.0.1",
     "add": "^2.0.6",
+    "autoprefixer": "^10.4.17",
     "clsx": "^2.1.0",
     "color": "^4.2.3",
     "docusaurus-plugin-sass": "^0.2.5",
+    "postcss": "^8.4.35",
     "prism-react-renderer": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -38,7 +40,8 @@
     "rehype-katex": "^7.0.0",
     "remark-math": "^6.0.0",
     "sass": "^1.70.0",
-    "swizzle": "^1.1.0"
+    "swizzle": "^1.1.0",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.1.1",
