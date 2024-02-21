@@ -188,7 +188,7 @@ const config = {
     announcementBar: {
       id: 'support_us',
       content:
-      'Kitoy Edition · <a target="_blank" rel="noopener noreferrer" href="./blog/kitoy-edition-beta">V2.0.5beta</a>', 
+      'Kitoy Edition · <a target="_blank" href="/blog/kitoy-edition-beta">V2.0.5beta</a>', 
         // 'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a> 🤙',
       textColor: '#111317',
       isCloseable: true,
