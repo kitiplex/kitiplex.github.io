@@ -176,8 +176,8 @@ const config = {
       {
         id: 'discover',
         path: 'discover',
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
+        // showLastUpdateAuthor: true,
+        // showLastUpdateTime: true,
         routeBasePath: 'discover',
         sidebarPath: require.resolve('./sidebarsDiscover.js'),
         include: ['**/*.md', '**/*.mdx'],
