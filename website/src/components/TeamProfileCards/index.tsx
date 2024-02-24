@@ -156,7 +156,7 @@ export function ContributorsTeamRow(): JSX.Element {
         githubUrl="https://github.com/JLorenz143"
         twitterUrl="https://twitter.com/">
         <Translate id="team.profile.Johanna Lorenz">
-        Contributor @Kitiplex · 🔥🔥🔥
+          Contributor @Kitiplex · 🔥🔥🔥
         </Translate>
       </TeamProfileCardCol>
 
@@ -165,7 +165,7 @@ export function ContributorsTeamRow(): JSX.Element {
         githubUrl="https://github.com/MiriamG416"
         twitterUrl="https://twitter.com/">
         <Translate id="team.profile.Miriam G">
-        Contributor @Kitiplex · 🔥🔥🔥
+          Contributor @Kitiplex · 🔥🔥🔥
         </Translate>
       </TeamProfileCardCol>
     </div>

@@ -1,7 +1,6 @@
-
 const theme = {
   plain: {
-    color: '#FFFFFF',
+    color: '#F5F8FA',
     backgroundColor: '#282C34',
   },
   styles: [
@@ -117,4 +116,4 @@ const theme = {
   ],
 };
 
-module.exports = theme;
+export default theme;

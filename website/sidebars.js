@@ -32,7 +32,7 @@ const sidebars = {
 
         {
             type: "category",
-            label: "Python Genesis",
+            label: "💡Python Genesis",
             collapsed: true,
             collapsible: true,
             link: {
@@ -50,7 +50,7 @@ const sidebars = {
 
         {
             type: "category",
-            label: "Featured",
+            label: "💡Featured",
             collapsed: true,
             collapsible: true,
             link: {
@@ -69,7 +69,7 @@ const sidebars = {
     guidesSidebar: [
         {
             type: "category",
-            label: "Guides",
+            label: "📚 Guides",
             collapsed: true,
             collapsible: true,
             link: {
@@ -87,7 +87,7 @@ const sidebars = {
     snippetsSidebar: [
         {
             type: "category",
-            label: "Snippets",
+            label: "📦 Snippets",
             collapsed: true,
             collapsible: true,
             link: {

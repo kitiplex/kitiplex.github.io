@@ -5,21 +5,27 @@
 /* index.module.css */
 
 .heroBanner {
-  text-align: center;
+  text-align: left;
   position: relative;
   overflow: hidden;
   display: flex;
-  /* background-color: #166a94;  */
+  background-color: #14171A;
+
   /* background-color: #0671a7;  */
   /* background-color: #1da1f2; */
   /* background-size: cover; */
   /* background-position: center; */
   /* height: 350; */
-  
+
 }
 .banner {
   padding: 5rem;
 }
+
+.heroTitleTextHtml b {
+  color: var(--ifm-color-primary);
+}
+
 
 
 @keyframes kit-in-the-box {
@@ -44,19 +50,21 @@
 }
 
 .heroBannerLogo {
-  max-width: 165px;
-  max-height: 165px;
-  /* margin-top: 20px; */
+  max-width: 35%;
+  margin-top: 20px;
   padding: 0 20px 20px;
   animation-duration: 2s;
   animation-name: kit-in-the-box;
-  /* float: right; */
+  float: right;
+  height: auto;
+  display: block;
 
 }
 
+
 /* @media screen and (max-width: 768px) {
   .heroBanner {
-    padding: 5rem;
+    padding: 2rem;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -66,7 +74,9 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -74,13 +84,28 @@
 .buttons {
   display: block;
   justify-content: center;
-  margin-top: 12px; /* Add spacing between title/subtitle and buttons */
+  margin-top: 10px;
+  /* Add spacing between title/subtitle and buttons */
   color: var(--ifm-color-primary-dark);
 }
 
 
 
-/* .heroButtons {
+
+.indexCtas {
+  --ifm-button-size-multiplier: 1.6;
   display: flex;
-  justify-content: center
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 24px;
+  justify-content: left;
+}
+
+/* .indexCtas a:last-of-type {
+  margin: 20px 20px;
 } */
+
+/* Used to test CSS insertion order */
+.test-marker-site-index-page {
+  content: 'site-index-page';
+}

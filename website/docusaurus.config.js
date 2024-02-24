@@ -15,7 +15,7 @@ import rehypeKatex from 'rehype-katex';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'kitiplex',
-  tagline: 'Projects and demos from Kitimi Platforms',
+  tagline: 'Build Innovate Inspire',
   favicon: 'icons/favicon.ico',
   url: 'https://kitiplex.github.io',
   baseUrl: '/',
@@ -49,6 +49,8 @@ const config = {
   markdown: {
     mermaid: true,
   },
+
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -124,6 +126,7 @@ const config = {
         theme: {
           customCss: [
             require.resolve('./src/css/custom.css'),
+            
 
           ],
         },
@@ -207,10 +210,11 @@ const config = {
       isCloseable: true,
     },
     prism: {
-      defaultLanguage: 'jsx',
       themes: require('./src/utils/PrismTheme'),
+      defaultLanguage: 'jsx',
       additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell'],
     },
+    
     docs: {
       sidebar: {
         hideable: true,
@@ -299,6 +303,8 @@ const config = {
     liveCodeBlock: {
       playgroundPosition: 'bottom',
     },
+
+    
 
   },
 
