@@ -4,13 +4,10 @@
  * Kitiplex - The hub for contributors, authors, and maintainers in the Kitimi ecosystem.
  * Licensed under MIT. See LICENSE file in the root directory.
  */
-import autoprefixer from "autoprefixer";
-import tailwind from "tailwindcss";
-import { themes as prismThemes } from 'prism-react-renderer';
+import autoprefixer from 'autoprefixer';
+import tailwind from 'tailwindcss';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-
-
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -27,19 +24,17 @@ const config = {
   trailingSlash: false,
 
   scripts: [
-    { src: "https://KLI8CT6349-dsn.algolia.net", rel: "preconnect", crossorigin: true },
+    { src: 'https://KLI8CT6349-dsn.algolia.net', rel: 'preconnect', crossorigin: true },
   ],
-  
+
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
       type: 'text/css',
-      integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
       crossorigin: 'anonymous',
     },
   ],
-
 
   titleDelimiter: '·',
   i18n: {
@@ -50,11 +45,9 @@ const config = {
     mermaid: true,
   },
 
-
   presets: [
     [
       '@docusaurus/preset-classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
           path: 'docs',
@@ -66,7 +59,7 @@ const config = {
           editLocalizedFiles: false,
           editCurrentVersion: false,
           routeBasePath: 'docs',
-          include: ['**/*.md', '**/*.mdx'],
+          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
           exclude: [
             '**/_*.{js,jsx,ts,tsx,md,mdx}',
             '**/_*/**',
@@ -91,10 +84,7 @@ const config = {
             '**/__tests__/**',
           ],
           mdxPageComponent: '@theme/MDXPage',
-          remarkPlugins: [
-            require('@docusaurus/remark-plugin-npm2yarn'),
-            remarkMath,
-          ],
+          remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn'), remarkMath],
         },
 
         blog: {
@@ -111,10 +101,7 @@ const config = {
             '**/__tests__/**',
           ],
           remarkPlugins: [
-            [
-              require('@docusaurus/remark-plugin-npm2yarn'),
-              { converters: ['pnpm'] },
-            ],
+            [require('@docusaurus/remark-plugin-npm2yarn'), { converters: ['pnpm'] }],
           ],
         },
         sitemap: {
@@ -124,16 +111,11 @@ const config = {
           filename: 'sitemap.xml',
         },
         theme: {
-          customCss: [
-            require.resolve('./src/css/custom.css'),
-            
-
-          ],
+          customCss: [require.resolve('./src/css/custom.css')],
         },
       },
     ],
   ],
-
 
   plugins: [
     async function tailwindPlugin(context, options) {
@@ -152,6 +134,7 @@ const config = {
     '@docusaurus/theme-mermaid',
     '@docusaurus/plugin-client-redirects',
 
+    // Content Docs - Community
     [
       'content-docs',
       {
@@ -174,13 +157,12 @@ const config = {
       },
     ],
 
+    // Content Docs - Discover
     [
       'content-docs',
       {
         id: 'discover',
         path: 'discover',
-        // showLastUpdateAuthor: true,
-        // showLastUpdateTime: true,
         routeBasePath: 'discover',
         sidebarPath: require.resolve('./sidebarsDiscover.js'),
         include: ['**/*.md', '**/*.mdx'],
@@ -200,12 +182,9 @@ const config = {
   ],
 
   themeConfig: {
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     announcementBar: {
       id: 'kitoy_beta',
-      content:
-      'Kitoy Edition · <a target="_blank" href="/blog/kitoy-edition-beta">V2.0.5beta</a>', 
-        // 'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a> 🤙',
+      content: 'Kitoy Edition · <a target="_blank" href="/blog/kitoy-edition-beta">V2.0.5beta</a>',
       textColor: '#111317',
       isCloseable: true,
     },
@@ -214,7 +193,6 @@ const config = {
       defaultLanguage: 'jsx',
       additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell'],
     },
-    
     docs: {
       sidebar: {
         hideable: true,
@@ -224,11 +202,9 @@ const config = {
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
-      respectPrefersColorScheme: false,
+      respectPrefersColorScheme: true,
     },
-
     image: 'img/main/social-banner-01a.png',
-
 
     navbar: {
       title: 'Kitiplex',
@@ -240,6 +216,7 @@ const config = {
         className: 'custom-navbar-logo-class',
         target: '_self',
       },
+
       items: [
         {
           label: 'Development',
@@ -303,11 +280,7 @@ const config = {
     liveCodeBlock: {
       playgroundPosition: 'bottom',
     },
-
-    
-
   },
-
 };
 
 export default config;

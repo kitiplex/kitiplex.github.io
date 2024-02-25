@@ -1,9 +1,10 @@
 const theme = {
   plain: {
-    color: '#F5F8FA',
+    color: '#fff',
     backgroundColor: '#282C34',
   },
   styles: [
+    // General styles
     {
       types: ['property'],
       style: {
@@ -70,7 +71,7 @@ const theme = {
         cursor: 'help',
       },
     },
-    // react-native theme
+    // React Native theme
     {
       types: ['attr-name', 'keyword'],
       style: {

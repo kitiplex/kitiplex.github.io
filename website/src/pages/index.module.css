@@ -1,7 +1,3 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
 /* index.module.css */
 
 .heroBanner {
@@ -10,14 +6,9 @@
   overflow: hidden;
   display: flex;
   background-color: #14171A;
-
-  /* background-color: #0671a7;  */
-  /* background-color: #1da1f2; */
-  /* background-size: cover; */
-  /* background-position: center; */
-  /* height: 350; */
-
+  height: 350;
 }
+
 .banner {
   padding: 5rem;
 }
@@ -26,7 +17,10 @@
   color: var(--ifm-color-primary);
 }
 
+.heroSubTitleTextHtml b {
+  color: #43b1f4;
 
+}
 
 @keyframes kit-in-the-box {
   0% {
@@ -34,15 +28,12 @@
     transform: scale(0.1) rotate(45deg);
     transform-origin: center bottom;
   }
-
   50% {
     transform: rotate(-10deg);
   }
-
   70% {
     transform: rotate(5deg);
   }
-
   100% {
     opacity: 1;
     transform: scale(1);
@@ -58,39 +49,29 @@
   float: right;
   height: auto;
   display: block;
-
 }
-
 
 /* @media screen and (max-width: 768px) {
   .heroBanner {
     padding: 2rem;
     padding-left: 20px;
     padding-right: 20px;
-
   }
-
 } */
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-
 .buttons {
   display: block;
   justify-content: center;
   margin-top: 10px;
-  /* Add spacing between title/subtitle and buttons */
   color: var(--ifm-color-primary-dark);
 }
-
-
-
 
 .indexCtas {
   --ifm-button-size-multiplier: 1.6;
