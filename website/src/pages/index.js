@@ -32,13 +32,13 @@ function HomepageHeader() {
         </Heading>
         <Heading as="p" className="hero__subtitle">
           <span className={styles.heroSubTitleTextHtml}>
-            Open source proj<b>e</b>cts and samples from Kitimi.
+            Open source projects and samples from Kitimi
           </span>
         </Heading>
 
         <div className={styles.indexCtas}>
           <Link className="button button--primary button--lg px-4 text-black" to="/docs">
-            Learn more
+            Learn more<span className="pl-1 animate-pulse"><b>●</b></span>
           </Link>
         </div>
       </div>

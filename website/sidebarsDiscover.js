@@ -15,8 +15,8 @@ const sidebars = {
             collapsible: true,
             items: [
                 'case-studies',
-                'future-developments',
                 'foobar-365',
+                'future-developments',
             ],
         },
     ],
