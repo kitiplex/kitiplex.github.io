@@ -1,5 +1,5 @@
-import React from 'react';
 import clsx from 'clsx';
+import React from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
@@ -22,21 +22,23 @@ function HomepageHeader() {
         />
 
         <Heading as="h1" className="hero__title">
-          <span
-            className={styles.heroTitleTextHtml}
-            dangerouslySetInnerHTML={{
-              __html: "<b>Build</b><br>Innovate<br><b>Inspire</b>",
-            }}
-          />
+          <span className={styles.heroTitleTextHtml}>
+            <b>Build</b>
+            <br />
+            Innovate
+            <br />
+            <b>Inspire</b>
+          </span>
+        </Heading>
+        <Heading as="p" className="hero__subtitle">
+          <span className={styles.heroSubTitleTextHtml}>
+            Open source projects and samples from Kitimi
+          </span>
         </Heading>
 
-        <p className="hero__subtitle">
-          {"Open source projects and samples from Kitimi."}
-        </p>
-
         <div className={styles.indexCtas}>
-          <Link className="button button--primary button--lg" to="/docs">
-            Learn more
+          <Link className="button button--primary button--lg px-4 text-black" to="/docs">
+            Learn more<span className="pl-1 animate-pulse"><b>●</b></span>
           </Link>
         </div>
       </div>
@@ -49,9 +51,7 @@ function Home() {
     <Layout title="" description="">
       <HomepageHeader />
       <main>
-        {/* <Heading as='h3' className="hero__subtitle text-center mt-1 mb-1">
-            {"Features"}
-          </Heading> */}
+        {/* <p className="text-2xl py-6 text-center font-semi-bold text--kiti-white">{"Features"}</p> */}
         <HomepageFeatures />
       </main>
     </Layout>

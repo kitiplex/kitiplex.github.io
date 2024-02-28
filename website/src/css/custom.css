@@ -11,25 +11,18 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
 :root {
-
-
   --brand: #61dafb;
   --dark: #282c34;
   --ifm-color-primary: #1DA1F2;
   --ifm-code-font-size: 95%;
-  /* --doc-sidebar-width: 266px !important; */
- 
   --deepdark: #20232a;
   --kiti-dark: #111317;
   --kiti-white: #C3C3C3;
-
   --twitter-black: #14171A;
   --twitter-blue: #1DA1F2;
   --twitter-darkgray: #657786;
-
   --shallowdark: #29303c;
-
-  --ifm-navbar-background-color: var(--dark);
+  /* --ifm-navbar-background-color: var(--dark); */
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -41,10 +34,7 @@
   --ifm-color-primary-light: #37acf3;
   --ifm-color-primary-lighter: #43b1f4;
   --ifm-color-primary-lightest: #6ac1f6;
-
-
   --ifm-color-warning: #ffe564;
-
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -56,7 +46,7 @@
 
 .header-github-link:hover,
 .header-twitter-link:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .main {
@@ -65,6 +55,41 @@
 
 .heading {
   font-weight: bold;
+}
+
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 966px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 
@@ -142,7 +167,7 @@
 
 div[class^='announcementBar_'] {
   font-size: 20px;
-  background-color: var(--ifm-color-primary-lightest);
+  background-color: var(--brand);
   
 
   /*
