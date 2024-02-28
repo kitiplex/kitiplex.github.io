@@ -38,7 +38,7 @@ function HomepageHeader() {
 
         <div className={styles.indexCtas}>
           <Link className="button button--primary button--lg px-4 text-black" to="/docs">
-            Learn more<span className="pl-1 animate-pulse"><b>●</b></span>
+            Learn more<span className="pl-1 animate-pulse"></span>
           </Link>
         </div>
       </div>

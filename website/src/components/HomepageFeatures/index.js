@@ -8,13 +8,14 @@ import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     scale: 1.0,
-    title: 'Docs',
+    title: 'Open-source',
     Svg: require('@site/static/img/vendor/undraw_docusaurus_react.svg').default,
-    // description: (
-    //   <>
-    //   An open-source documentation framework that simplifies the process of building and maintaining websites for software projects.
-    //   </>
-    // ),
+    description: (
+      <>
+        We strive to articulate the<Link to="/docs"> documentation </Link>for all open-source projects and demos in the platform hosted on this website.
+
+      </>
+    ),
   },
 
   {
@@ -23,19 +24,18 @@ const FeatureList = [
     Svg: require('@site/static/img/vendor/undraw_experience_design.svg').default,
     description: (
       <>
-      Awesome team
+        Fostering an environment where ideas evolve into tangible projects, collaborations flourish, and contributors actively engage in constructing innovative solutions.
       </>
     ),
   },
 
   {
     scale: 1.0,
-    title: 'Opensource',
-    fill: '#0087da', //#0087da
+    title: 'Learn',
     Svg: require('@site/static/img/vendor/undraw_code_review.svg').default,
     description: (
       <>
-      Innovative approach
+        Challenge to innovate, constantly pushing boundaries and redefining what's possible.
       </>
     ),
   },
