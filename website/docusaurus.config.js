@@ -4,10 +4,12 @@
  * Kitiplex - The hub for contributors, authors, and maintainers in the Kitimi ecosystem.
  * Licensed under MIT. See LICENSE file in the root directory.
  */
+// @ts-check
 import autoprefixer from 'autoprefixer';
 import tailwind from 'tailwindcss';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -111,7 +113,7 @@ const config = {
           filename: 'sitemap.xml',
         },
         theme: {
-          customCss: [require.resolve('./src/css/custom.css')],
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
@@ -183,15 +185,17 @@ const config = {
 
   themeConfig: {
     announcementBar: {
-      id: 'kitoy_beta',
-      content: 'Kitoy Edition · <a target="_blank" href="/blog/kitoy-edition-beta">V2.0.5beta</a>',
-      textColor: '#111317',
+      id: 'announcementBar_',
+      content:
+        ' 🎉 Give us a Star &#11088; on  <a target="_blank" rel="noopener noreferrer" href="https://github.com/kitiplex/kitiplex.github.io">GitHub</a>',
+      backgroundColor: '#20232a',
+      textColor: '#fff',
       isCloseable: true,
     },
     prism: {
-      themes: require('./src/utils/PrismTheme'),
-      defaultLanguage: 'jsx',
-      additionalLanguages: ['bash', 'json', 'java', 'python', 'powershell'],
+      theme: prismThemes.oceanicNext,
+      darkTheme: prismThemes.oceanicNext,
+      additionalLanguages: ['powershell','python','bash','json','java'],
     },
     docs: {
       sidebar: {
