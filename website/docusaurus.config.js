@@ -193,7 +193,6 @@ const config = {
       isCloseable: true,
     },
     prism: {
-      theme: prismThemes.oceanicNext,
       darkTheme: prismThemes.oceanicNext,
       additionalLanguages: ['powershell','python','bash','json','java'],
     },
