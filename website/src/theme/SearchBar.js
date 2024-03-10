@@ -2,7 +2,6 @@ import React from 'react';
 import { DocSearch } from '@docsearch/react';
 
 import '@docsearch/css';
-
 export default function SearchBarWrapper(props) {
   return (
     <div>
@@ -19,9 +18,5 @@ export default function SearchBarWrapper(props) {
         insights
       />
     </div>
-
   );
 }
-
-
-

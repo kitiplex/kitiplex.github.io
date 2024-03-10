@@ -6,8 +6,8 @@
   overflow: hidden;
   display: flex;
   background-color: #14171A;
-  height: 350;
-}
+  height: 400px; /* Add 'px' to specify height */
+ }
 
 .banner {
   padding: 5rem;
@@ -61,6 +61,7 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner {
+    padding: 2rem;
     padding-left: 20px;
     padding-right: 20px;
   }

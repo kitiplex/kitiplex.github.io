@@ -29,40 +29,88 @@ const sidebars = {
                 'styling-guide',
             ]
         },
-
         {
             type: "category",
-            label: "💡Python Genesis",
+            label: "Projects",
             collapsed: true,
             collapsible: true,
             link: {
-                type: "doc",
-                id: "projects/python-genesis/overview",
+                type: "generated-index",
+                // id: "projects/index"
             },
+            
+            
             items: [
+                // "projects/python-genesis/index",
+                
+                {
+                    type: "category",
+                    label: "Python Genesis",
+                    collapsed: true,
+                    collapsible: true,
+                    link:{
+                        type: "doc",
+                        id: "projects/python-genesis/index",
 
-                "projects/python-genesis/py-genesis",
-                "projects/python-genesis/flask-genesis",
-                "projects/python-genesis/dj-genesis"
+
+                    },
+                    items: [
+                        "projects/python-genesis/starters",
+                        "projects/python-genesis/flask-genesis",
+                        "projects/python-genesis/dj-genesis"
+                    ]
+                },
+                {
+                    type: "category",
+                    label: "Featured",
+                    collapsed: true,
+                    collapsible: true,
+                    link: {
+                        type: "doc",
+                        id: "projects/featured/index"
+                    },
+                    items: [
+                        "projects/featured/kitiplex-web",
+                        "projects/featured/chatx-web",
+                    ]
+                }
             ]
-
+        
         },
 
-        {
-            type: "category",
-            label: "💡Featured",
-            collapsed: true,
-            collapsible: true,
-            link: {
-                type: "doc",
-                id: "projects/featured/index",
-            },
-            items: [
+        // {
+        //     type: "category",
+        //     label: "💡Python Genesis",
+        //     collapsed: true,
+        //     collapsible: true,
+        //     link: {
+        //         type: "doc",
+        //         id: "projects/python-genesis/overview",
+        //     },
+        //     items: [
 
-                "projects/featured/chatx-web",
-                "projects/featured/kitiplex-web",
-            ]
-        }
+        //         "projects/python-genesis/py-genesis",
+        //         "projects/python-genesis/flask-genesis",
+        //         "projects/python-genesis/dj-genesis"
+        //     ]
+
+        // },
+
+        // {
+        //     type: "category",
+        //     label: "💡Featured",
+        //     collapsed: true,
+        //     collapsible: true,
+        //     link: {
+        //         type: "doc",
+        //         id: "projects/featured/index",
+        //     },
+        //     items: [
+
+        //         "projects/featured/chatx-web",
+        //         "projects/featured/kitiplex-web",
+        //     ]
+        // }
 
     ],
 

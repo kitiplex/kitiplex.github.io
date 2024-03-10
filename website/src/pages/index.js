@@ -18,8 +18,8 @@ function HomepageHeader() {
         <LogoBlue className={clsx(styles.heroBannerLogo, 'margin-vert--sm')}
           title='LogoBlue'
           alt="LogoBlue"
-          height={300}
-          width={300}
+          height={250}
+          width={200}
         />
 
         <Heading as="h1" className="hero__title">

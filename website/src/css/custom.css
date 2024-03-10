@@ -40,9 +40,14 @@
 
 
 
-[data-theme='light'] {
+/* [data-theme='light'] {
   --ifm-background-color: #F5F8FA;
+} */
+html[data-theme='dark'] {
+  --ifm-background-color: #1e2125;
+  --ifm-background-surface-color: #121212;
 }
+
 
 .header-github-link:hover,
 .header-twitter-link:hover {
@@ -167,7 +172,7 @@ p {
 
 div[class^='announcementBar_'] {
   font-size: 20px;
-  background-color: var(--brand);
+  background-color: var(--ifm-color-primary);
   
 
   /*

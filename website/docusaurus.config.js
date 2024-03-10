@@ -10,6 +10,7 @@ import tailwind from 'tailwindcss';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import {themes as prismThemes} from 'prism-react-renderer';
+// import PrismLight from './src/utils/PrismTheme';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -113,7 +114,7 @@ const config = {
           filename: 'sitemap.xml',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+         customCss: './src/css/custom.css',
         },
       },
     ],
@@ -184,16 +185,16 @@ const config = {
   ],
 
   themeConfig: {
+    
     announcementBar: {
       id: 'announcementBar_',
       content:
-        ' 🎉 Give us a Star &#11088; on  <a target="_blank" rel="noopener noreferrer" href="https://github.com/kitiplex/kitiplex.github.io">GitHub</a>',
-      backgroundColor: '#20232a',
-      textColor: '#fff',
+        '🎉Give it a Star &#11088; on  <a target="_blank" rel="noopener noreferrer" href="https://github.com/kitiplex/kitiplex.github.io">GitHub</a>',
+      textColor: '#000',
       isCloseable: true,
     },
     prism: {
-      darkTheme: prismThemes.oceanicNext,
+      theme: prismThemes.oceanicNext,
       additionalLanguages: ['powershell','python','bash','json','java'],
     },
     docs: {
