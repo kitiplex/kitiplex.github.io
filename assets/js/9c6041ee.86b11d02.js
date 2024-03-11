@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[4102],{2283:e=>{e.exports=JSON.parse('{"title":"Projects","description":"Our projects","slug":"/category/projects","permalink":"/docs/category/projects","navigation":{"next":{"title":"PythonGenesis","permalink":"/docs/python-genesis"}}}')}}]);

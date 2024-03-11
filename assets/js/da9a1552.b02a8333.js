@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[1131],{3982:e=>{e.exports=JSON.parse('{"label":"twitter","permalink":"/io/blog/tags/twitter","allTagsPath":"/io/blog/tags","count":1,"unlisted":false}')}}]);

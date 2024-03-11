@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://kitiplex.github.io/blog</id>
+    <id>https://kitiplex.github.io/io/blog</id>
     <title>kitiplex Blog</title>
     <updated>2024-03-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://kitiplex.github.io/blog"/>
+    <link rel="alternate" href="https://kitiplex.github.io/io/blog"/>
     <subtitle>kitiplex Blog</subtitle>
-    <icon>https://kitiplex.github.io/icons/favicon.ico</icon>
+    <icon>https://kitiplex.github.io/io/icons/favicon.ico</icon>
     <rights>Copyright © 2024 Kitimi Platforms.</rights>
     <entry>
         <title type="html"><![CDATA[IUIU]]></title>
-        <id>https://kitiplex.github.io/blog/iuiu-project</id>
-        <link href="https://kitiplex.github.io/blog/iuiu-project"/>
+        <id>https://kitiplex.github.io/io/blog/iuiu-project</id>
+        <link href="https://kitiplex.github.io/io/blog/iuiu-project"/>
         <updated>2024-03-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[🎉 We're happy to introduce our newest project IUIU - a user-friendly documentation website built with Docusaurus `--typescript` variant. Learn more.]]></summary>
         <content type="html"><![CDATA[<p>🎉 We're happy to introduce our newest project <strong>IUIU</strong> - a user-friendly documentation website built with Docusaurus <code>--typescript</code> variant. Learn <a href="https://kitiplex.github.io/iuiu/" target="_blank" rel="noopener noreferrer">more</a>.</p>]]></content>
@@ -28,16 +28,16 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Kitoy Edition]]></title>
-        <id>https://kitiplex.github.io/blog/kitoy-edition-beta</id>
-        <link href="https://kitiplex.github.io/blog/kitoy-edition-beta"/>
+        <id>https://kitiplex.github.io/io/blog/kitoy-edition-beta</id>
+        <link href="https://kitiplex.github.io/io/blog/kitoy-edition-beta"/>
         <updated>2024-02-18T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hey everyone. I'm thrilled to share some exciting news with you all! The documentation landscape is about to undergo a transformation with the introduction of `Kitoy Edition Beta` — a release that places a strong focus on how this website behaves in preparation for the Next Big Thing. {/ truncate /}]]></summary>
         <content type="html"><![CDATA[<p>Hey everyone. I'm thrilled to share some exciting news with you all! The documentation landscape is about to undergo a transformation with the introduction of <code>Kitoy Edition Beta</code> — a release that places a strong focus on how this website behaves in preparation for the Next Big Thing. </p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="whats-this">What's this?<a href="https://kitiplex.github.io/blog/kitoy-edition-beta#whats-this" class="hash-link" aria-label="Direct link to What's this?" title="Direct link to What's this?">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="whats-this">What's this?<a href="https://kitiplex.github.io/io/blog/kitoy-edition-beta#whats-this" class="hash-link" aria-label="Direct link to What's this?" title="Direct link to What's this?">​</a></h3>
 <p>In the ever-evolving tech landscape, being ahead of the curve is crucial. We are gearing up to set a new standard with a heightened emphasis on how the website behaves in anticipation of the Next Big Thing. This release is a testament to our commitment to staying at the forefront of innovation.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="algolia-search">Algolia Search<a href="https://kitiplex.github.io/blog/kitoy-edition-beta#algolia-search" class="hash-link" aria-label="Direct link to Algolia Search" title="Direct link to Algolia Search">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="algolia-search">Algolia Search<a href="https://kitiplex.github.io/io/blog/kitoy-edition-beta#algolia-search" class="hash-link" aria-label="Direct link to Algolia Search" title="Direct link to Algolia Search">​</a></h3>
 <p><strong>Big thanks to Algolia!</strong> One of the standout features in this release is the integration of <a href="https://docsearch.algolia.com/" target="_blank" rel="noopener noreferrer"><strong>Algolia search</strong></a>. We know how crucial it is for users to quickly find the information they need, and Algolia's powerful search and discovery API makes that happen. It's a game-changer for enhancing the user experience, aligning seamlessly with our focus on preparing for the future. In this release, we utilize the <a href="https://docsearch.algolia.com/docs/templates#docusaurus-v3-template" target="_blank" rel="noopener noreferrer">default configuration</a> with a little bit of tweak.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="custom-configuration">Custom Configuration<a href="https://kitiplex.github.io/blog/kitoy-edition-beta#custom-configuration" class="hash-link" aria-label="Direct link to Custom Configuration" title="Direct link to Custom Configuration">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="custom-configuration">Custom Configuration<a href="https://kitiplex.github.io/io/blog/kitoy-edition-beta#custom-configuration" class="hash-link" aria-label="Direct link to Custom Configuration" title="Direct link to Custom Configuration">​</a></h3>
 <p>Flexibility has always been a priority for us. We're introducing the concept of running optional with custom configuration. It's about giving you the control to make your workflow as efficient as possible, aligning perfectly with our goal of preparing for what comes next.</p>
 <p>Thank you for your time.</p>
 <p><em>-K</em></p>
@@ -50,14 +50,14 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[On GitHub Pages]]></title>
-        <id>https://kitiplex.github.io/blog/on-gh-pages</id>
-        <link href="https://kitiplex.github.io/blog/on-gh-pages"/>
+        <id>https://kitiplex.github.io/io/blog/on-gh-pages</id>
+        <link href="https://kitiplex.github.io/io/blog/on-gh-pages"/>
         <updated>2024-02-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[As we joyfully usher in the auspicious Year of the Dragon, {/ truncate /}]]></summary>
         <content type="html"><![CDATA[<p>As we joyfully usher in the auspicious Year of the Dragon, <!-- -->
 we are thrilled to share a double celebration with our community. Not only are we embracing the festive spirit of Chinese New Year, but we're also excited to announce that our website is now public and proudly served through <a href="https://kitiplex.github.io/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.  🎉🥳💥</p>
 <p>Additionally, we've given our online space a facelift with a brand-new banner, too.</p>
-<div aria-owns="rmiz-modal-" data-rmiz=""><div data-rmiz-content="not-found" style="visibility:visible"><p><img decoding="async" loading="lazy" alt="test" src="https://kitiplex.github.io/assets/images/social-banner-01a-e5042f2425f40ffaff345fcb46e91808.png" width="2190" height="948" class="img_ev3q"></p></div></div>]]></content>
+<div aria-owns="rmiz-modal-" data-rmiz=""><div data-rmiz-content="not-found" style="visibility:visible"><p><img decoding="async" loading="lazy" alt="test" src="https://kitiplex.github.io/io/assets/images/social-banner-01a-e5042f2425f40ffaff345fcb46e91808.png" width="2190" height="948" class="img_ev3q"></p></div></div>]]></content>
         <author>
             <name>Kitiplex</name>
             <uri>https://github.com/kitiplex</uri>
@@ -67,8 +67,8 @@ we are thrilled to share a double celebration with our community. Not only are w
     </entry>
     <entry>
         <title type="html"><![CDATA[New year spoiler]]></title>
-        <id>https://kitiplex.github.io/blog/new-year-spoiler</id>
-        <link href="https://kitiplex.github.io/blog/new-year-spoiler"/>
+        <id>https://kitiplex.github.io/io/blog/new-year-spoiler</id>
+        <link href="https://kitiplex.github.io/io/blog/new-year-spoiler"/>
         <updated>2024-01-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[🚀 Exciting start to 2024!   Just announced a major spoiler: delving into the world of Django with a new monorepository! From beginners to experts, we're creating a unified space for all. Coming soon! #Django2024 #MonorepoSpoiler]]></summary>
         <content type="html"><![CDATA[<p>🚀 Exciting start to 2024!   Just announced a major spoiler: delving into the world of Django with a new monorepository! From beginners to experts, we're creating a unified space for all. Coming soon! #Django2024 #MonorepoSpoiler</p>
@@ -82,8 +82,8 @@ we are thrilled to share a double celebration with our community. Not only are w
     </entry>
     <entry>
         <title type="html"><![CDATA[Kamaoism]]></title>
-        <id>https://kitiplex.github.io/blog/kamaoism</id>
-        <link href="https://kitiplex.github.io/blog/kamaoism"/>
+        <id>https://kitiplex.github.io/io/blog/kamaoism</id>
+        <link href="https://kitiplex.github.io/io/blog/kamaoism"/>
         <updated>2023-12-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Kamaoism is the term used to describe a fictional collective of individuals who identify themselves as Kamoists.    Although the exact origin of this group remains unverified, there are theories suggesting that it originated in the vicinity of Point Nemo. 48°52.6′S 123°23.6′W.]]></summary>
         <content type="html"><![CDATA[<p>Kamaoism is the term used to describe a fictional collective of individuals who identify themselves as Kamoists.    Although the exact origin of this group remains unverified, there are theories suggesting that it originated in the vicinity of Point Nemo. <a href="https://maps.app.goo.gl/oUkKPM37V3ymEKDB6" target="_blank" rel="noopener noreferrer">48°52.6′S 123°23.6′W</a>.</p>
@@ -96,8 +96,8 @@ we are thrilled to share a double celebration with our community. Not only are w
     </entry>
     <entry>
         <title type="html"><![CDATA[The Keyword]]></title>
-        <id>https://kitiplex.github.io/blog/the-keyword</id>
-        <link href="https://kitiplex.github.io/blog/the-keyword"/>
+        <id>https://kitiplex.github.io/io/blog/the-keyword</id>
+        <link href="https://kitiplex.github.io/io/blog/the-keyword"/>
         <updated>2023-11-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hello and welcome to the Kitimi family! {/ truncate /} It is an honor to collaborate with such talented and dedicated individuals]]></summary>
         <content type="html"><![CDATA[<p>Hello and welcome to the Kitimi family! <!-- --> It is an honor to collaborate with such talented and dedicated individuals
@@ -114,11 +114,11 @@ As we commence this exciting journey, please know my door is open for your suppo
     </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
-        <id>https://kitiplex.github.io/blog/welcome</id>
-        <link href="https://kitiplex.github.io/blog/welcome"/>
+        <id>https://kitiplex.github.io/io/blog/welcome</id>
+        <link href="https://kitiplex.github.io/io/blog/welcome"/>
         <updated>2023-10-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[kitiplex]]></summary>
-        <content type="html"><![CDATA[<div aria-owns="rmiz-modal-" data-rmiz=""><div data-rmiz-content="not-found" style="visibility:visible"><p><img decoding="async" loading="lazy" alt="kitiplex" src="https://kitiplex.github.io/assets/images/kitimi-banner-c5d942999dba9f262c7e700c82a674dd.png" width="3075" height="540" class="img_ev3q"></p></div></div>]]></content>
+        <content type="html"><![CDATA[<div aria-owns="rmiz-modal-" data-rmiz=""><div data-rmiz-content="not-found" style="visibility:visible"><p><img decoding="async" loading="lazy" alt="kitiplex" src="https://kitiplex.github.io/io/assets/images/kitimi-banner-c5d942999dba9f262c7e700c82a674dd.png" width="3075" height="540" class="img_ev3q"></p></div></div>]]></content>
         <author>
             <name>Kitiplex</name>
             <uri>https://github.com/kitiplex</uri>
