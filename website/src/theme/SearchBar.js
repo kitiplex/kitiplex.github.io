@@ -7,7 +7,7 @@ export default function SearchBarWrapper(props) {
     <div>
       <DocSearch
         appId="KLI8CT6349"
-        indexName="kitiplexio"
+        indexName="kitiplexio.tmp"
         apiKey="5037344df426897d733d0efebb8b6d12"
         // placeholder="Search kitiplex..."
 
@@ -15,7 +15,7 @@ export default function SearchBarWrapper(props) {
           return <h3>{state.context.nbHits} match found</h3>;
         }}
         maxResultsPerGroup="7"
-        insights
+        // insights
       />
     </div>
   );
