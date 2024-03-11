@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[3625],{3807:e=>{e.exports=JSON.parse('{"permalink":"/io/blog/tags/release","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Updates"}')}}]);
