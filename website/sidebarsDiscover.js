@@ -8,17 +8,17 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
     discover: [
-        {
-            type: 'category',
-            label: 'Discover',
-            collapsed: false,
-            collapsible: true,
-            items: [
-                'case-studies',
-                'foobar-365',
-                'future-developments',
-            ],
-        },
+        // {
+        //     type: 'category',
+        //     label: 'Discover',
+        //     collapsed: false,
+        //     collapsible: true,
+        //     items: [
+        //         'case-studies',
+        //         'foobar-365',
+        //         'future-developments',
+        //     ],
+        // },
     ],
 };
 

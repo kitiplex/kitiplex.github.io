@@ -155,6 +155,12 @@ const config = {
         id: "community",
         path: "community",
         routeBasePath: "community",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: true,
+        disableVersioning: false,
+        editLocalizedFiles: false,
+        editCurrentVersion: false,
         sidebarPath: require.resolve("./sidebarsCommunity.js"),
         include: ["**/*.md", "**/*.mdx"],
         exclude: [
@@ -163,30 +169,34 @@ const config = {
           "**/*.test.{js,jsx,ts,tsx}",
           "**/__tests__/**",
         ],
+        docItemComponent: '@theme/DocItem',
         remarkPlugins: [[npm2yarn, { sync: true }], remarkMath],
         rehypePlugins: [rehypeKatex],
+        beforeDefaultRemarkPlugins: [],
+        beforeDefaultRehypePlugins: [],
       },
     ],
 
     // Content Docs - Discover
-    [
-      "content-docs",
-      {
-        id: "discover",
-        path: "discover",
-        routeBasePath: "discover",
-        sidebarPath: require.resolve("./sidebarsDiscover.js"),
-        include: ["**/*.md", "**/*.mdx"],
-        exclude: [
-          "**/_*.{js,jsx,ts,tsx,md,mdx}",
-          "**/_*/**",
-          "**/*.test.{js,jsx,ts,tsx}",
-          "**/__tests__/**",
-        ],
-        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath],
-        rehypePlugins: [rehypeKatex],
-      },
-    ],
+    // [
+    //   "content-docs",
+      
+    //   {
+    //     id: "discover",
+    //     path: "discover",
+    //     routeBasePath: "discover",
+    //     sidebarPath: require.resolve("./sidebarsDiscover.js"),
+    //     include: ["**/*.md", "**/*.mdx"],
+    //     exclude: [
+    //       "**/_*.{js,jsx,ts,tsx,md,mdx}",
+    //       "**/_*/**",
+    //       "**/*.test.{js,jsx,ts,tsx}",
+    //       "**/__tests__/**",
+    //     ],
+    //     remarkPlugins: [[npm2yarn, { sync: true }], remarkMath],
+    //     rehypePlugins: [rehypeKatex],
+    //   },
+    // ],
 
     
   ],
@@ -253,31 +263,38 @@ const config = {
               type: "docSidebar",
             },
             {
+              label: "Projects",
+              sidebarId: "devSidebar",
+              type: "docSidebar",
+            },
+
+            {
               label: "Guides",
               sidebarId: "guidesSidebar",
               type: "docSidebar",
             },
-            {
-              label: "Snippets",
-              sidebarId: "snippetsSidebar",
-              type: "docSidebar",
-            },
+            // {
+            //   label: "Snippets",
+            //   sidebarId: "snippetsSidebar",
+            //   type: "docSidebar",
+            // },
           ],
         },
         {
           type: "doc",
-          docId: "/category/community",
+          // docId: "code-of-conduct",
+          docId:'resources',
           label: "Community",
           position: "right",
           docsPluginId: "community",
         },
-        {
-          type: "doc",
-          docId: "case-studies",
-          label: "Insights",
-          position: "right",
-          docsPluginId: "discover",
-        },
+        // {
+        //   type: "doc",
+        //   docId: "case-studies",
+        //   label: "Insights",
+        //   position: "right",
+        //   docsPluginId: "discover",
+        // },
         {
           label: "Blog",
           to: "/blog",

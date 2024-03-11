@@ -9,6 +9,7 @@
 
 const sidebars = {
   projectSidebar: [
+
     "intro",
 
     {
@@ -21,6 +22,10 @@ const sidebars = {
       },
       items: ["documentation", "configuration", "frameworks", "styling-guide"],
     },
+    
+  ],
+
+  devSidebar: [
     {
       type: "category",
       label: "Projects",
@@ -28,11 +33,10 @@ const sidebars = {
       collapsible: true,
       link: {
         type: "generated-index",
-        // id: "projects/index"
+        description: "Our projects"
       },
 
       items: [
-        // "projects/python-genesis/index",
 
         {
           type: "category",
@@ -70,7 +74,7 @@ const sidebars = {
           collapsible: true,
           link: {
             type: "generated-index",
-            description: "Learn more about Docusarus."
+            description: "Let's discover Docusaurus in less than 5 minutes."
             
           },
           items: [
@@ -118,7 +122,7 @@ const sidebars = {
   guidesSidebar: [
     {
       type: "category",
-      label: "📚 Guides",
+      label: "Guides 📚 ",
       collapsed: true,
       collapsible: true,
       link: {
@@ -130,18 +134,18 @@ const sidebars = {
         "guides/wsl-kali",
         "guides/openai-api",
       ],
+      
     },
-  ],
-
-  snippetsSidebar: [
     {
       type: "category",
-      label: "📦 Snippets",
+      label: "Snippets 📦 ",
+
       collapsed: true,
       collapsible: true,
       link: {
         type: "doc",
         id: "snippets/index",
+        
       },
       items: [
         "snippets/browser-dev",
@@ -158,6 +162,33 @@ const sidebars = {
       ],
     },
   ],
+
+
+  // snippetsSidebar: [
+  //   {
+  //     type: "category",
+  //     label: "📦 Snippets",
+  //     collapsed: true,
+  //     collapsible: true,
+  //     link: {
+  //       type: "doc",
+  //       id: "snippets/index",
+  //     },
+  //     items: [
+  //       "snippets/browser-dev",
+  //       "snippets/live-editor",
+  //       "snippets/celestial-distance",
+  //       "snippets/pwsh-cli",
+  //       "snippets/py-starters",
+  //       "snippets/calculus",
+  //       "snippets/mermaid-config",
+  //       "snippets/foobar-one",
+  //       "snippets/foobar-two",
+  //       "snippets/git-cheat",
+  //       "snippets/conda-cheat",
+  //     ],
+  //   },
+  // ],
 };
 
 export default sidebars;
