@@ -2,11 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kitiplex.github.io/blog</id>
     <title>kitiplex Blog</title>
-    <updated>2024-02-18T00:00:00.000Z</updated>
+    <updated>2024-03-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kitiplex.github.io/blog"/>
     <subtitle>kitiplex Blog</subtitle>
     <icon>https://kitiplex.github.io/icons/favicon.ico</icon>
+    <rights>Copyright © 2024 Kitimi Platforms.</rights>
+    <entry>
+        <title type="html"><![CDATA[IUIU]]></title>
+        <id>https://kitiplex.github.io/blog/iuiu-project</id>
+        <link href="https://kitiplex.github.io/blog/iuiu-project"/>
+        <updated>2024-03-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎉 We're happy to introduce our newest project IUIU - a user-friendly documentation website built with Docusaurus `--typescript` variant. Learn more.]]></summary>
+        <content type="html"><![CDATA[<p>🎉 We're happy to introduce our newest project <strong>IUIU</strong> - a user-friendly documentation website built with Docusaurus <code>--typescript</code> variant. Learn <a href="https://kitiplex.github.io/iuiu/" target="_blank" rel="noopener noreferrer">more</a>.</p>]]></content>
+        <author>
+            <name>Keith</name>
+            <uri>https://github.com/mkeithX</uri>
+        </author>
+        <author>
+            <name>Kitiplex</name>
+            <uri>https://github.com/kitiplex</uri>
+        </author>
+        <category label="release" term="release"/>
+        <category label="updates" term="updates"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Kitoy Edition]]></title>
         <id>https://kitiplex.github.io/blog/kitoy-edition-beta</id>
@@ -121,7 +140,7 @@ As we commence this exciting journey, please know my door is open for your suppo
             <uri>https://github.com/Portiaporkshap</uri>
         </author>
         <author>
-            <name>PriMx</name>
+            <name>Primrose</name>
             <uri>https://github.com/PriMaxima</uri>
         </author>
         <category label="kitiplex" term="kitiplex"/>

@@ -4,10 +4,21 @@
         <title>kitiplex Blog</title>
         <link>https://kitiplex.github.io/blog</link>
         <description>kitiplex Blog</description>
-        <lastBuildDate>Sun, 18 Feb 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 11 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <copyright>Copyright © 2024 Kitimi Platforms.</copyright>
+        <item>
+            <title><![CDATA[IUIU]]></title>
+            <link>https://kitiplex.github.io/blog/iuiu-project</link>
+            <guid>https://kitiplex.github.io/blog/iuiu-project</guid>
+            <pubDate>Mon, 11 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[🎉 We're happy to introduce our newest project IUIU - a user-friendly documentation website built with Docusaurus `--typescript` variant. Learn more.]]></description>
+            <content:encoded><![CDATA[<p>🎉 We're happy to introduce our newest project <strong>IUIU</strong> - a user-friendly documentation website built with Docusaurus <code>--typescript</code> variant. Learn <a href="https://kitiplex.github.io/iuiu/" target="_blank" rel="noopener noreferrer">more</a>.</p>]]></content:encoded>
+            <category>release</category>
+            <category>updates</category>
+        </item>
         <item>
             <title><![CDATA[Kitoy Edition]]></title>
             <link>https://kitiplex.github.io/blog/kitoy-edition-beta</link>
