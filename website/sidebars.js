@@ -4,14 +4,14 @@
  * Kitiplex - The hub for contributors, authors, and maintainers in the Kitimi ecosystem.
  * Licensed under MIT. See LICENSE file in the root directory.
  */
+// @ts-check
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 
 const sidebars = {
+  
   projectSidebar: [
-
     "intro",
-
     {
       type: "category",
       label: "Getting started",
@@ -19,12 +19,49 @@ const sidebars = {
       collapsible: true,
       link: {
         type: "generated-index",
+        slug: "/getting-started",
       },
       items: ["documentation", "configuration", "frameworks", "styling-guide"],
     },
-    
+    {
+      type: "category",
+      label: "Guides 📚 ",
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: "guides/index",
+      },
+      items: [
+        "guides/installing-python",
+        "guides/wsl-kali",
+        "guides/openai-api",
+      ],
+    },
+    {
+      type: "category",
+      label: "Snippets 📦",
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: "snippets/index",
+      },
+      items: [
+        "snippets/browser-dev",
+        "snippets/live-editor",
+        "snippets/celestial-distance",
+        "snippets/pwsh-cli",
+        "snippets/py-starters",
+        "snippets/calculus",
+        "snippets/mermaid-config",
+        "snippets/foobar-one",
+        "snippets/foobar-two",
+        "snippets/git-cheat",
+        "snippets/conda-cheat",
+      ],
+    },
   ],
-
   devSidebar: [
     {
       type: "category",
@@ -32,12 +69,10 @@ const sidebars = {
       collapsed: true,
       collapsible: true,
       link: {
-        type: "generated-index",
-        description: "Our projects"
+        type: "doc",
+        id: "projects/index",
       },
-
       items: [
-
         {
           type: "category",
           label: "Python Genesis",
@@ -69,23 +104,23 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Docusaurus",
+          label: "Docusaurus 🦖",
           collapsed: true,
           collapsible: true,
           link: {
             type: "generated-index",
-            description: "Let's discover Docusaurus in less than 5 minutes."
-            
+            description: "Let's discover Docusaurus in less than 5 minutes.",
+            slug: "/docusaurus/getting-started",
           },
           items: [
             {
-              label: 'Basics',
-              type: 'category',
+              label: "Basics",
+              type: "category",
               collapsed: true,
               collapsible: true,
               link: {
-                type: 'doc',
-                id: 'projects/docusaurus/basics/index',
+                type: "doc",
+                id: "projects/docusaurus/basics/index",
               },
               items: [
                 "projects/docusaurus/basics/create-a-page",
@@ -96,7 +131,7 @@ const sidebars = {
                 "projects/docusaurus/basics/manage-docs-versions",
                 "projects/docusaurus/basics/translate-your-site",
                 "projects/docusaurus/basics/congratulations",
-              ]
+              ],
             },
 
             {
@@ -115,50 +150,6 @@ const sidebars = {
             },
           ],
         },
-      ],
-    },
-  ],
-
-  guidesSidebar: [
-    {
-      type: "category",
-      label: "Guides 📚 ",
-      collapsed: true,
-      collapsible: true,
-      link: {
-        type: "doc",
-        id: "guides/index",
-      },
-      items: [
-        "guides/installing-python",
-        "guides/wsl-kali",
-        "guides/openai-api",
-      ],
-      
-    },
-    {
-      type: "category",
-      label: "Snippets 📦 ",
-
-      collapsed: true,
-      collapsible: true,
-      link: {
-        type: "doc",
-        id: "snippets/index",
-        
-      },
-      items: [
-        "snippets/browser-dev",
-        "snippets/live-editor",
-        "snippets/celestial-distance",
-        "snippets/pwsh-cli",
-        "snippets/py-starters",
-        "snippets/calculus",
-        "snippets/mermaid-config",
-        "snippets/foobar-one",
-        "snippets/foobar-two",
-        "snippets/git-cheat",
-        "snippets/conda-cheat",
       ],
     },
   ],

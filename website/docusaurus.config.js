@@ -5,6 +5,7 @@
  * Licensed under MIT. See LICENSE file in the root directory.
  */
 // @ts-check
+
 import autoprefixer from 'autoprefixer';
 import tailwind from 'tailwindcss';
 import remarkMath from 'remark-math';
@@ -19,7 +20,7 @@ const config = {
   tagline: "Build Innovate Inspire",
   favicon: "icons/favicon.ico",
   url: "https://kitiplex.github.io",
-  baseUrl: "/",
+  baseUrl: "/io/",
   organizationName: "kitiplex",
   projectName: "kitiplex.github.io",
   deploymentBranch: "gh-pages",
@@ -54,12 +55,13 @@ const config = {
   presets: [
     [
       "@docusaurus/preset-classic",
+        /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
           path: "docs",
           showLastUpdateAuthor: true,
           breadcrumbs: true,
-          sidebarPath: 'sidebars.js',
+          sidebarPath: './sidebars.js',
           showLastUpdateTime: true,
           disableVersioning: false,
           editLocalizedFiles: false,
@@ -210,11 +212,13 @@ const config = {
         autoCollapseCategories: true,
       },
     },
+    
     colorMode: {
       defaultMode: "dark",
       disableSwitch: false,
-      respectPrefersColorScheme: false,
+      respectPrefersColorScheme: true,
     },
+
     image: "img/main/social-banner-01a.png",
 
     navbar: {
@@ -245,17 +249,10 @@ const config = {
               sidebarId: "devSidebar",
               type: "docSidebar",
             },
-
-            {
-              label: "Guides",
-              sidebarId: "guidesSidebar",
-              type: "docSidebar",
-            },
           ],
         },
         {
           type: "doc",
-          // docId: "code-of-conduct",
           docId:'resources',
           label: "Community",
           position: "right",
