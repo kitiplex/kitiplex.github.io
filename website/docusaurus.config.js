@@ -20,7 +20,7 @@ const config = {
   tagline: "Build Innovate Inspire",
   favicon: "icons/favicon.ico",
   url: "https://kitiplex.github.io",
-  baseUrl: "/io/",
+  baseUrl: "/",
   organizationName: "kitiplex",
   projectName: "kitiplex.github.io",
   deploymentBranch: "gh-pages",
