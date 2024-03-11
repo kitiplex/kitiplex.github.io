@@ -176,29 +176,7 @@ const config = {
         beforeDefaultRehypePlugins: [],
       },
     ],
-
-    // Content Docs - Discover
-    // [
-    //   "content-docs",
-      
-    //   {
-    //     id: "discover",
-    //     path: "discover",
-    //     routeBasePath: "discover",
-    //     sidebarPath: require.resolve("./sidebarsDiscover.js"),
-    //     include: ["**/*.md", "**/*.mdx"],
-    //     exclude: [
-    //       "**/_*.{js,jsx,ts,tsx,md,mdx}",
-    //       "**/_*/**",
-    //       "**/*.test.{js,jsx,ts,tsx}",
-    //       "**/__tests__/**",
-    //     ],
-    //     remarkPlugins: [[npm2yarn, { sync: true }], remarkMath],
-    //     rehypePlugins: [rehypeKatex],
-    //   },
-    // ],
-
-    
+ 
   ],
   
   themes: ["@docusaurus/theme-live-codeblock","@docusaurus/theme-mermaid",],
@@ -273,11 +251,6 @@ const config = {
               sidebarId: "guidesSidebar",
               type: "docSidebar",
             },
-            // {
-            //   label: "Snippets",
-            //   sidebarId: "snippetsSidebar",
-            //   type: "docSidebar",
-            // },
           ],
         },
         {
@@ -288,13 +261,6 @@ const config = {
           position: "right",
           docsPluginId: "community",
         },
-        // {
-        //   type: "doc",
-        //   docId: "case-studies",
-        //   label: "Insights",
-        //   position: "right",
-        //   docsPluginId: "discover",
-        // },
         {
           label: "Blog",
           to: "/blog",

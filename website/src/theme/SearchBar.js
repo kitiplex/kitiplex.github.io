@@ -9,7 +9,7 @@ export default function SearchBarWrapper(props) {
         appId="KLI8CT6349"
         indexName="kitiplexio"
         apiKey="5037344df426897d733d0efebb8b6d12"
-        placeholder="Search kitiplex..."
+        // placeholder="Search kitiplex..."
 
         resultsFooterComponent={({ state }) => {
           return <h3>{state.context.nbHits} match found</h3>;

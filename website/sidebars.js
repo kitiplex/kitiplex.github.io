@@ -162,33 +162,6 @@ const sidebars = {
       ],
     },
   ],
-
-
-  // snippetsSidebar: [
-  //   {
-  //     type: "category",
-  //     label: "📦 Snippets",
-  //     collapsed: true,
-  //     collapsible: true,
-  //     link: {
-  //       type: "doc",
-  //       id: "snippets/index",
-  //     },
-  //     items: [
-  //       "snippets/browser-dev",
-  //       "snippets/live-editor",
-  //       "snippets/celestial-distance",
-  //       "snippets/pwsh-cli",
-  //       "snippets/py-starters",
-  //       "snippets/calculus",
-  //       "snippets/mermaid-config",
-  //       "snippets/foobar-one",
-  //       "snippets/foobar-two",
-  //       "snippets/git-cheat",
-  //       "snippets/conda-cheat",
-  //     ],
-  //   },
-  // ],
 };
 
 export default sidebars;
