@@ -8,13 +8,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
 :root {
   --brand: #61dafb;
   --dark: #282c34;
   --ifm-color-primary: #1DA1F2;
-  --ifm-code-font-size: 95%;
+
   --deepdark: #20232a;
   --kiti-dark: #111317;
   --kiti-white: #C3C3C3;
@@ -22,6 +21,7 @@
   --twitter-blue: #1DA1F2;
   --twitter-darkgray: #657786;
   --shallowdark: #29303c;
+  /* --ifm-code-font-size: 95%; */
   /* --ifm-navbar-background-color: var(--dark); */
 }
 
@@ -44,7 +44,7 @@
   --ifm-background-color: #F5F8FA;
 } */
 html[data-theme='dark'] {
-  --ifm-background-color: #1e2125;
+  /* --ifm-background-color: #1e2125; */
   --ifm-background-surface-color: #121212;
 }
 

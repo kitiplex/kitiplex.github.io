@@ -81,7 +81,8 @@ export function CoreTeamRow(): JSX.Element {
         githubUrl="https://github.com/mkeithX"
         twitterUrl="https://twitter.com/mkeithtan">
         <Translate id="team.profile.Keith Tan.body">
-          01001001 01101101 00100000 01100110 01100101 01100101 01101100 01101001 01101110 01100111 00100000 01101100 01110101 01100011 01101011 01111001
+          {/* 01001001 01101101 00100000 01100110 01100101 01100101 01101100 01101001 01101110 01100111 00100000 01101100 01110101 01100011 01101011 01111001 */}
+          {"I'm a software engineer with a facination for understanding the complex of the universe."}
         </Translate>
       </TeamProfileCardCol>
 

@@ -10,111 +10,126 @@ import tailwind from 'tailwindcss';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import {themes as prismThemes} from 'prism-react-renderer';
-// import PrismLight from './src/utils/PrismTheme';
+import npm2yarn from '@docusaurus/remark-plugin-npm2yarn';
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'kitiplex',
-  tagline: 'Build Innovate Inspire',
-  favicon: 'icons/favicon.ico',
-  url: 'https://kitiplex.github.io',
-  baseUrl: '/',
-  organizationName: 'kitiplex',
-  projectName: 'kitiplex.github.io',
-  deploymentBranch: 'gh-pages',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  title: "kitiplex",
+  tagline: "Build Innovate Inspire",
+  favicon: "icons/favicon.ico",
+  url: "https://kitiplex.github.io",
+  baseUrl: "/",
+  organizationName: "kitiplex",
+  projectName: "kitiplex.github.io",
+  deploymentBranch: "gh-pages",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
   trailingSlash: false,
 
   scripts: [
-    { src: 'https://KLI8CT6349-dsn.algolia.net', rel: 'preconnect', crossorigin: true },
+    {
+      src: "https://KLI8CT6349-dsn.algolia.net",
+      rel: "preconnect",
+      crossorigin: true,
+    },
   ],
 
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
+      integrity:
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
     },
   ],
 
-  titleDelimiter: '·',
+  titleDelimiter: "·",
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
-  markdown: {
-    mermaid: true,
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          path: 'docs',
+          path: "docs",
           showLastUpdateAuthor: true,
           breadcrumbs: true,
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: 'sidebars.js',
           showLastUpdateTime: true,
           disableVersioning: false,
           editLocalizedFiles: false,
           editCurrentVersion: false,
-          routeBasePath: 'docs',
-          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+          routeBasePath: "docs",
+          include: ["**/*.{js,jsx,ts,tsx,md,mdx}"],
           exclude: [
-            '**/_*.{js,jsx,ts,tsx,md,mdx}',
-            '**/_*/**',
-            '**/*.test.{js,jsx,ts,tsx}',
-            '**/__tests__/**',
+            "**/_*.{js,jsx,ts,tsx,md,mdx}",
+            "**/_*/**",
+            "**/*.test.{js,jsx,ts,tsx}",
+            "**/__tests__/**",
           ],
-          remarkPlugins: [
-            [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-            remarkMath,
-          ],
+          docItemComponent: '@theme/DocItem',
+          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath],
           rehypePlugins: [rehypeKatex],
+          beforeDefaultRemarkPlugins: [],
+          beforeDefaultRehypePlugins: [],
         },
 
         pages: {
-          path: 'src/pages',
-          routeBasePath: '',
-          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+          path: "src/pages",
+          routeBasePath: "",
+          include: ["**/*.{js,jsx,ts,tsx,md,mdx}"],
           exclude: [
-            '**/_*.{js,jsx,ts,tsx,md,mdx}',
-            '**/_*/**',
-            '**/*.test.{js,jsx,ts,tsx}',
-            '**/__tests__/**',
+            "**/_*.{js,jsx,ts,tsx,md,mdx}",
+            "**/_*/**",
+            "**/*.test.{js,jsx,ts,tsx}",
+            "**/__tests__/**",
           ],
-          mdxPageComponent: '@theme/MDXPage',
-          remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn'), remarkMath],
+          mdxPageComponent: "@theme/MDXPage",
+          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath],
+          rehypePlugins: [rehypeKatex],
+          beforeDefaultRemarkPlugins: [],
+          beforeDefaultRehypePlugins: [],
         },
 
         blog: {
-          path: 'blog',
-          blogSidebarCount: 'ALL',
-          blogSidebarTitle: 'Blog Posts',
+
+          path: "blog",
+          editLocalizedFiles: false,
+          blogTitle: "Updates",
+          blogSidebarCount: "ALL",
+          blogSidebarTitle: "Recent updates",
+          blogDescription: "Blog",
           showReadingTime: true,
-          routeBasePath: 'blog',
-          include: ['**/*.{md,mdx}'],
+          routeBasePath: "blog",
+          include: ["**/*.{md,mdx}"],
           exclude: [
-            '**/_*.{js,jsx,ts,tsx,md,mdx}',
-            '**/_*/**',
-            '**/*.test.{js,jsx,ts,tsx}',
-            '**/__tests__/**',
+            "**/_*.{js,jsx,ts,tsx,md,mdx}",
+            "**/_*/**",
+            "**/*.test.{js,jsx,ts,tsx}",
+            "**/__tests__/**",
           ],
-          remarkPlugins: [
-            [require('@docusaurus/remark-plugin-npm2yarn'), { converters: ['pnpm'] }],
-          ],
+          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath],
+          rehypePlugins: [rehypeKatex],
+          feedOptions: {
+            type: "all",
+            copyright: `Copyright © ${new Date().getFullYear()} Kitimi Platforms.`,
+          },
         },
+
         sitemap: {
-          changefreq: 'weekly',
+          changefreq: "weekly",
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
-          filename: 'sitemap.xml',
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
         },
+
         theme: {
-         customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       },
     ],
@@ -131,71 +146,75 @@ const config = {
         },
       };
     },
-    '@docusaurus/theme-live-codeblock',
-    'docusaurus-plugin-sass',
-    '@docusaurus/remark-plugin-npm2yarn',
-    '@docusaurus/theme-mermaid',
-    '@docusaurus/plugin-client-redirects',
+
 
     // Content Docs - Community
     [
-      'content-docs',
+      "content-docs",
       {
-        id: 'community',
-        path: 'community',
-        routeBasePath: 'community',
-        sidebarPath: require.resolve('./sidebarsCommunity.js'),
-        include: ['**/*.md', '**/*.mdx'],
+        id: "community",
+        path: "community",
+        routeBasePath: "community",
+        sidebarPath: require.resolve("./sidebarsCommunity.js"),
+        include: ["**/*.md", "**/*.mdx"],
         exclude: [
-          '**/_*.{js,jsx,ts,tsx,md,mdx}',
-          '**/_*/**',
-          '**/*.test.{js,jsx,ts,tsx}',
-          '**/__tests__/**',
+          "**/_*.{js,jsx,ts,tsx,md,mdx}",
+          "**/_*/**",
+          "**/*.test.{js,jsx,ts,tsx}",
+          "**/__tests__/**",
         ],
-        remarkPlugins: [
-          [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-          remarkMath,
-        ],
+        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath],
         rehypePlugins: [rehypeKatex],
       },
     ],
 
     // Content Docs - Discover
     [
-      'content-docs',
+      "content-docs",
       {
-        id: 'discover',
-        path: 'discover',
-        routeBasePath: 'discover',
-        sidebarPath: require.resolve('./sidebarsDiscover.js'),
-        include: ['**/*.md', '**/*.mdx'],
+        id: "discover",
+        path: "discover",
+        routeBasePath: "discover",
+        sidebarPath: require.resolve("./sidebarsDiscover.js"),
+        include: ["**/*.md", "**/*.mdx"],
         exclude: [
-          '**/_*.{js,jsx,ts,tsx,md,mdx}',
-          '**/_*/**',
-          '**/*.test.{js,jsx,ts,tsx}',
-          '**/__tests__/**',
+          "**/_*.{js,jsx,ts,tsx,md,mdx}",
+          "**/_*/**",
+          "**/*.test.{js,jsx,ts,tsx}",
+          "**/__tests__/**",
         ],
-        remarkPlugins: [
-          [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-          remarkMath,
-        ],
+        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath],
         rehypePlugins: [rehypeKatex],
       },
     ],
+
+    
   ],
+  
+  themes: ["@docusaurus/theme-live-codeblock","@docusaurus/theme-mermaid",],
+  
+  markdown: {
+    mermaid: true,
+  },
+
 
   themeConfig: {
-    
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+
+    liveCodeBlock: {
+      playgroundPosition: "bottom",
+    },
+
     announcementBar: {
-      id: 'announcementBar_',
+      id: "announcementBar_",
       content:
         '🎉Give it a Star &#11088; on  <a target="_blank" rel="noopener noreferrer" href="https://github.com/kitiplex/kitiplex.github.io">GitHub</a>',
-      textColor: '#000',
+      textColor: "#000",
       isCloseable: true,
     },
     prism: {
       theme: prismThemes.oceanicNext,
-      additionalLanguages: ['powershell','python','bash','json','java'],
+      additionalLanguages: ["powershell", "python", "bash", "json", "java"],
     },
     docs: {
       sidebar: {
@@ -204,85 +223,83 @@ const config = {
       },
     },
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: "dark",
       disableSwitch: false,
-      respectPrefersColorScheme: true,
+      respectPrefersColorScheme: false,
     },
-    image: 'img/main/social-banner-01a.png',
+    image: "img/main/social-banner-01a.png",
 
     navbar: {
-      title: 'Kitiplex',
-      style: 'dark',
+      title: "Kitiplex",
+      style: "dark",
       hideOnScroll: true,
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/main/logo-blue.svg',
-        className: 'custom-navbar-logo-class',
-        target: '_self',
+        alt: "",
+        src: "img/main/logo-blue.svg",
+        className: "custom-navbar-logo-class",
+        target: "_self",
       },
 
       items: [
+
         {
-          label: 'Development',
-          position: 'right',
-          type: 'dropdown',
+          label: "Development",
+          position: "right",
+          type: "dropdown",
           items: [
             {
-              label: 'Docs',
-              sidebarId: 'projectSidebar',
-              type: 'docSidebar',
+              label: "Docs",
+              sidebarId: "projectSidebar",
+              type: "docSidebar",
             },
             {
-              label: 'Guides',
-              sidebarId: 'guidesSidebar',
-              type: 'docSidebar',
+              label: "Guides",
+              sidebarId: "guidesSidebar",
+              type: "docSidebar",
             },
             {
-              label: 'Snippets',
-              sidebarId: 'snippetsSidebar',
-              type: 'docSidebar',
+              label: "Snippets",
+              sidebarId: "snippetsSidebar",
+              type: "docSidebar",
             },
           ],
         },
         {
-          type: 'doc',
-          docId: 'resources',
-          label: 'Community',
-          position: 'right',
-          docsPluginId: 'community',
+          type: "doc",
+          docId: "/category/community",
+          label: "Community",
+          position: "right",
+          docsPluginId: "community",
         },
         {
-          type: 'doc',
-          docId: 'case-studies',
-          label: 'Insights',
-          position: 'right',
-          docsPluginId: 'discover',
+          type: "doc",
+          docId: "case-studies",
+          label: "Insights",
+          position: "right",
+          docsPluginId: "discover",
         },
         {
-          label: 'Blog',
-          to: '/blog',
-          position: 'right',
+          label: "Blog",
+          to: "/blog",
+          position: "right",
         },
         {
-          href: 'https://github.com/kitiplex/',
-          'aria-label': 'GitHub repository',
-          position: 'right',
-          className: 'header-github-link',
+          href: "https://github.com/kitiplex/",
+          "aria-label": "GitHub repository",
+          position: "right",
+          className: "header-github-link",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       logo: {
-        alt: 'Kitiplex Logo',
-        src: 'img/main/kitimi-svg-banner-2.svg',
-        href: '/',
+        alt: "Kitiplex Logo",
+        src: "img/main/kitimi-svg-banner-2.svg",
+        href: "/",
         width: 200,
       },
       copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
-    },
-    liveCodeBlock: {
-      playgroundPosition: 'bottom',
     },
   },
 };

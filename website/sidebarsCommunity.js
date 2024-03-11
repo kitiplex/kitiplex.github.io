@@ -12,24 +12,30 @@ const sidebars = {
             type: 'category',
             label: 'Community',
             collapsed: false,
-            collapsible: true,
+            collapsible: false,
+            link: {
+                type: 'generated-index',
+                description: "Kitiplex has adopted these policies that we expect project participants to adhere to.",
+            },
             items: [
-                'resources',
-                'team',
+                // 'resources',
+                
                 'code-of-conduct',
+                'contribution-guidelines',
                 'security-policy',
+                'team',
             ],
         },
-        {
-            type: 'category',
-            label: 'Support',
-            collapsed: true,
-            collapsible: true,
-            items: [
-                'support/user-experience',
-                'support/terms-of-service',
-            ],
-        },
+        // {
+        //     type: 'category',
+        //     label: 'Support',
+        //     collapsed: true,
+        //     collapsible: true,
+        //     items: [
+        //         'support/user-experience',
+        //         'support/terms-of-service',
+        //     ],
+        // },
     ],
 };
 
