@@ -178,7 +178,7 @@ const config = {
         beforeDefaultRehypePlugins: [],
       },
     ],
- 
+    require.resolve("docusaurus-plugin-image-zoom"),
   ],
   
   themes: ["@docusaurus/theme-live-codeblock","@docusaurus/theme-mermaid",],
@@ -191,14 +191,12 @@ const config = {
   themeConfig: {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 
-    liveCodeBlock: {
-      playgroundPosition: "bottom",
-    },
+
 
     announcementBar: {
       id: "announcementBar_",
       content:
-        '🎉Give it a Star &#11088; on  <a target="_blank" rel="noopener noreferrer" href="https://github.com/kitiplex/kitiplex.github.io">GitHub</a>',
+        '🎉Like Kitiplex? Give it a Star &#11088; on  <a target="_blank" rel="noopener noreferrer" href="https://github.com/kitiplex/kitiplex.github.io">GitHub</a>',
       textColor: "#000",
       isCloseable: true,
     },
@@ -281,6 +279,25 @@ const config = {
       },
       copyright: `Copyright © ${new Date().getFullYear()} contributors of Kitiplex`,
     },
+    liveCodeBlock: {
+      playgroundPosition: "bottom",
+    },
+    zoom: {
+      config: {
+        
+      },
+    },
+    // zoom: {
+    //   selector: '.markdown :not(em) > img',
+    //   config: {
+              
+    //     // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+    //     background: {
+    //       light: 'rgb(255, 255, 255)',
+    //       dark: 'rgb(50, 50, 50)'
+    //     }
+    //   }
+    // },
   },
 };
 

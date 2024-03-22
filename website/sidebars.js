@@ -4,7 +4,6 @@
  * Kitiplex - The hub for contributors, authors, and maintainers in the Kitimi ecosystem.
  * Licensed under MIT. See LICENSE file in the root directory.
  */
-// @ts-check
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 
