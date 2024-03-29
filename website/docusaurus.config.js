@@ -234,7 +234,7 @@ const config = {
 
         {
           label: "Development",
-          position: "right",
+          position: "left",
           type: "dropdown",
           items: [
             {
