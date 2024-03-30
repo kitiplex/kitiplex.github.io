@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[9139],{47696:t=>{t.exports=JSON.parse('{"title":"Getting started","slug":"/getting-started","permalink":"/docs/getting-started","navigation":{"previous":{"title":"Introduction","permalink":"/docs/"},"next":{"title":"This Doc","permalink":"/docs/this-doc"}}}')}}]);

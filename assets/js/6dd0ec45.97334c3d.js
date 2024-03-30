@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkitiplex_dev_website=self.webpackChunkkitiplex_dev_website||[]).push([[9304],{10499:e=>{e.exports=JSON.parse('{"label":"kitiplex","permalink":"/blog/tags/kitiplex","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
