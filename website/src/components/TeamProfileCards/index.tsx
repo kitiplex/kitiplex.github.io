@@ -82,7 +82,16 @@ export function CoreTeamRow(): JSX.Element {
         twitterUrl="https://twitter.com/mkeithtan">
         <Translate id="team.profile.Keith Tan.body">
           {/* 01001001 01101101 00100000 01100110 01100101 01100101 01101100 01101001 01101110 01100111 00100000 01101100 01110101 01100011 01101011 01111001 */}
-          {"I'm a software engineer with a facination for understanding the complex of the universe."}
+          {"Building the web before bedtime."}
+        </Translate>
+      </TeamProfileCardCol>
+
+      <TeamProfileCardCol
+        name="Venice"
+        githubUrl="https://github.com/Portiaporkshap"
+        twitterUrl="https://twitter.com/">
+        <Translate id="team.profile.Venic.body">
+          {"Trust me I'm an engineer."}
         </Translate>
       </TeamProfileCardCol>
 
@@ -91,17 +100,12 @@ export function CoreTeamRow(): JSX.Element {
         githubUrl="https://github.com/JoeiX"
         twitterUrl="https://twitter.com/angajoei">
         <Translate id="team.profile.Joei.body">
-          Busy upskilling. 🌾
+          {"Busy upskilling."}
         </Translate>
       </TeamProfileCardCol>
-      <TeamProfileCardCol
-        name="Venice"
-        githubUrl="https://github.com/Portiaporkshap"
-        twitterUrl="https://twitter.com/">
-        <Translate id="team.profile.Venic.body">
-          Trust me, I'm always an Engineer. 24/7 365. 🛠️
-        </Translate>
-      </TeamProfileCardCol>
+
+
+
       <TeamProfileCardCol
         name="PriMx"
         githubUrl="https://github.com/PriMaxima"
@@ -110,6 +114,7 @@ export function CoreTeamRow(): JSX.Element {
           Teammate is about to update profile. Be right back!
         </Translate>
       </TeamProfileCardCol>
+      
       <TeamProfileCardCol
         name="Gina"
         githubUrl="https://github.com/botgina"
